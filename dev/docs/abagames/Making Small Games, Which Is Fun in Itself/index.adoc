@@ -1,0 +1,749 @@
+= Making Small Games, Which Is Fun in Itself - DEV Community
+:keywords: gamedev, productivity, software, coding, development,
+engineering, inclusive, community
+:lang: en
+
+[[main-content]]
+[[main-title]]
+link:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_o69dloafxpnklxg8r4o9.png[image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_o69dloafxpnklxg8r4o9.png[Cover
+image for Making Small Games&#44; Which Is Fun in
+Itself,width=1000,height=420]]
+
+[[action-space]]
+
+https://dev.to/abagames[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_859761_871a936d-2aa9-4fdd-91cc-74410e64683e.png[ABA
+Games,width=40,height=40]]
+
+https://dev.to/abagames[ABA Games]
+
+Posted on 5. Okt. 2023
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg[./index++_++files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf,width=24,height=24]#
+[#reaction_engagement_like_count .crayons-reaction__count]#10#
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg[./index++_++files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97,width=24,height=24]#
+[#reaction_engagement_unicorn_count .crayons-reaction__count]# #
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg[./index++_++files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5,width=24,height=24]#
+[#reaction_engagement_exploding_head_count .crayons-reaction__count]# #
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg[./index++_++files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5,width=24,height=24]#
+[#reaction_engagement_raised_hands_count .crayons-reaction__count]# #
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg[./index++_++files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e,width=24,height=24]#
+[#reaction_engagement_fire_count .crayons-reaction__count]# #
+
+== Making Small Games, Which Is Fun in Itself
+
+https://dev.to/t/productivity[[.crayons-tag__prefix]##++#++##productivity]
+https://dev.to/t/gamedev[[.crayons-tag__prefix]##++#++##gamedev]
+
+[[article-body]]
+Creating small games is an enjoyable endeavor in itself. So what
+constitutes a small game? According to the 'Small Game Manifesto',
+^https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn1[1]^
+it refers to games that conclude within 10 minutes and can be easily
+played on browsers.
+
+By this definition, I have already created over 350 small
+games.^https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn2[2]^
+There was a year when I crafted 139 of these small
+games,^https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn3[3]^
+showcasing my undeniable love for them.
+
+Take for instance, a simple game where you slice a red stick into equal
+parts, which exemplifies a small game.
+
+https://abagames.github.io/crisp-game-lib-11-games/?timbertest[image:./index_files/https___github.com_abagames_crisp-game-lib-11-games_raw_main_docs_timbertest_screenshot.gif[TIMBER
+TEST]]
+
+Another example is a game where you cut a rope with a tap, ensuring it
+doesn't touch the bottom of the screen, also a small game, enjoyable on
+touch panel devices like smartphones.
+
+https://abagames.github.io/crisp-game-lib-games/?cnodes[image:./index_files/https___github.com_abagames_crisp-game-lib-games_raw_main_docs_cnodes_screenshot.gif[C
+NODES]]
+
+The allure of small games lies in the abbreviated development time they
+require. A game could be quickly whipped up in about 2 hours, or within
+around 10 hours if met with challenges. However, once you start diving
+into artwork, the time investment can become endless. The small games
+discussed in this article are those produced under initiatives such as
+"Game A
+Week,"^https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn4[4]^
+in which developers aim to produce a new game each week. These games,
+even from a developer's standpoint, are considered small due to the
+constrained time frame in which they are developed.
+
+The abbreviated development time means you can easily experiment with
+various ideas. I’ve enjoyed crafting and testing unconventional games.
+
+The common narrative surrounding small games posits that creating them
+is a crucial preparatory step towards developing larger, more polished
+games. Many articles overwhelmingly advise beginners to start with small
+games.
+
+A blog post titled "Make and release lots of small games before making a
+big one"
+^https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn5[5]^
+emphasizes the importance of this practice before embarking on larger
+projects.
+
+____
+It's here because, jumping straight into a big game as your "first" game
+is exactly how you end up losing motivation and never finishing that
+game, or ending up with something that ate years of your life that you
+can't even stand looking at anymore.
+____
+
+But the story doesn’t end there. Small games possess a unique charm
+exclusive to them. That's what I believe.
+
+There's a blog post titled "How To Make Good Small
+Games",^https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn6[6]^
+elucidating that excellent small games do exist and detailing how to
+create them.
+
+____
+This manifesto of sorts, “How to Make Good Small Games”, is an attempt
+to meet this perspective halfway. It’s divided into twelve thoughts,
+made up mostly of esoteric creative theory (why do I like small games?
+why do I like making small games?), and hopefully a little actionable
+advice. I can tell you “scope small uwu”, but if you don’t believe small
+games can be good in the first place, all you’ll hear is a homework
+assignment you have to do before you can make the games you really care
+about.
+____
+
+The 12 thoughts encompass the following:
+
+. A game’s quality is independent from its scale.: Small games are not
+only easy to create but also to make well. The larger the game, the more
+aspects within it need attention, and the higher the chance of failure.
+. A game’s quality is independent from its emotional scope.: Just as
+short stories function differently from long novels or epics, the
+conditions constituting “success” vary in small-scale games.
+. A game defines the terms of its own success.: Accept them as they are,
+and assess whether that's good or bad.
+. A game succeeds when it fulfills its promises.: The introduction of
+new characters or mechanics is a promise. Instead of introducing an
+interesting idea and quickly abandoning it, ensure it evolves and
+contributes to the game's overall progression.
+. It's easier for a game to succeed if it makes smaller promises.:
+Reduce the mechanics, enemies, assets, characters, and stages. It's
+easier to introduce three ideas and develop them to a satisfying climax
+than to juggle 10 or 100 ideas.
+. Fulfill promises in an interesting and delightful way.: What makes you
+smile? This is where your personal style shines through in creating a
+game that feels authentically "you".
+. Don’t over-deliver on your promises.: Games should conclude at the
+right moment, not extending unnecessarily.
+. Form factor is a part of a game’s promises.: Minimize information
+presented to players, and ensure they can commence playing as soon as
+the game launches, altering player expectations.
+. Finish your game before releasing it.: Before releasing under labels
+like “Demo” or subtitling it “Prologue”, question why you would wish to
+release it before completion.
+. Serial games are not a shortcut.: Splitting the game into two or more
+episodes released over an extended period is almost always a bad idea.
+. Don’t worry about going viral.: Pursuing small, specific goals in
+games also attracts a small, specific audience.
+. Good is good enough.: Once you can consistently create games that
+satisfy you and feel genuinely good, you’re light-years ahead of many
+game developers.
+
+Additionally, the article in discussion presents a 13th thought: "Have
+fun :)". Conceptualize new mechanics and integrate them into your game
+in a manner that reflects your style. I find this process enjoyable, and
+it’s even more gratifying if a fair number of people experience and
+enjoy what I’ve created.
+
+Creating small games is often discussed within the context of honing
+game development skills. However, the process of brainstorming diverse
+game ideas, experimenting, riding the roller coaster of elation and
+disappointment, and occasionally showcasing your work to others is
+itself enjoyable, which is an invaluable experience.
+
+This time, I have compiled the joys and methods of developing compact
+games into a small e-booklet titled *"Joys of Small Game Development"*.
+
+https://abagames.github.io/joys-of-small-game-development-en/[Joys of
+Small Game Development]
+
+To convey its delights from various angles, I've included the following
+content:
+
+* Exploring what *small games* are and why creating them is enjoyable.
+* Choosing *target devices and development environments* for game
+development.
+* Generating *core game ideas*, and discovering how to spawn ideas
+through constraints.
+* Setting *appropriate levels of difficulty* for players.
+* Enhancing the game's appeal by adding *'juicy' effects and sound*.
+* Creating *custom libraries or engines*, and exploring methods for
+auto-generating artwork and sound.
+* Deliberating on the potential of *computers in developing games from
+scratch*.
+
+This compilation aims to benefit those interested in small game
+development or those already engaged in the process. Although the
+content is varied and diverse, reflecting my interests, I hope that
+sharing my experiences and knowledge will make your game development
+journey a tad more enjoyable.
+
+'''''
+
+. {blank}
++
+[[fn1]]
+https://ebeth.itch.io/small-games-manifesto[Small Games Manifesto] for
+https://itch.io/jam/manifesto-jam[Manifesto
+Jam] https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref1[↩]
+. {blank}
++
+[[fn2]]
+http://www.asahi-net.or.jp/~cs8k-cyu/[ABA
+Games] https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref2[↩]
+. {blank}
++
+[[fn3]]
+https://dev.to/abagames/i-have-created-139-games-in-one-year-by-patterning-my-game-making-gc2[I
+have created 139 games in one year by patterning my game
+making] https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref3[↩]
+. {blank}
++
+[[fn4]]
+https://www.gamedeveloper.com/audio/game-a-week-getting-experienced-at-failure[Game
+A Week: Getting Experienced At
+Failure] https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref4[↩]
+. {blank}
++
+[[fn5]]
+https://tylerglaiel.substack.com/p/make-and-release-lots-of-small-games[Make
+and release lots of small games before making a big
+one] https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref5[↩]
+. {blank}
++
+[[fn6]]
+https://farawaytimes.blogspot.com/2023/02/how-to-make-good-small-games.html[How
+To Make Good Small
+Games] https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref6[↩]
+
+https://dev.to/devteam[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_organization_profile_image_1_d908a186-5651-4a5a-9f76-15200bc6801f.jpg[profile,width=20,height=20]]
+
+The DEV Team
+
+[.crayons-bb__indicator .c-indicator .c-indicator--subtle .c-indicator--round .fs-2xs .fw-medium .ml-2 .py-1 .px-2]#Promoted#
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWhobmYxZDVncngzMWZhbDhidTEyYWdlOGlxMnRpbGsiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI+PHRpdGxlIGlkPSJhaGhuZjFkNWdyeDMxZmFsOGJ1MTJhZ2U4aXEydGlsayI+RHJvcGRvd24gbWVudTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWhobmYxZDVncngzMWZhbDhidTEyYWdlOGlxMnRpbGsiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI{plus}PHRpdGxlIGlkPSJhaGhuZjFkNWdyeDMxZmFsOGJ1MTJhZ2U4aXEydGlsayI{plus}RHJvcGRvd24gbWVudTwvdGl0bGU{plus}CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8{plus}Cjwvc3ZnPg==]
+
+[[sponsorship-dropdown-263961]]
+* https://dev.to/billboards[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMiAyMkM2LjQ3NyAyMiAyIDE3LjUyMyAyIDEyUzYuNDc3IDIgMTIgMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHptMC0yYTggOCAwIDEwMC0xNiA4IDggMCAwMDAgMTZ6TTExIDdoMnYyaC0yVjd6bTAgNGgydjZoLTJ2LTZ6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMiAyMkM2LjQ3NyAyMiAyIDE3LjUyMyAyIDEyUzYuNDc3IDIgMTIgMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHptMC0yYTggOCAwIDEwMC0xNiA4IDggMCAwMDAgMTZ6TTExIDdoMnYyaC0yVjd6bTAgNGgydjZoLTJ2LTZ6IiAvPgo8L3N2Zz4=]
+What's a billboard?]
+* https://dev.to/settings/customization#sponsors[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld2JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0zLjM0IDE2Ljk5OTlDMi45MTcyNyAxNi4yNjg5IDIuNTg4NjYgMTUuNDg3NCAyLjM2MiAxNC42NzM5QzIuODU1MzEgMTQuNDIzIDMuMjY5NTkgMTQuMDQwNiAzLjU1OTAzIDEzLjU2ODhDMy44NDg0NiAxMy4wOTcxIDQuMDAxNzYgMTIuNTU0NSA0LjAwMTk3IDEyLjAwMTFDNC4wMDIxOCAxMS40NDc2IDMuODQ5MjggMTAuOTA0OSAzLjU2MDIgMTAuNDMyOUMzLjI3MTEyIDkuOTYxIDIuODU3MTIgOS41NzgyMSAyLjM2NCA5LjMyNjk0QzIuODE2MDQgNy42OTI0MyAzLjY3NjczIDYuMTk5OSA0Ljg2NSA0Ljk4OTk0QzUuMzI5MDkgNS4yOTE2NyA1Ljg2NzYyIDUuNDU5MTEgNi40MjA5OCA1LjQ3MzczQzYuOTc0MzQgNS40ODgzNCA3LjUyMDk1IDUuMzQ5NTggOC4wMDAzMyA1LjA3Mjc4QzguNDc5NzEgNC43OTU5OCA4Ljg3MzE1IDQuMzkxOTQgOS4xMzcxMyAzLjkwNTM5QzkuNDAxMSAzLjQxODgzIDkuNTI1MzEgMi44Njg3MiA5LjQ5NiAyLjMxNTk0QzExLjEzODEgMS44OTE1NyAxMi44NjEyIDEuODkyMjYgMTQuNTAzIDIuMzE3OTVDMTQuNDc0IDIuODcwNzEgMTQuNTk4NCAzLjQyMDczIDE0Ljg2MjYgMy45MDcxNUMxNS4xMjY4IDQuMzkzNTcgMTUuNTIwNCA0Ljc5NzQyIDE1Ljk5OTggNS4wNzQwMUMxNi40NzkzIDUuMzUwNTkgMTcuMDI1OSA1LjQ4OTEzIDE3LjU3OTMgNS40NzQzQzE4LjEzMjYgNS40NTk0NiAxOC42NzEgNS4yOTE4MyAxOS4xMzUgNC45ODk5NEMxOS43MTQgNS41Nzk5NCAyMC4yMjggNi4yNTA5NSAyMC42NiA2Ljk5OTk1QzIxLjA5MyA3Ljc0ODk1IDIxLjQxNyA4LjUyOTk1IDIxLjYzOCA5LjMyNTk1QzIxLjE0NDcgOS41NzY4NSAyMC43MzA0IDkuOTU5MzIgMjAuNDQxIDEwLjQzMTFDMjAuMTUxNSAxMC45MDI4IDE5Ljk5ODIgMTEuNDQ1NCAxOS45OTggMTEuOTk4OEMxOS45OTc4IDEyLjU1MjMgMjAuMTUwNyAxMy4wOTUgMjAuNDM5OCAxMy41NjY5QzIwLjcyODkgMTQuMDM4OSAyMS4xNDI5IDE0LjQyMTcgMjEuNjM2IDE0LjY3MjlDMjEuMTg0IDE2LjMwNzUgMjAuMzIzMyAxNy44IDE5LjEzNSAxOS4wMDk5QzE4LjY3MDkgMTguNzA4MiAxOC4xMzI0IDE4LjU0MDggMTcuNTc5IDE4LjUyNjJDMTcuMDI1NyAxOC41MTE1IDE2LjQ3OSAxOC42NTAzIDE1Ljk5OTcgMTguOTI3MUMxNS41MjAzIDE5LjIwMzkgMTUuMTI2OCAxOS42MDc5IDE0Ljg2MjkgMjAuMDk0NUMxNC41OTg5IDIwLjU4MTEgMTQuNDc0NyAyMS4xMzEyIDE0LjUwNCAyMS42ODM5QzEyLjg2MTkgMjIuMTA4MyAxMS4xMzg4IDIyLjEwNzYgOS40OTcgMjEuNjgxOUM5LjUyNjA1IDIxLjEyOTIgOS40MDE2IDIwLjU3OTIgOS4xMzc0MiAyMC4wOTI3QzguODczMjQgMTkuNjA2MyA4LjQ3OTY0IDE5LjIwMjUgOC4wMDAxNyAxOC45MjU5QzcuNTIwNyAxOC42NDkzIDYuOTc0MDUgMTguNTEwOCA2LjQyMDczIDE4LjUyNTZDNS44Njc0IDE4LjU0MDQgNS4zMjg5NiAxOC43MDgxIDQuODY1IDE5LjAwOTlDNC4yNzM5OSAxOC40MDY5IDMuNzYxNTkgMTcuNzMxNSAzLjM0IDE2Ljk5OTlaTTkgMTcuMTk1OUMxMC4wNjU2IDE3LjgxMDYgMTAuODY2OCAxOC43OTcgMTEuMjUgMTkuOTY1OUMxMS43NDkgMjAuMDEyOSAxMi4yNSAyMC4wMTM5IDEyLjc0OSAxOS45NjY5QzEzLjEzMjQgMTguNzk3OCAxMy45MzQgMTcuODExNCAxNSAxNy4xOTY5QzE2LjA2NTIgMTYuNTgwNiAxNy4zMjA1IDE2LjM3OTQgMTguNTI1IDE2LjYzMTlDMTguODE1IDE2LjIyMzkgMTkuMDY1IDE1Ljc4ODkgMTkuMjczIDE1LjMzMzlDMTguNDUyNCAxNC40MTc0IDE3Ljk5OTEgMTMuMjMwMiAxOCAxMS45OTk5QzE4IDEwLjczOTkgMTguNDcgOS41NjI5NSAxOS4yNzMgOC42NjU5NUMxOS4wNjM1IDguMjExMDkgMTguODEyNSA3Ljc3NjU4IDE4LjUyMyA3LjM2Nzk1QzE3LjMxOTMgNy42MjAyNSAxNi4wNjQ4IDcuNDE5NDIgMTUgNi44MDM5NUMxMy45MzQ0IDYuMTg5MzIgMTMuMTMzMiA1LjIwMjkzIDEyLjc1IDQuMDMzOTRDMTIuMjUxIDMuOTg2OTQgMTEuNzUgMy45ODU5NCAxMS4yNTEgNC4wMzI5NEMxMC44Njc2IDUuMjAyMDkgMTAuMDY2IDYuMTg4NSA5IDYuODAyOTVDNy45MzQ3OCA3LjQxOTI2IDYuNjc5NDggNy42MjA0NiA1LjQ3NSA3LjM2Nzk1QzUuMTg1NTYgNy43NzYyMyA0LjkzNTEzIDguMjEwODEgNC43MjcgOC42NjU5NUM1LjU0NzU3IDkuNTgyNSA2LjAwMDg4IDEwLjc2OTcgNiAxMS45OTk5QzYgMTMuMjU5OSA1LjUzIDE0LjQzNjkgNC43MjcgMTUuMzMzOUM0LjkzNjQ3IDE1Ljc4ODggNS4xODc1NCAxNi4yMjMzIDUuNDc3IDE2LjYzMTlDNi42ODA3MiAxNi4zNzk2IDcuOTM1MjEgMTYuNTgwNSA5IDE3LjE5NTlaTTEyIDE0Ljk5OTlDMTEuMjA0NCAxNC45OTk5IDEwLjQ0MTMgMTQuNjgzOSA5Ljg3ODY4IDE0LjEyMTNDOS4zMTYwNyAxMy41NTg3IDkgMTIuNzk1NiA5IDExLjk5OTlDOSAxMS4yMDQzIDkuMzE2MDcgMTAuNDQxMiA5Ljg3ODY4IDkuODc4NjJDMTAuNDQxMyA5LjMxNjAyIDExLjIwNDQgOC45OTk5NSAxMiA4Ljk5OTk1QzEyLjc5NTYgOC45OTk5NSAxMy41NTg3IDkuMzE2MDIgMTQuMTIxMyA5Ljg3ODYyQzE0LjY4MzkgMTAuNDQxMiAxNSAxMS4yMDQzIDE1IDExLjk5OTlDMTUgMTIuNzk1NiAxNC42ODM5IDEzLjU1ODcgMTQuMTIxMyAxNC4xMjEzQzEzLjU1ODcgMTQuNjgzOSAxMi43OTU2IDE0Ljk5OTkgMTIgMTQuOTk5OVpNMTIgMTIuOTk5OUMxMi4yNjUyIDEyLjk5OTkgMTIuNTE5NiAxMi44OTQ2IDEyLjcwNzEgMTIuNzA3MUMxMi44OTQ2IDEyLjUxOTUgMTMgMTIuMjY1MiAxMyAxMS45OTk5QzEzIDExLjczNDcgMTIuODk0NiAxMS40ODA0IDEyLjcwNzEgMTEuMjkyOEMxMi41MTk2IDExLjEwNTMgMTIuMjY1MiAxMC45OTk5IDEyIDEwLjk5OTlDMTEuNzM0OCAxMC45OTk5IDExLjQ4MDQgMTEuMTA1MyAxMS4yOTI5IDExLjI5MjhDMTEuMTA1NCAxMS40ODA0IDExIDExLjczNDcgMTEgMTEuOTk5OUMxMSAxMi4yNjUyIDExLjEwNTQgMTIuNTE5NSAxMS4yOTI5IDEyLjcwNzFDMTEuNDgwNCAxMi44OTQ2IDExLjczNDggMTIuOTk5OSAxMiAxMi45OTk5WiIgZmlsbD0iYmxhY2siIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld2JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0zLjM0IDE2Ljk5OTlDMi45MTcyNyAxNi4yNjg5IDIuNTg4NjYgMTUuNDg3NCAyLjM2MiAxNC42NzM5QzIuODU1MzEgMTQuNDIzIDMuMjY5NTkgMTQuMDQwNiAzLjU1OTAzIDEzLjU2ODhDMy44NDg0NiAxMy4wOTcxIDQuMDAxNzYgMTIuNTU0NSA0LjAwMTk3IDEyLjAwMTFDNC4wMDIxOCAxMS40NDc2IDMuODQ5MjggMTAuOTA0OSAzLjU2MDIgMTAuNDMyOUMzLjI3MTEyIDkuOTYxIDIuODU3MTIgOS41NzgyMSAyLjM2NCA5LjMyNjk0QzIuODE2MDQgNy42OTI0MyAzLjY3NjczIDYuMTk5OSA0Ljg2NSA0Ljk4OTk0QzUuMzI5MDkgNS4yOTE2NyA1Ljg2NzYyIDUuNDU5MTEgNi40MjA5OCA1LjQ3MzczQzYuOTc0MzQgNS40ODgzNCA3LjUyMDk1IDUuMzQ5NTggOC4wMDAzMyA1LjA3Mjc4QzguNDc5NzEgNC43OTU5OCA4Ljg3MzE1IDQuMzkxOTQgOS4xMzcxMyAzLjkwNTM5QzkuNDAxMSAzLjQxODgzIDkuNTI1MzEgMi44Njg3MiA5LjQ5NiAyLjMxNTk0QzExLjEzODEgMS44OTE1NyAxMi44NjEyIDEuODkyMjYgMTQuNTAzIDIuMzE3OTVDMTQuNDc0IDIuODcwNzEgMTQuNTk4NCAzLjQyMDczIDE0Ljg2MjYgMy45MDcxNUMxNS4xMjY4IDQuMzkzNTcgMTUuNTIwNCA0Ljc5NzQyIDE1Ljk5OTggNS4wNzQwMUMxNi40NzkzIDUuMzUwNTkgMTcuMDI1OSA1LjQ4OTEzIDE3LjU3OTMgNS40NzQzQzE4LjEzMjYgNS40NTk0NiAxOC42NzEgNS4yOTE4MyAxOS4xMzUgNC45ODk5NEMxOS43MTQgNS41Nzk5NCAyMC4yMjggNi4yNTA5NSAyMC42NiA2Ljk5OTk1QzIxLjA5MyA3Ljc0ODk1IDIxLjQxNyA4LjUyOTk1IDIxLjYzOCA5LjMyNTk1QzIxLjE0NDcgOS41NzY4NSAyMC43MzA0IDkuOTU5MzIgMjAuNDQxIDEwLjQzMTFDMjAuMTUxNSAxMC45MDI4IDE5Ljk5ODIgMTEuNDQ1NCAxOS45OTggMTEuOTk4OEMxOS45OTc4IDEyLjU1MjMgMjAuMTUwNyAxMy4wOTUgMjAuNDM5OCAxMy41NjY5QzIwLjcyODkgMTQuMDM4OSAyMS4xNDI5IDE0LjQyMTcgMjEuNjM2IDE0LjY3MjlDMjEuMTg0IDE2LjMwNzUgMjAuMzIzMyAxNy44IDE5LjEzNSAxOS4wMDk5QzE4LjY3MDkgMTguNzA4MiAxOC4xMzI0IDE4LjU0MDggMTcuNTc5IDE4LjUyNjJDMTcuMDI1NyAxOC41MTE1IDE2LjQ3OSAxOC42NTAzIDE1Ljk5OTcgMTguOTI3MUMxNS41MjAzIDE5LjIwMzkgMTUuMTI2OCAxOS42MDc5IDE0Ljg2MjkgMjAuMDk0NUMxNC41OTg5IDIwLjU4MTEgMTQuNDc0NyAyMS4xMzEyIDE0LjUwNCAyMS42ODM5QzEyLjg2MTkgMjIuMTA4MyAxMS4xMzg4IDIyLjEwNzYgOS40OTcgMjEuNjgxOUM5LjUyNjA1IDIxLjEyOTIgOS40MDE2IDIwLjU3OTIgOS4xMzc0MiAyMC4wOTI3QzguODczMjQgMTkuNjA2MyA4LjQ3OTY0IDE5LjIwMjUgOC4wMDAxNyAxOC45MjU5QzcuNTIwNyAxOC42NDkzIDYuOTc0MDUgMTguNTEwOCA2LjQyMDczIDE4LjUyNTZDNS44Njc0IDE4LjU0MDQgNS4zMjg5NiAxOC43MDgxIDQuODY1IDE5LjAwOTlDNC4yNzM5OSAxOC40MDY5IDMuNzYxNTkgMTcuNzMxNSAzLjM0IDE2Ljk5OTlaTTkgMTcuMTk1OUMxMC4wNjU2IDE3LjgxMDYgMTAuODY2OCAxOC43OTcgMTEuMjUgMTkuOTY1OUMxMS43NDkgMjAuMDEyOSAxMi4yNSAyMC4wMTM5IDEyLjc0OSAxOS45NjY5QzEzLjEzMjQgMTguNzk3OCAxMy45MzQgMTcuODExNCAxNSAxNy4xOTY5QzE2LjA2NTIgMTYuNTgwNiAxNy4zMjA1IDE2LjM3OTQgMTguNTI1IDE2LjYzMTlDMTguODE1IDE2LjIyMzkgMTkuMDY1IDE1Ljc4ODkgMTkuMjczIDE1LjMzMzlDMTguNDUyNCAxNC40MTc0IDE3Ljk5OTEgMTMuMjMwMiAxOCAxMS45OTk5QzE4IDEwLjczOTkgMTguNDcgOS41NjI5NSAxOS4yNzMgOC42NjU5NUMxOS4wNjM1IDguMjExMDkgMTguODEyNSA3Ljc3NjU4IDE4LjUyMyA3LjM2Nzk1QzE3LjMxOTMgNy42MjAyNSAxNi4wNjQ4IDcuNDE5NDIgMTUgNi44MDM5NUMxMy45MzQ0IDYuMTg5MzIgMTMuMTMzMiA1LjIwMjkzIDEyLjc1IDQuMDMzOTRDMTIuMjUxIDMuOTg2OTQgMTEuNzUgMy45ODU5NCAxMS4yNTEgNC4wMzI5NEMxMC44Njc2IDUuMjAyMDkgMTAuMDY2IDYuMTg4NSA5IDYuODAyOTVDNy45MzQ3OCA3LjQxOTI2IDYuNjc5NDggNy42MjA0NiA1LjQ3NSA3LjM2Nzk1QzUuMTg1NTYgNy43NzYyMyA0LjkzNTEzIDguMjEwODEgNC43MjcgOC42NjU5NUM1LjU0NzU3IDkuNTgyNSA2LjAwMDg4IDEwLjc2OTcgNiAxMS45OTk5QzYgMTMuMjU5OSA1LjUzIDE0LjQzNjkgNC43MjcgMTUuMzMzOUM0LjkzNjQ3IDE1Ljc4ODggNS4xODc1NCAxNi4yMjMzIDUuNDc3IDE2LjYzMTlDNi42ODA3MiAxNi4zNzk2IDcuOTM1MjEgMTYuNTgwNSA5IDE3LjE5NTlaTTEyIDE0Ljk5OTlDMTEuMjA0NCAxNC45OTk5IDEwLjQ0MTMgMTQuNjgzOSA5Ljg3ODY4IDE0LjEyMTNDOS4zMTYwNyAxMy41NTg3IDkgMTIuNzk1NiA5IDExLjk5OTlDOSAxMS4yMDQzIDkuMzE2MDcgMTAuNDQxMiA5Ljg3ODY4IDkuODc4NjJDMTAuNDQxMyA5LjMxNjAyIDExLjIwNDQgOC45OTk5NSAxMiA4Ljk5OTk1QzEyLjc5NTYgOC45OTk5NSAxMy41NTg3IDkuMzE2MDIgMTQuMTIxMyA5Ljg3ODYyQzE0LjY4MzkgMTAuNDQxMiAxNSAxMS4yMDQzIDE1IDExLjk5OTlDMTUgMTIuNzk1NiAxNC42ODM5IDEzLjU1ODcgMTQuMTIxMyAxNC4xMjEzQzEzLjU1ODcgMTQuNjgzOSAxMi43OTU2IDE0Ljk5OTkgMTIgMTQuOTk5OVpNMTIgMTIuOTk5OUMxMi4yNjUyIDEyLjk5OTkgMTIuNTE5NiAxMi44OTQ2IDEyLjcwNzEgMTIuNzA3MUMxMi44OTQ2IDEyLjUxOTUgMTMgMTIuMjY1MiAxMyAxMS45OTk5QzEzIDExLjczNDcgMTIuODk0NiAxMS40ODA0IDEyLjcwNzEgMTEuMjkyOEMxMi41MTk2IDExLjEwNTMgMTIuMjY1MiAxMC45OTk5IDEyIDEwLjk5OTlDMTEuNzM0OCAxMC45OTk5IDExLjQ4MDQgMTEuMTA1MyAxMS4yOTI5IDExLjI5MjhDMTEuMTA1NCAxMS40ODA0IDExIDExLjczNDcgMTEgMTEuOTk5OUMxMSAxMi4yNjUyIDExLjEwNTQgMTIuNTE5NSAxMS4yOTI5IDEyLjcwNzFDMTEuNDgwNCAxMi44OTQ2IDExLjczNDggMTIuOTk5OSAxMiAxMi45OTk5WiIgZmlsbD0iYmxhY2siIC8{plus}Cjwvc3ZnPg==]
+Manage preferences]
++
+
+'''''
+* https://dev.to/report-abuse?billboard=263961[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMi4zODIgM2ExIDEgMCAwIDEgLjg5NC41NTNMMTQgNWg2YTEgMSAwIDAgMSAxIDF2MTFhMSAxIDAgMCAxLTEgMWgtNi4zODJhMSAxIDAgMCAxLS44OTQtLjU1M0wxMiAxNkg1djZIM1YzaDkuMzgyWm0tLjYxOCAySDV2OWg4LjIzNmwxIDJIMTlWN2gtNi4yMzZsLTEtMloiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMi4zODIgM2ExIDEgMCAwIDEgLjg5NC41NTNMMTQgNWg2YTEgMSAwIDAgMSAxIDF2MTFhMSAxIDAgMCAxLTEgMWgtNi4zODJhMSAxIDAgMCAxLS44OTQtLjU1M0wxMiAxNkg1djZIM1YzaDkuMzgyWm0tLjYxOCAySDV2OWg4LjIzNmwxIDJIMTlWN2gtNi4yMzZsLTEtMloiIC8{plus}Cjwvc3ZnPg==]
+Report billboard]
+
+https://dev.to/googleai/skills-vs-mcp-how-ai-tools-have-evolved-3pmk?bb=263961[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_articles_qav2bblu7ofv2tbo35f0.png[Google
+article image,width=800,height=450]]
+
+=== https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#the-hottest-programming-language-right-now-is-english[] https://dev.to/googleai/skills-vs-mcp-how-ai-tools-have-evolved-3pmk?bb=263961[The hottest programming language right now is English]
+
+A Skill is, more or less, a markdown file containing a reusable prompt.
+That means non-developers can write, iterate on, and share instructions
+that make an entire team's agents faster with no code required. Here's
+how Skills and MCP actually work together.
+
+https://dev.to/googleai/skills-vs-mcp-how-ai-tools-have-evolved-3pmk?bb=263961[Read
+more →]
+
+Read More
+
+[[comments]]
+=== Top comments [.js-comments-count]#(4)#
+
+[[comment-subscription]]
+[.crayons-btn .crayons-btn--outlined]#Subscribe#
+
+[[billboard_delay_trigger]]
+
+[[comments-container]]
+[[response-templates-data]]
+
+[.crayons-avatar .m:crayons-avatar--l .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_8j7kvp660rqzt99zui8e.png[pic,width=32,height=32]
+#
+
+Personal
+
+Trusted User
+
+https://dev.to/settings/response-templates[Create template]
+
+Templates let you quickly answer FAQs or store snippets for re-use.
+
+[[preview-div]]
+
+Submit
+
+Preview
+
+https://dev.to/404.html[Dismiss]
+
+[[toggle-code-of-conduct-checkbox]]
+
+[[comment-trees-container]]
+[.m:mx-1 .inline-block .align-middle]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYXFnbzJyczJ6cDQ5dG5tamcyZDgzenUxNmVoM3o4dDUiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYXFnbzJyczJ6cDQ5dG5tamcyZDgzenUxNmVoM3o4dDUiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYXFnbzJyczJ6cDQ5dG5tamcyZDgzenUxNmVoM3o4dDUiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYXFnbzJyczJ6cDQ5dG5tamcyZDgzenUxNmVoM3o4dDUiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYXA1em8wNW9oeDAyN3RkMGFyN29pdnR3OWRiZTZ4dXciIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImFwNXpvMDVvaHgwMjd0ZDBhcjdvaXZ0dzlkYmU2eHV3Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYXA1em8wNW9oeDAyN3RkMGFyN29pdnR3OWRiZTZ4dXciIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImFwNXpvMDVvaHgwMjd0ZDBhcjdvaXZ0dzlkYmU2eHV3Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc{plus}]
+# [.js-collapse-comment-content .inline-block .align-middle]##
+
+[[comment-node-1088851]]
+[#comment-29oin]# #
+
+https://dev.to/thecheapaudiophile[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg[thecheapaudiophile
+profile image,width=32,height=32]]
+
+https://dev.to/thecheapaudiophile[[.js-comment-username]# Griff Polk #]
+
+Griff Polk
+
+[[comment-profile-preview-content-1088851]]
+https://dev.to/thecheapaudiophile[[.crayons-avatar .crayons-avatar--xl .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg[./index++_++files/https++___++dev-to-uploads.s3.us-east-2.amazonaws(1).com++_++uploads++_++user++_++profile++_++image++_++1022591++_++6172c733-f6a0-4fc1-a308-379561289c69]
+# [.crayons-link .crayons-subtitle-2 .mt-5]# Griff Polk #]
+
+Follow
+
+Hey, I’m the cheap audiophile, a self-expressed audiophile, who loves
+all things… sound!
+
+* {blank}
++
+Pronouns
++
+He/Him
+* {blank}
++
+Joined
++
+7. Feb. 2023
+
+[.color-base-30 .px-2 .m:pl-0]#•#
+https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29oin[5.
+Okt. 23]
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTRrMjJvcjEyN21ycXcyN3NsYzNydnI4MHhrNHFtNTYiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI+PHRpdGxlIGlkPSJhNGsyMm9yMTI3bXJxdzI3c2xjM3J2cjgweGs0cW01NiI+RHJvcGRvd24gbWVudTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTRrMjJvcjEyN21ycXcyN3NsYzNydnI4MHhrNHFtNTYiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI{plus}PHRpdGxlIGlkPSJhNGsyMm9yMTI3bXJxdzI3c2xjM3J2cjgweGs0cW01NiI{plus}RHJvcGRvd24gbWVudTwvdGl0bGU{plus}CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8{plus}Cjwvc3ZnPg==]
+
+[[comment-dropdown-1088851]]
+* https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29oin[Copy
+link]
+* {blank}
+* Hide
+* {blank}
+* https://dev.to/report-abuse?url=https://dev.to/thecheapaudiophile/comment/29oin[Report
+abuse]
+* {blank}
+
+Cool! Can we get links to these games?
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFoMXJjN3IxNmV5bW8ybmM5ZGl1Ymx1aTJqcm5kNTQzIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWgxcmM3cjE2ZXltbzJuYzlkaXVibHVpMmpybmQ1NDMiPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFoMXJjN3IxNmV5bW8ybmM5ZGl1Ymx1aTJqcm5kNTQzIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWgxcmM3cjE2ZXltbzJuYzlkaXVibHVpMmpybmQ1NDMiPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWNmOXFjbjk5NzdtMnhwbXlpZnR6eGVoMWZ5cmprOWkiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImFjZjlxY245OTc3bTJ4cG15aWZ0enhlaDFmeXJqazlpIj5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU+CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWNmOXFjbjk5NzdtMnhwbXlpZnR6eGVoMWZ5cmprOWkiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImFjZjlxY245OTc3bTJ4cG15aWZ0enhlaDFmeXJqazlpIj5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU{plus}CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc{plus}]
+[.reactions-count]##1##[.reactions-label .hidden .m:inline-block]## like##
+[.crayons-tooltip__content]# Like #
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFsNTkzZ2w5cGFyczRmMnplZjF1Z2MzaDdhYmZrc2UiIGNsYXNzPSJjcmF5b25zLWljb24gcmVhY3Rpb24taWNvbiBub3QtcmVhY3RlZCI+PHRpdGxlIGlkPSJhbDU5M2dsOXBhcnM0ZjJ6ZWYxdWdjM2g3YWJma3NlIj5Db21tZW50IGJ1dHRvbjwvdGl0bGU+PHBhdGggZD0iTTEwLjUgNWgzYTYgNiAwIDExMCAxMnYyLjYyNWMtMy43NS0xLjUtOS0zLjc1LTktOC42MjVhNiA2IDAgMDE2LTZ6TTEyIDE1LjVoMS41YTQuNTAxIDQuNTAxIDAgMDAxLjcyMi04LjY1N0E0LjUgNC41IDAgMDAxMy41IDYuNWgtM0E0LjUgNC41IDAgMDA2IDExYzAgMi43MDcgMS44NDYgNC40NzUgNiA2LjM2VjE1LjV6IiAvPjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFsNTkzZ2w5cGFyczRmMnplZjF1Z2MzaDdhYmZrc2UiIGNsYXNzPSJjcmF5b25zLWljb24gcmVhY3Rpb24taWNvbiBub3QtcmVhY3RlZCI{plus}PHRpdGxlIGlkPSJhbDU5M2dsOXBhcnM0ZjJ6ZWYxdWdjM2g3YWJma3NlIj5Db21tZW50IGJ1dHRvbjwvdGl0bGU{plus}PHBhdGggZD0iTTEwLjUgNWgzYTYgNiAwIDExMCAxMnYyLjYyNWMtMy43NS0xLjUtOS0zLjc1LTktOC42MjVhNiA2IDAgMDE2LTZ6TTEyIDE1LjVoMS41YTQuNTAxIDQuNTAxIDAgMDAxLjcyMi04LjY1N0E0LjUgNC41IDAgMDAxMy41IDYuNWgtM0E0LjUgNC41IDAgMDA2IDExYzAgMi43MDcgMS44NDYgNC40NzUgNiA2LjM2VjE1LjV6IiAvPjwvc3ZnPg==]
+[.hidden .m:inline-block]#Reply#
+
+[.mx-0 .inline-block .align-middle]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWc1MHlrdmFjb3FzeGp4N2Q1bHZoN3Q0eDUwam91ZzIiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYWc1MHlrdmFjb3FzeGp4N2Q1bHZoN3Q0eDUwam91ZzIiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWc1MHlrdmFjb3FzeGp4N2Q1bHZoN3Q0eDUwam91ZzIiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYWc1MHlrdmFjb3FzeGp4N2Q1bHZoN3Q0eDUwam91ZzIiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTY4NjdvOTBxNDEwZDF1OXlndzRyZGJnazhkbHc4MnQiIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImE2ODY3bzkwcTQxMGQxdTl5Z3c0cmRiZ2s4ZGx3ODJ0Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTY4NjdvOTBxNDEwZDF1OXlndzRyZGJnazhkbHc4MnQiIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImE2ODY3bzkwcTQxMGQxdTl5Z3c0cmRiZ2s4ZGx3ODJ0Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc{plus}]
+# [.js-collapse-comment-content .inline-block .align-middle]##
+
+[[comment-node-1088932]]
+[#comment-29om0]# #
+
+https://dev.to/abagames[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_859761_871a936d-2aa9-4fdd-91cc-74410e64683e.png[abagames
+profile image,width=32,height=32]]
+
+https://dev.to/abagames[[.js-comment-username]# ABA Games #
+[.crayons-hover-tooltip .inline-block .spec-op-author .-mr-2]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGNsYXNzPSJjcmF5b25zLWljb24iPgogICAgPHBhdGggZD0iTTEyIDguMjVhNiA2IDAgMTEwIDEyIDYgNiAwIDAxMC0xMnptMCAyLjYyNWwtLjk5MiAyLjAxLTIuMjE4LjMyMiAxLjYwNSAxLjU2NC0uMzc5IDIuMjFMMTIgMTUuOTM3bDEuOTg0IDEuMDQzLS4zNzktMi4yMDkgMS42MDUtMS41NjQtMi4yMTgtLjMyM0wxMiAxMC44NzV6bS43NS02LjM3NmwzLjc1LjAwMXYyLjI1bC0xLjAyMi44NTRhNy40NSA3LjQ1IDAgMDAtMi43MjgtLjgxN1Y0LjV6bS0xLjUgMHYyLjI4OGE3LjQ1MSA3LjQ1MSAwIDAwLTIuNzI3LjgxNkw3LjUgNi43NVY0LjVoMy43NXoiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGNsYXNzPSJjcmF5b25zLWljb24iPgogICAgPHBhdGggZD0iTTEyIDguMjVhNiA2IDAgMTEwIDEyIDYgNiAwIDAxMC0xMnptMCAyLjYyNWwtLjk5MiAyLjAxLTIuMjE4LjMyMiAxLjYwNSAxLjU2NC0uMzc5IDIuMjFMMTIgMTUuOTM3bDEuOTg0IDEuMDQzLS4zNzktMi4yMDkgMS42MDUtMS41NjQtMi4yMTgtLjMyM0wxMiAxMC44NzV6bS43NS02LjM3NmwzLjc1LjAwMXYyLjI1bC0xLjAyMi44NTRhNy40NSA3LjQ1IDAgMDAtMi43MjgtLjgxN1Y0LjV6bS0xLjUgMHYyLjI4OGE3LjQ1MSA3LjQ1MSAwIDAwLTIuNzI3LjgxNkw3LjUgNi43NVY0LjVoMy43NXoiIC8{plus}Cjwvc3ZnPg==]
+#]
+
+ABA Games
+
+[[comment-profile-preview-content-1088932]]
+https://dev.to/abagames[[.crayons-avatar .crayons-avatar--xl .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_859761_871a936d-2aa9-4fdd-91cc-74410e64683e.png[./index++_++files/https++___++dev-to-uploads.s3.us-east-2.amazonaws(1).com++_++uploads++_++user++_++profile++_++image++_++859761++_++871a936d-2aa9-4fdd-91cc-74410e64683e]
+# [.crayons-link .crayons-subtitle-2 .mt-5]# ABA Games #]
+
+Follow
+
+ABA Games
+
+* {blank}
++
+Joined
++
+9. Mai 2022
+
+[.crayons-hover-tooltip .inline-block .spec-op-author .-ml-2]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGNsYXNzPSJjcmF5b25zLWljb24iPgogICAgPHBhdGggZD0iTTEyIDguMjVhNiA2IDAgMTEwIDEyIDYgNiAwIDAxMC0xMnptMCAyLjYyNWwtLjk5MiAyLjAxLTIuMjE4LjMyMiAxLjYwNSAxLjU2NC0uMzc5IDIuMjFMMTIgMTUuOTM3bDEuOTg0IDEuMDQzLS4zNzktMi4yMDkgMS42MDUtMS41NjQtMi4yMTgtLjMyM0wxMiAxMC44NzV6bS43NS02LjM3NmwzLjc1LjAwMXYyLjI1bC0xLjAyMi44NTRhNy40NSA3LjQ1IDAgMDAtMi43MjgtLjgxN1Y0LjV6bS0xLjUgMHYyLjI4OGE3LjQ1MSA3LjQ1MSAwIDAwLTIuNzI3LjgxNkw3LjUgNi43NVY0LjVoMy43NXoiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGNsYXNzPSJjcmF5b25zLWljb24iPgogICAgPHBhdGggZD0iTTEyIDguMjVhNiA2IDAgMTEwIDEyIDYgNiAwIDAxMC0xMnptMCAyLjYyNWwtLjk5MiAyLjAxLTIuMjE4LjMyMiAxLjYwNSAxLjU2NC0uMzc5IDIuMjFMMTIgMTUuOTM3bDEuOTg0IDEuMDQzLS4zNzktMi4yMDkgMS42MDUtMS41NjQtMi4yMTgtLjMyM0wxMiAxMC44NzV6bS43NS02LjM3NmwzLjc1LjAwMXYyLjI1bC0xLjAyMi44NTRhNy40NSA3LjQ1IDAgMDAtMi43MjgtLjgxN1Y0LjV6bS0xLjUgMHYyLjI4OGE3LjQ1MSA3LjQ1MSAwIDAwLTIuNzI3LjgxNkw3LjUgNi43NVY0LjVoMy43NXoiIC8{plus}Cjwvc3ZnPg==]
+#
+
+[.color-base-30 .px-2 .m:pl-0]#•#
+https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29om0[6.
+Okt. 23]
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWs4eDQwczRwbXN4ZTNwbWszc244ZnQ2cTM0aWxidyIgY2xhc3M9ImNyYXlvbnMtaWNvbiBwb2ludGVyLWV2ZW50cy1ub25lIj48dGl0bGUgaWQ9ImFrOHg0MHM0cG1zeGUzcG1rM3NuOGZ0NnEzNGlsYnciPkRyb3Bkb3duIG1lbnU8L3RpdGxlPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjI1IDEyYTEuNSAxLjUgMCAxMS0zIDAgMS41IDEuNSAwIDAxMyAwem01LjI1IDBhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTMuNzUgMS41YTEuNSAxLjUgMCAxMDAtMyAxLjUgMS41IDAgMDAwIDN6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWs4eDQwczRwbXN4ZTNwbWszc244ZnQ2cTM0aWxidyIgY2xhc3M9ImNyYXlvbnMtaWNvbiBwb2ludGVyLWV2ZW50cy1ub25lIj48dGl0bGUgaWQ9ImFrOHg0MHM0cG1zeGUzcG1rM3NuOGZ0NnEzNGlsYnciPkRyb3Bkb3duIG1lbnU8L3RpdGxlPgogICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjI1IDEyYTEuNSAxLjUgMCAxMS0zIDAgMS41IDEuNSAwIDAxMyAwem01LjI1IDBhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTMuNzUgMS41YTEuNSAxLjUgMCAxMDAtMyAxLjUgMS41IDAgMDAwIDN6IiAvPgo8L3N2Zz4=]
+
+[[comment-dropdown-1088932]]
+* https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29om0[Copy
+link]
+* {blank}
+* Hide
+* {blank}
+* https://dev.to/report-abuse?url=https://dev.to/abagames/comment/29om0[Report
+abuse]
+* {blank}
+
+http://www.asahi-net.or.jp/~cs8k-cyu/browser.html[ABA Games - Browser] +
+I hope you enjoy it.
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFvbGtyMDJ0bTUxNDRhY3FuMXRmbHJqZnBob3c4Y3htIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYW9sa3IwMnRtNTE0NGFjcW4xdGZscmpmcGhvdzhjeG0iPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFvbGtyMDJ0bTUxNDRhY3FuMXRmbHJqZnBob3c4Y3htIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYW9sa3IwMnRtNTE0NGFjcW4xdGZscmpmcGhvdzhjeG0iPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWxtc2h3MmM2MDl6eGVhMGNsejEwbmV4azJvbnNpM3UiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImFsbXNodzJjNjA5enhlYTBjbHoxMG5leGsyb25zaTN1Ij5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU+CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWxtc2h3MmM2MDl6eGVhMGNsejEwbmV4azJvbnNpM3UiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImFsbXNodzJjNjA5enhlYTBjbHoxMG5leGsyb25zaTN1Ij5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU{plus}CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc{plus}]
+[.reactions-count]####[.reactions-label .hidden .m:inline-block]####
+[.crayons-tooltip__content]# Like #
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFnMDFzdzdwZ2xvdTQ5am4zcGFwbXVwaTE1ZDR5M21hIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWcwMXN3N3BnbG91NDlqbjNwYXBtdXBpMTVkNHkzbWEiPkNvbW1lbnQgYnV0dG9uPC90aXRsZT48cGF0aCBkPSJNMTAuNSA1aDNhNiA2IDAgMTEwIDEydjIuNjI1Yy0zLjc1LTEuNS05LTMuNzUtOS04LjYyNWE2IDYgMCAwMTYtNnpNMTIgMTUuNWgxLjVhNC41MDEgNC41MDEgMCAwMDEuNzIyLTguNjU3QTQuNSA0LjUgMCAwMDEzLjUgNi41aC0zQTQuNSA0LjUgMCAwMDYgMTFjMCAyLjcwNyAxLjg0NiA0LjQ3NSA2IDYuMzZWMTUuNXoiIC8+PC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFnMDFzdzdwZ2xvdTQ5am4zcGFwbXVwaTE1ZDR5M21hIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWcwMXN3N3BnbG91NDlqbjNwYXBtdXBpMTVkNHkzbWEiPkNvbW1lbnQgYnV0dG9uPC90aXRsZT48cGF0aCBkPSJNMTAuNSA1aDNhNiA2IDAgMTEwIDEydjIuNjI1Yy0zLjc1LTEuNS05LTMuNzUtOS04LjYyNWE2IDYgMCAwMTYtNnpNMTIgMTUuNWgxLjVhNC41MDEgNC41MDEgMCAwMDEuNzIyLTguNjU3QTQuNSA0LjUgMCAwMDEzLjUgNi41aC0zQTQuNSA0LjUgMCAwMDYgMTFjMCAyLjcwNyAxLjg0NiA0LjQ3NSA2IDYuMzZWMTUuNXoiIC8{plus}PC9zdmc{plus}]
+[.hidden .m:inline-block]#Reply#
+
+[.mx-0 .inline-block .align-middle]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWlyMHZnd3dmcGttZ280cHZxYjdqYzZqOHdlMG5xdjkiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYWlyMHZnd3dmcGttZ280cHZxYjdqYzZqOHdlMG5xdjkiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWlyMHZnd3dmcGttZ280cHZxYjdqYzZqOHdlMG5xdjkiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYWlyMHZnd3dmcGttZ280cHZxYjdqYzZqOHdlMG5xdjkiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWR2ZTluNDE3OTJ4NXhzNzh2NzdlZzk3cnY3dXc3bDgiIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImFkdmU5bjQxNzkyeDV4czc4djc3ZWc5N3J2N3V3N2w4Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWR2ZTluNDE3OTJ4NXhzNzh2NzdlZzk3cnY3dXc3bDgiIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImFkdmU5bjQxNzkyeDV4czc4djc3ZWc5N3J2N3V3N2w4Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc{plus}]
+# [.js-collapse-comment-content .inline-block .align-middle]##
+
+[[comment-node-1089197]]
+[#comment-29p65]# #
+
+https://dev.to/thecheapaudiophile[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg[thecheapaudiophile
+profile image,width=32,height=32]]
+
+https://dev.to/thecheapaudiophile[[.js-comment-username]# Griff Polk #]
+
+Griff Polk
+
+[[comment-profile-preview-content-1089197]]
+https://dev.to/thecheapaudiophile[[.crayons-avatar .crayons-avatar--xl .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg[./index++_++files/https++___++dev-to-uploads.s3.us-east-2.amazonaws(1).com++_++uploads++_++user++_++profile++_++image++_++1022591++_++6172c733-f6a0-4fc1-a308-379561289c69]
+# [.crayons-link .crayons-subtitle-2 .mt-5]# Griff Polk #]
+
+Follow
+
+Hey, I’m the cheap audiophile, a self-expressed audiophile, who loves
+all things… sound!
+
+* {blank}
++
+Pronouns
++
+He/Him
+* {blank}
++
+Joined
++
+7. Feb. 2023
+
+[.color-base-30 .px-2 .m:pl-0]#•#
+https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29p65[6.
+Okt. 23]
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTI2c2ljcXBmZ3BqaGxldHY4emlxa2Iybm00ZTRrbGkiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI+PHRpdGxlIGlkPSJhMjZzaWNxcGZncGpobGV0djh6aXFrYjJubTRlNGtsaSI+RHJvcGRvd24gbWVudTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTI2c2ljcXBmZ3BqaGxldHY4emlxa2Iybm00ZTRrbGkiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI{plus}PHRpdGxlIGlkPSJhMjZzaWNxcGZncGpobGV0djh6aXFrYjJubTRlNGtsaSI{plus}RHJvcGRvd24gbWVudTwvdGl0bGU{plus}CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8{plus}Cjwvc3ZnPg==]
+
+[[comment-dropdown-1089197]]
+* https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29p65[Copy
+link]
+* {blank}
+* Hide
+* {blank}
+* https://dev.to/report-abuse?url=https://dev.to/thecheapaudiophile/comment/29p65[Report
+abuse]
+* {blank}
+
+Wow! They are great, the ones i have got to! Which one is the slicing
+one? (I sound like a kid) I might need to take up small games!
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFvbjg4cjVwZGM0OWs5endlNXBodzUycWNubjFjamN0IiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYW9uODhyNXBkYzQ5azl6d2U1cGh3NTJxY25uMWNqY3QiPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFvbjg4cjVwZGM0OWs5endlNXBodzUycWNubjFjamN0IiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYW9uODhyNXBkYzQ5azl6d2U1cGh3NTJxY25uMWNqY3QiPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTN4amNpMTVuNGN5YngxMjRyYmF2NDA0ZnBvNTg5dGYiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImEzeGpjaTE1bjRjeWJ4MTI0cmJhdjQwNGZwbzU4OXRmIj5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU+CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTN4amNpMTVuNGN5YngxMjRyYmF2NDA0ZnBvNTg5dGYiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImEzeGpjaTE1bjRjeWJ4MTI0cmJhdjQwNGZwbzU4OXRmIj5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU{plus}CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc{plus}]
+[.reactions-count]##1##[.reactions-label .hidden .m:inline-block]## like##
+[.crayons-tooltip__content]# Like #
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFnNHcyNWhlNW1rc3F3YzJkeWg2ZTRsZmw2NDA0cm54IiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWc0dzI1aGU1bWtzcXdjMmR5aDZlNGxmbDY0MDRybngiPkNvbW1lbnQgYnV0dG9uPC90aXRsZT48cGF0aCBkPSJNMTAuNSA1aDNhNiA2IDAgMTEwIDEydjIuNjI1Yy0zLjc1LTEuNS05LTMuNzUtOS04LjYyNWE2IDYgMCAwMTYtNnpNMTIgMTUuNWgxLjVhNC41MDEgNC41MDEgMCAwMDEuNzIyLTguNjU3QTQuNSA0LjUgMCAwMDEzLjUgNi41aC0zQTQuNSA0LjUgMCAwMDYgMTFjMCAyLjcwNyAxLjg0NiA0LjQ3NSA2IDYuMzZWMTUuNXoiIC8+PC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFnNHcyNWhlNW1rc3F3YzJkeWg2ZTRsZmw2NDA0cm54IiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWc0dzI1aGU1bWtzcXdjMmR5aDZlNGxmbDY0MDRybngiPkNvbW1lbnQgYnV0dG9uPC90aXRsZT48cGF0aCBkPSJNMTAuNSA1aDNhNiA2IDAgMTEwIDEydjIuNjI1Yy0zLjc1LTEuNS05LTMuNzUtOS04LjYyNWE2IDYgMCAwMTYtNnpNMTIgMTUuNWgxLjVhNC41MDEgNC41MDEgMCAwMDEuNzIyLTguNjU3QTQuNSA0LjUgMCAwMDEzLjUgNi41aC0zQTQuNSA0LjUgMCAwMDYgMTFjMCAyLjcwNyAxLjg0NiA0LjQ3NSA2IDYuMzZWMTUuNXoiIC8{plus}PC9zdmc{plus}]
+[.hidden .m:inline-block]#Reply#
+
+[.m:mx-1 .inline-block .align-middle]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWdjeHRpcWY1YzNnNmp1eW5reDl2dTFmd2VmeW54djUiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYWdjeHRpcWY1YzNnNmp1eW5reDl2dTFmd2VmeW54djUiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWdjeHRpcWY1YzNnNmp1eW5reDl2dTFmd2VmeW54djUiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYWdjeHRpcWY1YzNnNmp1eW5reDl2dTFmd2VmeW54djUiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWJ2ZHZpN2FoZTZldzVzeXJrOWRuNWI3ZmwxNHB2bXciIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImFidmR2aTdhaGU2ZXc1c3lyazlkbjViN2ZsMTRwdm13Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWJ2ZHZpN2FoZTZldzVzeXJrOWRuNWI3ZmwxNHB2bXciIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImFidmR2aTdhaGU2ZXc1c3lyazlkbjViN2ZsMTRwdm13Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc{plus}]
+# [.js-collapse-comment-content .inline-block .align-middle]##
+
+[[comment-node-1127152]]
+[#comment-2c3a0]# #
+
+https://dev.to/thecheapaudiophile[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg[thecheapaudiophile
+profile image,width=32,height=32]]
+
+https://dev.to/thecheapaudiophile[[.js-comment-username]# Griff Polk #]
+
+Griff Polk
+
+[[comment-profile-preview-content-1127152]]
+https://dev.to/thecheapaudiophile[[.crayons-avatar .crayons-avatar--xl .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg[./index++_++files/https++___++dev-to-uploads.s3.us-east-2.amazonaws(1).com++_++uploads++_++user++_++profile++_++image++_++1022591++_++6172c733-f6a0-4fc1-a308-379561289c69]
+# [.crayons-link .crayons-subtitle-2 .mt-5]# Griff Polk #]
+
+Follow
+
+Hey, I’m the cheap audiophile, a self-expressed audiophile, who loves
+all things… sound!
+
+* {blank}
++
+Pronouns
++
+He/Him
+* {blank}
++
+Joined
++
+7. Feb. 2023
+
+[.color-base-30 .px-2 .m:pl-0]#•#
+https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-2c3a0[8.
+Jan. 24]
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWprNmNrOTZvcnJjazZoZnNud21vb2V0M2RjMDRhdmQiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI+PHRpdGxlIGlkPSJhams2Y2s5Nm9ycmNrNmhmc253bW9vZXQzZGMwNGF2ZCI+RHJvcGRvd24gbWVudTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWprNmNrOTZvcnJjazZoZnNud21vb2V0M2RjMDRhdmQiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI{plus}PHRpdGxlIGlkPSJhams2Y2s5Nm9ycmNrNmhmc253bW9vZXQzZGMwNGF2ZCI{plus}RHJvcGRvd24gbWVudTwvdGl0bGU{plus}CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8{plus}Cjwvc3ZnPg==]
+
+[[comment-dropdown-1127152]]
+* https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-2c3a0[Copy
+link]
+* {blank}
+* Hide
+* {blank}
+* https://dev.to/report-abuse?url=https://dev.to/thecheapaudiophile/comment/2c3a0[Report
+abuse]
+* {blank}
+
+TOM SCOTT HOLY COW
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFteHhlMXc3MnRqbTBmZXI0Y25qM3BrYzB5NjYzcjBzIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYW14eGUxdzcydGptMGZlcjRjbmozcGtjMHk2NjNyMHMiPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFteHhlMXc3MnRqbTBmZXI0Y25qM3BrYzB5NjYzcjBzIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYW14eGUxdzcydGptMGZlcjRjbmozcGtjMHk2NjNyMHMiPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYW1tM2tsdmtuMXFzb3JkZmY2bmY3dndmdHQxc2YxcHUiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImFtbTNrbHZrbjFxc29yZGZmNm5mN3Z3ZnR0MXNmMXB1Ij5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU+CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYW1tM2tsdmtuMXFzb3JkZmY2bmY3dndmdHQxc2YxcHUiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImFtbTNrbHZrbjFxc29yZGZmNm5mN3Z3ZnR0MXNmMXB1Ij5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU{plus}CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc{plus}]
+[.reactions-count]##1##[.reactions-label .hidden .m:inline-block]## like##
+[.crayons-tooltip__content]# Like #
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImE4ZjB3c3RueWlmdHZuOTYwMzIwNDkxbHIxeDlmOXRrIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYThmMHdzdG55aWZ0dm45NjAzMjA0OTFscjF4OWY5dGsiPkNvbW1lbnQgYnV0dG9uPC90aXRsZT48cGF0aCBkPSJNMTAuNSA1aDNhNiA2IDAgMTEwIDEydjIuNjI1Yy0zLjc1LTEuNS05LTMuNzUtOS04LjYyNWE2IDYgMCAwMTYtNnpNMTIgMTUuNWgxLjVhNC41MDEgNC41MDEgMCAwMDEuNzIyLTguNjU3QTQuNSA0LjUgMCAwMDEzLjUgNi41aC0zQTQuNSA0LjUgMCAwMDYgMTFjMCAyLjcwNyAxLjg0NiA0LjQ3NSA2IDYuMzZWMTUuNXoiIC8+PC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImE4ZjB3c3RueWlmdHZuOTYwMzIwNDkxbHIxeDlmOXRrIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYThmMHdzdG55aWZ0dm45NjAzMjA0OTFscjF4OWY5dGsiPkNvbW1lbnQgYnV0dG9uPC90aXRsZT48cGF0aCBkPSJNMTAuNSA1aDNhNiA2IDAgMTEwIDEydjIuNjI1Yy0zLjc1LTEuNS05LTMuNzUtOS04LjYyNWE2IDYgMCAwMTYtNnpNMTIgMTUuNWgxLjVhNC41MDEgNC41MDEgMCAwMDEuNzIyLTguNjU3QTQuNSA0LjUgMCAwMDEzLjUgNi41aC0zQTQuNSA0LjUgMCAwMDYgMTFjMCAyLjcwNyAxLjg0NiA0LjQ3NSA2IDYuMzZWMTUuNXoiIC8{plus}PC9zdmc{plus}]
+[.hidden .m:inline-block]#Reply#
+
+https://dev.to/code-of-conduct[Code of Conduct] [.opacity-25 .px-2]#•#
+https://dev.to/report-abuse[Report abuse]
+
+[[hide-comments-modal]]
+Are you sure you want to hide this comment? It will become hidden in
+your post, but will still be visible via the comment's
+https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#[permalink].
+
+Hide child comments as well
+
+Confirm
+
+For further actions, you may consider blocking this person and/or
+https://dev.to/report-abuse[reporting abuse]
+
+https://dev.to/devteam[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_organization_profile_image_1_d908a186-5651-4a5a-9f76-15200bc6801f.jpg[profile,width=20,height=20]]
+
+The DEV Team
+
+[.crayons-bb__indicator .c-indicator .c-indicator--subtle .c-indicator--round .fs-2xs .fw-medium .ml-2 .py-1 .px-2]#Promoted#
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWUzaHJ0c2R3dWl3aWR2bjQ3c3l4Y21hMzhqMzJ5dTMiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI+PHRpdGxlIGlkPSJhZTNocnRzZHd1aXdpZHZuNDdzeXhjbWEzOGozMnl1MyI+RHJvcGRvd24gbWVudTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWUzaHJ0c2R3dWl3aWR2bjQ3c3l4Y21hMzhqMzJ5dTMiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI{plus}PHRpdGxlIGlkPSJhZTNocnRzZHd1aXdpZHZuNDdzeXhjbWEzOGozMnl1MyI{plus}RHJvcGRvd24gbWVudTwvdGl0bGU{plus}CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8{plus}Cjwvc3ZnPg==]
+
+[[sponsorship-dropdown-262995]]
+* https://dev.to/billboards[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMiAyMkM2LjQ3NyAyMiAyIDE3LjUyMyAyIDEyUzYuNDc3IDIgMTIgMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHptMC0yYTggOCAwIDEwMC0xNiA4IDggMCAwMDAgMTZ6TTExIDdoMnYyaC0yVjd6bTAgNGgydjZoLTJ2LTZ6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMiAyMkM2LjQ3NyAyMiAyIDE3LjUyMyAyIDEyUzYuNDc3IDIgMTIgMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHptMC0yYTggOCAwIDEwMC0xNiA4IDggMCAwMDAgMTZ6TTExIDdoMnYyaC0yVjd6bTAgNGgydjZoLTJ2LTZ6IiAvPgo8L3N2Zz4=]
+What's a billboard?]
+* https://dev.to/settings/customization#sponsors[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld2JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0zLjM0IDE2Ljk5OTlDMi45MTcyNyAxNi4yNjg5IDIuNTg4NjYgMTUuNDg3NCAyLjM2MiAxNC42NzM5QzIuODU1MzEgMTQuNDIzIDMuMjY5NTkgMTQuMDQwNiAzLjU1OTAzIDEzLjU2ODhDMy44NDg0NiAxMy4wOTcxIDQuMDAxNzYgMTIuNTU0NSA0LjAwMTk3IDEyLjAwMTFDNC4wMDIxOCAxMS40NDc2IDMuODQ5MjggMTAuOTA0OSAzLjU2MDIgMTAuNDMyOUMzLjI3MTEyIDkuOTYxIDIuODU3MTIgOS41NzgyMSAyLjM2NCA5LjMyNjk0QzIuODE2MDQgNy42OTI0MyAzLjY3NjczIDYuMTk5OSA0Ljg2NSA0Ljk4OTk0QzUuMzI5MDkgNS4yOTE2NyA1Ljg2NzYyIDUuNDU5MTEgNi40MjA5OCA1LjQ3MzczQzYuOTc0MzQgNS40ODgzNCA3LjUyMDk1IDUuMzQ5NTggOC4wMDAzMyA1LjA3Mjc4QzguNDc5NzEgNC43OTU5OCA4Ljg3MzE1IDQuMzkxOTQgOS4xMzcxMyAzLjkwNTM5QzkuNDAxMSAzLjQxODgzIDkuNTI1MzEgMi44Njg3MiA5LjQ5NiAyLjMxNTk0QzExLjEzODEgMS44OTE1NyAxMi44NjEyIDEuODkyMjYgMTQuNTAzIDIuMzE3OTVDMTQuNDc0IDIuODcwNzEgMTQuNTk4NCAzLjQyMDczIDE0Ljg2MjYgMy45MDcxNUMxNS4xMjY4IDQuMzkzNTcgMTUuNTIwNCA0Ljc5NzQyIDE1Ljk5OTggNS4wNzQwMUMxNi40NzkzIDUuMzUwNTkgMTcuMDI1OSA1LjQ4OTEzIDE3LjU3OTMgNS40NzQzQzE4LjEzMjYgNS40NTk0NiAxOC42NzEgNS4yOTE4MyAxOS4xMzUgNC45ODk5NEMxOS43MTQgNS41Nzk5NCAyMC4yMjggNi4yNTA5NSAyMC42NiA2Ljk5OTk1QzIxLjA5MyA3Ljc0ODk1IDIxLjQxNyA4LjUyOTk1IDIxLjYzOCA5LjMyNTk1QzIxLjE0NDcgOS41NzY4NSAyMC43MzA0IDkuOTU5MzIgMjAuNDQxIDEwLjQzMTFDMjAuMTUxNSAxMC45MDI4IDE5Ljk5ODIgMTEuNDQ1NCAxOS45OTggMTEuOTk4OEMxOS45OTc4IDEyLjU1MjMgMjAuMTUwNyAxMy4wOTUgMjAuNDM5OCAxMy41NjY5QzIwLjcyODkgMTQuMDM4OSAyMS4xNDI5IDE0LjQyMTcgMjEuNjM2IDE0LjY3MjlDMjEuMTg0IDE2LjMwNzUgMjAuMzIzMyAxNy44IDE5LjEzNSAxOS4wMDk5QzE4LjY3MDkgMTguNzA4MiAxOC4xMzI0IDE4LjU0MDggMTcuNTc5IDE4LjUyNjJDMTcuMDI1NyAxOC41MTE1IDE2LjQ3OSAxOC42NTAzIDE1Ljk5OTcgMTguOTI3MUMxNS41MjAzIDE5LjIwMzkgMTUuMTI2OCAxOS42MDc5IDE0Ljg2MjkgMjAuMDk0NUMxNC41OTg5IDIwLjU4MTEgMTQuNDc0NyAyMS4xMzEyIDE0LjUwNCAyMS42ODM5QzEyLjg2MTkgMjIuMTA4MyAxMS4xMzg4IDIyLjEwNzYgOS40OTcgMjEuNjgxOUM5LjUyNjA1IDIxLjEyOTIgOS40MDE2IDIwLjU3OTIgOS4xMzc0MiAyMC4wOTI3QzguODczMjQgMTkuNjA2MyA4LjQ3OTY0IDE5LjIwMjUgOC4wMDAxNyAxOC45MjU5QzcuNTIwNyAxOC42NDkzIDYuOTc0MDUgMTguNTEwOCA2LjQyMDczIDE4LjUyNTZDNS44Njc0IDE4LjU0MDQgNS4zMjg5NiAxOC43MDgxIDQuODY1IDE5LjAwOTlDNC4yNzM5OSAxOC40MDY5IDMuNzYxNTkgMTcuNzMxNSAzLjM0IDE2Ljk5OTlaTTkgMTcuMTk1OUMxMC4wNjU2IDE3LjgxMDYgMTAuODY2OCAxOC43OTcgMTEuMjUgMTkuOTY1OUMxMS43NDkgMjAuMDEyOSAxMi4yNSAyMC4wMTM5IDEyLjc0OSAxOS45NjY5QzEzLjEzMjQgMTguNzk3OCAxMy45MzQgMTcuODExNCAxNSAxNy4xOTY5QzE2LjA2NTIgMTYuNTgwNiAxNy4zMjA1IDE2LjM3OTQgMTguNTI1IDE2LjYzMTlDMTguODE1IDE2LjIyMzkgMTkuMDY1IDE1Ljc4ODkgMTkuMjczIDE1LjMzMzlDMTguNDUyNCAxNC40MTc0IDE3Ljk5OTEgMTMuMjMwMiAxOCAxMS45OTk5QzE4IDEwLjczOTkgMTguNDcgOS41NjI5NSAxOS4yNzMgOC42NjU5NUMxOS4wNjM1IDguMjExMDkgMTguODEyNSA3Ljc3NjU4IDE4LjUyMyA3LjM2Nzk1QzE3LjMxOTMgNy42MjAyNSAxNi4wNjQ4IDcuNDE5NDIgMTUgNi44MDM5NUMxMy45MzQ0IDYuMTg5MzIgMTMuMTMzMiA1LjIwMjkzIDEyLjc1IDQuMDMzOTRDMTIuMjUxIDMuOTg2OTQgMTEuNzUgMy45ODU5NCAxMS4yNTEgNC4wMzI5NEMxMC44Njc2IDUuMjAyMDkgMTAuMDY2IDYuMTg4NSA5IDYuODAyOTVDNy45MzQ3OCA3LjQxOTI2IDYuNjc5NDggNy42MjA0NiA1LjQ3NSA3LjM2Nzk1QzUuMTg1NTYgNy43NzYyMyA0LjkzNTEzIDguMjEwODEgNC43MjcgOC42NjU5NUM1LjU0NzU3IDkuNTgyNSA2LjAwMDg4IDEwLjc2OTcgNiAxMS45OTk5QzYgMTMuMjU5OSA1LjUzIDE0LjQzNjkgNC43MjcgMTUuMzMzOUM0LjkzNjQ3IDE1Ljc4ODggNS4xODc1NCAxNi4yMjMzIDUuNDc3IDE2LjYzMTlDNi42ODA3MiAxNi4zNzk2IDcuOTM1MjEgMTYuNTgwNSA5IDE3LjE5NTlaTTEyIDE0Ljk5OTlDMTEuMjA0NCAxNC45OTk5IDEwLjQ0MTMgMTQuNjgzOSA5Ljg3ODY4IDE0LjEyMTNDOS4zMTYwNyAxMy41NTg3IDkgMTIuNzk1NiA5IDExLjk5OTlDOSAxMS4yMDQzIDkuMzE2MDcgMTAuNDQxMiA5Ljg3ODY4IDkuODc4NjJDMTAuNDQxMyA5LjMxNjAyIDExLjIwNDQgOC45OTk5NSAxMiA4Ljk5OTk1QzEyLjc5NTYgOC45OTk5NSAxMy41NTg3IDkuMzE2MDIgMTQuMTIxMyA5Ljg3ODYyQzE0LjY4MzkgMTAuNDQxMiAxNSAxMS4yMDQzIDE1IDExLjk5OTlDMTUgMTIuNzk1NiAxNC42ODM5IDEzLjU1ODcgMTQuMTIxMyAxNC4xMjEzQzEzLjU1ODcgMTQuNjgzOSAxMi43OTU2IDE0Ljk5OTkgMTIgMTQuOTk5OVpNMTIgMTIuOTk5OUMxMi4yNjUyIDEyLjk5OTkgMTIuNTE5NiAxMi44OTQ2IDEyLjcwNzEgMTIuNzA3MUMxMi44OTQ2IDEyLjUxOTUgMTMgMTIuMjY1MiAxMyAxMS45OTk5QzEzIDExLjczNDcgMTIuODk0NiAxMS40ODA0IDEyLjcwNzEgMTEuMjkyOEMxMi41MTk2IDExLjEwNTMgMTIuMjY1MiAxMC45OTk5IDEyIDEwLjk5OTlDMTEuNzM0OCAxMC45OTk5IDExLjQ4MDQgMTEuMTA1MyAxMS4yOTI5IDExLjI5MjhDMTEuMTA1NCAxMS40ODA0IDExIDExLjczNDcgMTEgMTEuOTk5OUMxMSAxMi4yNjUyIDExLjEwNTQgMTIuNTE5NSAxMS4yOTI5IDEyLjcwNzFDMTEuNDgwNCAxMi44OTQ2IDExLjczNDggMTIuOTk5OSAxMiAxMi45OTk5WiIgZmlsbD0iYmxhY2siIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld2JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0zLjM0IDE2Ljk5OTlDMi45MTcyNyAxNi4yNjg5IDIuNTg4NjYgMTUuNDg3NCAyLjM2MiAxNC42NzM5QzIuODU1MzEgMTQuNDIzIDMuMjY5NTkgMTQuMDQwNiAzLjU1OTAzIDEzLjU2ODhDMy44NDg0NiAxMy4wOTcxIDQuMDAxNzYgMTIuNTU0NSA0LjAwMTk3IDEyLjAwMTFDNC4wMDIxOCAxMS40NDc2IDMuODQ5MjggMTAuOTA0OSAzLjU2MDIgMTAuNDMyOUMzLjI3MTEyIDkuOTYxIDIuODU3MTIgOS41NzgyMSAyLjM2NCA5LjMyNjk0QzIuODE2MDQgNy42OTI0MyAzLjY3NjczIDYuMTk5OSA0Ljg2NSA0Ljk4OTk0QzUuMzI5MDkgNS4yOTE2NyA1Ljg2NzYyIDUuNDU5MTEgNi40MjA5OCA1LjQ3MzczQzYuOTc0MzQgNS40ODgzNCA3LjUyMDk1IDUuMzQ5NTggOC4wMDAzMyA1LjA3Mjc4QzguNDc5NzEgNC43OTU5OCA4Ljg3MzE1IDQuMzkxOTQgOS4xMzcxMyAzLjkwNTM5QzkuNDAxMSAzLjQxODgzIDkuNTI1MzEgMi44Njg3MiA5LjQ5NiAyLjMxNTk0QzExLjEzODEgMS44OTE1NyAxMi44NjEyIDEuODkyMjYgMTQuNTAzIDIuMzE3OTVDMTQuNDc0IDIuODcwNzEgMTQuNTk4NCAzLjQyMDczIDE0Ljg2MjYgMy45MDcxNUMxNS4xMjY4IDQuMzkzNTcgMTUuNTIwNCA0Ljc5NzQyIDE1Ljk5OTggNS4wNzQwMUMxNi40NzkzIDUuMzUwNTkgMTcuMDI1OSA1LjQ4OTEzIDE3LjU3OTMgNS40NzQzQzE4LjEzMjYgNS40NTk0NiAxOC42NzEgNS4yOTE4MyAxOS4xMzUgNC45ODk5NEMxOS43MTQgNS41Nzk5NCAyMC4yMjggNi4yNTA5NSAyMC42NiA2Ljk5OTk1QzIxLjA5MyA3Ljc0ODk1IDIxLjQxNyA4LjUyOTk1IDIxLjYzOCA5LjMyNTk1QzIxLjE0NDcgOS41NzY4NSAyMC43MzA0IDkuOTU5MzIgMjAuNDQxIDEwLjQzMTFDMjAuMTUxNSAxMC45MDI4IDE5Ljk5ODIgMTEuNDQ1NCAxOS45OTggMTEuOTk4OEMxOS45OTc4IDEyLjU1MjMgMjAuMTUwNyAxMy4wOTUgMjAuNDM5OCAxMy41NjY5QzIwLjcyODkgMTQuMDM4OSAyMS4xNDI5IDE0LjQyMTcgMjEuNjM2IDE0LjY3MjlDMjEuMTg0IDE2LjMwNzUgMjAuMzIzMyAxNy44IDE5LjEzNSAxOS4wMDk5QzE4LjY3MDkgMTguNzA4MiAxOC4xMzI0IDE4LjU0MDggMTcuNTc5IDE4LjUyNjJDMTcuMDI1NyAxOC41MTE1IDE2LjQ3OSAxOC42NTAzIDE1Ljk5OTcgMTguOTI3MUMxNS41MjAzIDE5LjIwMzkgMTUuMTI2OCAxOS42MDc5IDE0Ljg2MjkgMjAuMDk0NUMxNC41OTg5IDIwLjU4MTEgMTQuNDc0NyAyMS4xMzEyIDE0LjUwNCAyMS42ODM5QzEyLjg2MTkgMjIuMTA4MyAxMS4xMzg4IDIyLjEwNzYgOS40OTcgMjEuNjgxOUM5LjUyNjA1IDIxLjEyOTIgOS40MDE2IDIwLjU3OTIgOS4xMzc0MiAyMC4wOTI3QzguODczMjQgMTkuNjA2MyA4LjQ3OTY0IDE5LjIwMjUgOC4wMDAxNyAxOC45MjU5QzcuNTIwNyAxOC42NDkzIDYuOTc0MDUgMTguNTEwOCA2LjQyMDczIDE4LjUyNTZDNS44Njc0IDE4LjU0MDQgNS4zMjg5NiAxOC43MDgxIDQuODY1IDE5LjAwOTlDNC4yNzM5OSAxOC40MDY5IDMuNzYxNTkgMTcuNzMxNSAzLjM0IDE2Ljk5OTlaTTkgMTcuMTk1OUMxMC4wNjU2IDE3LjgxMDYgMTAuODY2OCAxOC43OTcgMTEuMjUgMTkuOTY1OUMxMS43NDkgMjAuMDEyOSAxMi4yNSAyMC4wMTM5IDEyLjc0OSAxOS45NjY5QzEzLjEzMjQgMTguNzk3OCAxMy45MzQgMTcuODExNCAxNSAxNy4xOTY5QzE2LjA2NTIgMTYuNTgwNiAxNy4zMjA1IDE2LjM3OTQgMTguNTI1IDE2LjYzMTlDMTguODE1IDE2LjIyMzkgMTkuMDY1IDE1Ljc4ODkgMTkuMjczIDE1LjMzMzlDMTguNDUyNCAxNC40MTc0IDE3Ljk5OTEgMTMuMjMwMiAxOCAxMS45OTk5QzE4IDEwLjczOTkgMTguNDcgOS41NjI5NSAxOS4yNzMgOC42NjU5NUMxOS4wNjM1IDguMjExMDkgMTguODEyNSA3Ljc3NjU4IDE4LjUyMyA3LjM2Nzk1QzE3LjMxOTMgNy42MjAyNSAxNi4wNjQ4IDcuNDE5NDIgMTUgNi44MDM5NUMxMy45MzQ0IDYuMTg5MzIgMTMuMTMzMiA1LjIwMjkzIDEyLjc1IDQuMDMzOTRDMTIuMjUxIDMuOTg2OTQgMTEuNzUgMy45ODU5NCAxMS4yNTEgNC4wMzI5NEMxMC44Njc2IDUuMjAyMDkgMTAuMDY2IDYuMTg4NSA5IDYuODAyOTVDNy45MzQ3OCA3LjQxOTI2IDYuNjc5NDggNy42MjA0NiA1LjQ3NSA3LjM2Nzk1QzUuMTg1NTYgNy43NzYyMyA0LjkzNTEzIDguMjEwODEgNC43MjcgOC42NjU5NUM1LjU0NzU3IDkuNTgyNSA2LjAwMDg4IDEwLjc2OTcgNiAxMS45OTk5QzYgMTMuMjU5OSA1LjUzIDE0LjQzNjkgNC43MjcgMTUuMzMzOUM0LjkzNjQ3IDE1Ljc4ODggNS4xODc1NCAxNi4yMjMzIDUuNDc3IDE2LjYzMTlDNi42ODA3MiAxNi4zNzk2IDcuOTM1MjEgMTYuNTgwNSA5IDE3LjE5NTlaTTEyIDE0Ljk5OTlDMTEuMjA0NCAxNC45OTk5IDEwLjQ0MTMgMTQuNjgzOSA5Ljg3ODY4IDE0LjEyMTNDOS4zMTYwNyAxMy41NTg3IDkgMTIuNzk1NiA5IDExLjk5OTlDOSAxMS4yMDQzIDkuMzE2MDcgMTAuNDQxMiA5Ljg3ODY4IDkuODc4NjJDMTAuNDQxMyA5LjMxNjAyIDExLjIwNDQgOC45OTk5NSAxMiA4Ljk5OTk1QzEyLjc5NTYgOC45OTk5NSAxMy41NTg3IDkuMzE2MDIgMTQuMTIxMyA5Ljg3ODYyQzE0LjY4MzkgMTAuNDQxMiAxNSAxMS4yMDQzIDE1IDExLjk5OTlDMTUgMTIuNzk1NiAxNC42ODM5IDEzLjU1ODcgMTQuMTIxMyAxNC4xMjEzQzEzLjU1ODcgMTQuNjgzOSAxMi43OTU2IDE0Ljk5OTkgMTIgMTQuOTk5OVpNMTIgMTIuOTk5OUMxMi4yNjUyIDEyLjk5OTkgMTIuNTE5NiAxMi44OTQ2IDEyLjcwNzEgMTIuNzA3MUMxMi44OTQ2IDEyLjUxOTUgMTMgMTIuMjY1MiAxMyAxMS45OTk5QzEzIDExLjczNDcgMTIuODk0NiAxMS40ODA0IDEyLjcwNzEgMTEuMjkyOEMxMi41MTk2IDExLjEwNTMgMTIuMjY1MiAxMC45OTk5IDEyIDEwLjk5OTlDMTEuNzM0OCAxMC45OTk5IDExLjQ4MDQgMTEuMTA1MyAxMS4yOTI5IDExLjI5MjhDMTEuMTA1NCAxMS40ODA0IDExIDExLjczNDcgMTEgMTEuOTk5OUMxMSAxMi4yNjUyIDExLjEwNTQgMTIuNTE5NSAxMS4yOTI5IDEyLjcwNzFDMTEuNDgwNCAxMi44OTQ2IDExLjczNDggMTIuOTk5OSAxMiAxMi45OTk5WiIgZmlsbD0iYmxhY2siIC8{plus}Cjwvc3ZnPg==]
+Manage preferences]
++
+
+'''''
+* https://dev.to/report-abuse?billboard=262995[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMi4zODIgM2ExIDEgMCAwIDEgLjg5NC41NTNMMTQgNWg2YTEgMSAwIDAgMSAxIDF2MTFhMSAxIDAgMCAxLTEgMWgtNi4zODJhMSAxIDAgMCAxLS44OTQtLjU1M0wxMiAxNkg1djZIM1YzaDkuMzgyWm0tLjYxOCAySDV2OWg4LjIzNmwxIDJIMTlWN2gtNi4yMzZsLTEtMloiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMi4zODIgM2ExIDEgMCAwIDEgLjg5NC41NTNMMTQgNWg2YTEgMSAwIDAgMSAxIDF2MTFhMSAxIDAgMCAxLTEgMWgtNi4zODJhMSAxIDAgMCAxLS44OTQtLjU1M0wxMiAxNkg1djZIM1YzaDkuMzgyWm0tLjYxOCAySDV2OWg4LjIzNmwxIDJIMTlWN2gtNi4yMzZsLTEtMloiIC8{plus}Cjwvc3ZnPg==]
+Report billboard]
+
+=== https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#check-out-some-recent-articles-from-google-ai[] Check out some recent articles from Google AI
+
+https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995[Deploy
+Gemma 4 on Cloud Run: Pay Only When You Actually Use It]
+
+https://dev.to/gde?bb=262995[image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_organization_profile_image_11939_e3080d5b-ecde-42a8-b089-bafecc31fa97.png[Google
+Developer Experts logo,width=90,height=90]]
+https://dev.to/kulaone?bb=262995[image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_3700947_9cbf0498-ff26-48a2-b5f6-bf03ce467f94.webp[kulaone
+profile,width=90,height=90]]
+
+https://dev.to/kulaone?bb=262995[Daniel Gwerzman]
+
+Daniel Gwerzman
+
+[[story-author-preview-content-3453326]]
+https://dev.to/kulaone?bb=262995[[.crayons-avatar .crayons-avatar--xl .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_3700947_9cbf0498-ff26-48a2-b5f6-bf03ce467f94.webp[./index++_++files/https++___++dev-to-uploads.s3.amazonaws.com++_++uploads++_++user++_++profile++_++image++_++3700947++_++9cbf0498-ff26-48a2-b5f6-bf03ce467f94,width=90,height=90]
+# [.crayons-link .crayons-subtitle-2 .mt-5]#Daniel Gwerzman#]
+
+Follow
+
+[.crayons-story__tertiary .fw-normal]## for
+##https://dev.to/gde?bb=262995[Google Developer Experts]
+
+https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995[Apr
+4[.time-ago-indicator-initial-placeholder]####]
+
+=== https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995[Deploy Gemma 4 on Cloud Run: Pay Only When You Actually Use It]
+
+https://dev.to/t/gemma?bb=262995[[.crayons-tag__prefix]##++#++##gemma]
+https://dev.to/t/cloudrun?bb=262995[[.crayons-tag__prefix]##++#++##cloudrun]
+https://dev.to/t/cloud?bb=262995[[.crayons-tag__prefix]##++#++##cloud]
+https://dev.to/t/ai?bb=262995[[.crayons-tag__prefix]##++#++##ai]
+
+https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995[]
+
+[.multiple_reactions_icons_container]# [.crayons_icon_container]#
+image:./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg[./index++_++files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5,width=18,height=18]
+# [.crayons_icon_container]#
+image:./index_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg[./index++_++files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5,width=18,height=18]
+# [.crayons_icon_container]#
+image:./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg[./index++_++files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf,width=18,height=18]
+# # [.aggregate_reactions_counter]#17[.hidden .s:inline]## reactions###
+
+https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995#comments[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFtMTRnemRkM2tvMzFnMzFyMDliYjljeWNuaXQxeHVjIiBjbGFzcz0iY3JheW9ucy1pY29uIj48dGl0bGUgaWQ9ImFtMTRnemRkM2tvMzFnMzFyMDliYjljeWNuaXQxeHVjIj5Db21tZW50czwvdGl0bGU+CjxwYXRoIGQ9Ik0xMC41IDVoM2E2IDYgMCAxMTAgMTJ2Mi42MjVjLTMuNzUtMS41LTktMy43NS05LTguNjI1YTYgNiAwIDAxNi02ek0xMiAxNS41aDEuNWE0LjUwMSA0LjUwMSAwIDAwMS43MjItOC42NTdBNC41IDQuNSAwIDAwMTMuNSA2LjVoLTNBNC41IDQuNSAwIDAwNiAxMWMwIDIuNzA3IDEuODQ2IDQuNDc1IDYgNi4zNlYxNS41eiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFtMTRnemRkM2tvMzFnMzFyMDliYjljeWNuaXQxeHVjIiBjbGFzcz0iY3JheW9ucy1pY29uIj48dGl0bGUgaWQ9ImFtMTRnemRkM2tvMzFnMzFyMDliYjljeWNuaXQxeHVjIj5Db21tZW50czwvdGl0bGU{plus}CjxwYXRoIGQ9Ik0xMC41IDVoM2E2IDYgMCAxMTAgMTJ2Mi42MjVjLTMuNzUtMS41LTktMy43NS05LTguNjI1YTYgNiAwIDAxNi02ek0xMiAxNS41aDEuNWE0LjUwMSA0LjUwMSAwIDAwMS43MjItOC42NTdBNC41IDQuNSAwIDAwMTMuNSA2LjVoLTNBNC41IDQuNSAwIDAwNiAxMWMwIDIuNzA3IDEuODQ2IDQuNDc1IDYgNi4zNlYxNS41eiIgLz48L3N2Zz4=]
+3[.hidden .s:inline]## comments##]
+
+[.small]#18 min read#
+
+[.bm-initial]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1ek0xNi41IDZoLTl2MTEuNTc0bDQuNS0yLjgyIDQuNSAyLjgyVjZ6IiAvPjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1ek0xNi41IDZoLTl2MTEuNTc0bDQuNS0yLjgyIDQuNSAyLjgyVjZ6IiAvPjwvc3ZnPg==]
+# [.bm-success]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1eiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1eiIgLz48L3N2Zz4=]
+#
+
+https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995[Running
+Agentic AI at Scale on Google Kubernetes Engine]
+
+https://dev.to/gde?bb=262995[image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_organization_profile_image_11939_e3080d5b-ecde-42a8-b089-bafecc31fa97.png[Google
+Developer Experts logo,width=90,height=90]]
+https://dev.to/saurabhmi?bb=262995[image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_1150046_7b2a3640-5eec-4bd7-a008-61950bda1fdc.png[saurabhmi
+profile,width=90,height=90]]
+
+https://dev.to/saurabhmi?bb=262995[Saurabh Mishra]
+
+Saurabh Mishra
+
+[[story-author-preview-content-3469292]]
+https://dev.to/saurabhmi?bb=262995[[.crayons-avatar .crayons-avatar--xl .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_1150046_7b2a3640-5eec-4bd7-a008-61950bda1fdc.png[./index++_++files/https++___++dev-to-uploads.s3.amazonaws.com++_++uploads++_++user++_++profile++_++image++_++1150046++_++7b2a3640-5eec-4bd7-a008-61950bda1fdc,width=90,height=90]
+# [.crayons-link .crayons-subtitle-2 .mt-5]#Saurabh Mishra#]
+
+Follow
+
+[.crayons-story__tertiary .fw-normal]## for
+##https://dev.to/gde?bb=262995[Google Developer Experts]
+
+https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995[Apr
+8[.time-ago-indicator-initial-placeholder]####]
+
+=== https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995[Running Agentic AI at Scale on Google Kubernetes Engine]
+
+https://dev.to/t/agents?bb=262995[[.crayons-tag__prefix]##++#++##agents]
+https://dev.to/t/ai?bb=262995[[.crayons-tag__prefix]##++#++##ai]
+https://dev.to/t/cloud?bb=262995[[.crayons-tag__prefix]##++#++##cloud]
+https://dev.to/t/kubernetes?bb=262995[[.crayons-tag__prefix]##++#++##kubernetes]
+
+https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995[]
+
+[.multiple_reactions_icons_container]# [.crayons_icon_container]#
+image:./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg[./index++_++files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5,width=18,height=18]
+# [.crayons_icon_container]#
+image:./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg[./index++_++files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97,width=18,height=18]
+# [.crayons_icon_container]#
+image:./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg[./index++_++files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf,width=18,height=18]
+# # [.aggregate_reactions_counter]#7[.hidden .s:inline]## reactions###
+
+https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995#comments[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFiZGVidG56Z2dpMWJnbmV1Y3E1bWZjYWViMG1iY2JtIiBjbGFzcz0iY3JheW9ucy1pY29uIj48dGl0bGUgaWQ9ImFiZGVidG56Z2dpMWJnbmV1Y3E1bWZjYWViMG1iY2JtIj5Db21tZW50czwvdGl0bGU+CjxwYXRoIGQ9Ik0xMC41IDVoM2E2IDYgMCAxMTAgMTJ2Mi42MjVjLTMuNzUtMS41LTktMy43NS05LTguNjI1YTYgNiAwIDAxNi02ek0xMiAxNS41aDEuNWE0LjUwMSA0LjUwMSAwIDAwMS43MjItOC42NTdBNC41IDQuNSAwIDAwMTMuNSA2LjVoLTNBNC41IDQuNSAwIDAwNiAxMWMwIDIuNzA3IDEuODQ2IDQuNDc1IDYgNi4zNlYxNS41eiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFiZGVidG56Z2dpMWJnbmV1Y3E1bWZjYWViMG1iY2JtIiBjbGFzcz0iY3JheW9ucy1pY29uIj48dGl0bGUgaWQ9ImFiZGVidG56Z2dpMWJnbmV1Y3E1bWZjYWViMG1iY2JtIj5Db21tZW50czwvdGl0bGU{plus}CjxwYXRoIGQ9Ik0xMC41IDVoM2E2IDYgMCAxMTAgMTJ2Mi42MjVjLTMuNzUtMS41LTktMy43NS05LTguNjI1YTYgNiAwIDAxNi02ek0xMiAxNS41aDEuNWE0LjUwMSA0LjUwMSAwIDAwMS43MjItOC42NTdBNC41IDQuNSAwIDAwMTMuNSA2LjVoLTNBNC41IDQuNSAwIDAwNiAxMWMwIDIuNzA3IDEuODQ2IDQuNDc1IDYgNi4zNlYxNS41eiIgLz48L3N2Zz4=]
+[.hidden .s:inline]#Add Comment#]
+
+[.small]#6 min read#
+
+[.bm-initial]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1ek0xNi41IDZoLTl2MTEuNTc0bDQuNS0yLjgyIDQuNSAyLjgyVjZ6IiAvPjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1ek0xNi41IDZoLTl2MTEuNTc0bDQuNS0yLjgyIDQuNSAyLjgyVjZ6IiAvPjwvc3ZnPg==]
+# [.bm-success]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1eiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1eiIgLz48L3N2Zz4=]
+#
+
+https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995[Observability
+at Scale: Mastering ADK Callbacks for Cost&#44; Latency&#44; and
+Auditability ++[++GDE++]++]
+
+https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995[]
+
+Bypassing redundant steps to cut LLM costs
+
+https://dev.to/gde?bb=262995[image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_organization_profile_image_11939_e3080d5b-ecde-42a8-b089-bafecc31fa97.png[Google
+Developer Experts logo,width=90,height=90]]
+https://dev.to/railsstudent?bb=262995[image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_774921_1f16eaef-f6d6-4ef0-ab0d-17eaa5c01e75.jpeg[railsstudent
+profile,width=90,height=90]]
+
+https://dev.to/railsstudent?bb=262995[Connie Leung]
+
+Connie Leung
+
+[[story-author-preview-content-3461516]]
+https://dev.to/railsstudent?bb=262995[[.crayons-avatar .crayons-avatar--xl .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_774921_1f16eaef-f6d6-4ef0-ab0d-17eaa5c01e75.jpeg[./index++_++files/https++___++dev-to-uploads.s3.amazonaws.com++_++uploads++_++user++_++profile++_++image++_++774921++_++1f16eaef-f6d6-4ef0-ab0d-17eaa5c01e75,width=90,height=90]
+# [.crayons-link .crayons-subtitle-2 .mt-5]#Connie Leung#]
+
+Follow
+
+[.crayons-story__tertiary .fw-normal]## for
+##https://dev.to/gde?bb=262995[Google Developer Experts]
+
+https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995[Apr
+6[.time-ago-indicator-initial-placeholder]####]
+
+=== https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995[Observability at Scale: Mastering ADK Callbacks for Cost&#44; Latency&#44; and Auditability ++[++GDE++]++]
+
+https://dev.to/t/agents?bb=262995[[.crayons-tag__prefix]##++#++##agents]
+https://dev.to/t/tutorial?bb=262995[[.crayons-tag__prefix]##++#++##tutorial]
+https://dev.to/t/ai?bb=262995[[.crayons-tag__prefix]##++#++##ai]
+https://dev.to/t/typescript?bb=262995[[.crayons-tag__prefix]##++#++##typescript]
+
+https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995[]
+
+[.multiple_reactions_icons_container]# [.crayons_icon_container]#
+image:./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg[./index++_++files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5,width=18,height=18]
+# [.crayons_icon_container]#
+image:./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg[./index++_++files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97,width=18,height=18]
+# [.crayons_icon_container]#
+image:./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg[./index++_++files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf,width=18,height=18]
+# # [.aggregate_reactions_counter]#32[.hidden .s:inline]## reactions###
+
+https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995#comments[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFkdXZwYmpxa3I4OXE5c3hubG5rZnNyYmF2dHdndjRrIiBjbGFzcz0iY3JheW9ucy1pY29uIj48dGl0bGUgaWQ9ImFkdXZwYmpxa3I4OXE5c3hubG5rZnNyYmF2dHdndjRrIj5Db21tZW50czwvdGl0bGU+CjxwYXRoIGQ9Ik0xMC41IDVoM2E2IDYgMCAxMTAgMTJ2Mi42MjVjLTMuNzUtMS41LTktMy43NS05LTguNjI1YTYgNiAwIDAxNi02ek0xMiAxNS41aDEuNWE0LjUwMSA0LjUwMSAwIDAwMS43MjItOC42NTdBNC41IDQuNSAwIDAwMTMuNSA2LjVoLTNBNC41IDQuNSAwIDAwNiAxMWMwIDIuNzA3IDEuODQ2IDQuNDc1IDYgNi4zNlYxNS41eiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFkdXZwYmpxa3I4OXE5c3hubG5rZnNyYmF2dHdndjRrIiBjbGFzcz0iY3JheW9ucy1pY29uIj48dGl0bGUgaWQ9ImFkdXZwYmpxa3I4OXE5c3hubG5rZnNyYmF2dHdndjRrIj5Db21tZW50czwvdGl0bGU{plus}CjxwYXRoIGQ9Ik0xMC41IDVoM2E2IDYgMCAxMTAgMTJ2Mi42MjVjLTMuNzUtMS41LTktMy43NS05LTguNjI1YTYgNiAwIDAxNi02ek0xMiAxNS41aDEuNWE0LjUwMSA0LjUwMSAwIDAwMS43MjItOC42NTdBNC41IDQuNSAwIDAwMTMuNSA2LjVoLTNBNC41IDQuNSAwIDAwNiAxMWMwIDIuNzA3IDEuODQ2IDQuNDc1IDYgNi4zNlYxNS41eiIgLz48L3N2Zz4=]
+11[.hidden .s:inline]## comments##]
+
+[.small]#12 min read#
+
+[.bm-initial]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1ek0xNi41IDZoLTl2MTEuNTc0bDQuNS0yLjgyIDQuNSAyLjgyVjZ6IiAvPjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1ek0xNi41IDZoLTl2MTEuNTc0bDQuNS0yLjgyIDQuNSAyLjgyVjZ6IiAvPjwvc3ZnPg==]
+# [.bm-success]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1eiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik02Ljc1IDQuNWgxMC41YS43NS43NSAwIDAxLjc1Ljc1djE0LjM1N2EuMzc1LjM3NSAwIDAxLS41NzUuMzE4TDEyIDE2LjUyM2wtNS40MjYgMy40MDFBLjM3NS4zNzUgMCAwMTYgMTkuNjA3VjUuMjVhLjc1Ljc1IDAgMDEuNzUtLjc1eiIgLz48L3N2Zz4=]
+#

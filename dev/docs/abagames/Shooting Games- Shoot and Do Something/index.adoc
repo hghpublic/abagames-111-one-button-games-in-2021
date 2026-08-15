@@ -1,0 +1,481 @@
+= Shooting Games: "Shoot" and "Do Something" - DEV Community
+:keywords: software, coding, development, engineering, inclusive,
+community
+:lang: en
+
+[[main-content]]
+[[main-title]]
+[[action-space]]
+
+https://dev.to/abagames[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_859761_871a936d-2aa9-4fdd-91cc-74410e64683e.png[ABA
+Games,width=40,height=40]]
+
+https://dev.to/abagames[ABA Games]
+
+Posted on 19. Apr. 2024
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg[./index++_++files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf,width=24,height=24]#
+[#reaction_engagement_like_count .crayons-reaction__count]#3#
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg[./index++_++files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97,width=24,height=24]#
+[#reaction_engagement_unicorn_count .crayons-reaction__count]# #
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg[./index++_++files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5,width=24,height=24]#
+[#reaction_engagement_exploding_head_count .crayons-reaction__count]# #
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg[./index++_++files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5,width=24,height=24]#
+[#reaction_engagement_raised_hands_count .crayons-reaction__count]# #
+
+[.crayons-reaction__icon .crayons-reaction__icon--inactive .p-1]#image:./index_files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg[./index++_++files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e,width=24,height=24]#
+[#reaction_engagement_fire_count .crayons-reaction__count]# #
+
+== Shooting Games: "Shoot" and "Do Something"
+
+[[article-body]]
+On April 17th, I gave a talk at Tokyo Indies
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn1[1]^
+about generating ideas for shooting games (shmups).
+
+Here
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn2[2]^
+are the presentation slides in Japanese. However, since most of the
+content was delivered verbally, the slides alone may not fully convey
+the topic. Therefore, I'd like to provide some supplementary
+information.
+
+Shmups are games where you "shoot" and "defeat enemies." It's obvious,
+but is that really all there is to it?
+
+For example, what about a game where you "shoot" and "create squares"?
+
+That's Quarth （BLOCK HOLE)
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn3[3]^.
+In the game Quarth, you shoot blocks at mysterious approaching blocks to
+form squares and eliminate them. So, is Quarth an shmup? The original
+developer calls it a "shooting puzzle game," so it must be a shmup. This
+means that the "do something" part doesn't necessarily have to be
+"defeat enemies" for a game to be considered a shmup.
+
+Come to think of it, I've created various "do something" shmups in the
+past.
+
+* "Shoot" and "attach enemies" game, TUMIKI Fighters
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn4[4]^
+
+When you defeat an enemy, it falls and you can pick it up with your
+ship. The enemy then attaches to your ship and starts counterattacking.
+As you keep attaching more enemies, your ship eventually becomes larger
+than the boss, allowing you to overwhelm enemies with incredible
+firepower. By incorporating the idea of "attaching" into an shmup, I
+created a slightly different kind of shooting game. It's like a
+combination of Katamari Damacy and Sky Kid.
+
+* "Shoot" and "drop enemies" game, Mu-cade
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn5[5]^
+
+The player's ship and enemies are centipede-like, and by hitting enemies
+with your shots, you can blow them away and defeat them by pushing them
+out of the game field. At the time, I incorporated the still-obvious
+technology of a physics engine into an shmup.
+
+'''''
+
+By changing the "do something" part from "defeat enemies" to something
+else, you can create shmups of the novelty. Thinking about what goes
+into the "do something" part can serve as a guideline for considering
+game rules, gimmicks, and mechanics.
+
+'''''
+
+* "Shoot" and "contaminate the Game of Life" game, L.A.2
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn6[6]^
+
+The game field consists of the Game of Life and enemies moving on its
+cells. The player's ship fires glider patterns, which are Game of Life
+patterns that fly diagonally. When they hit the Game of Life on the
+field, they change the color of the cells and contaminate them.
+Releasing the button destroys the contaminated cells and any enemies on
+them. It's a combination of the Game of Life and shmup.
+
+* "Shoot" and "pierce through the same color" game, COLOR ROLL
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn7[7]^
+
+Color-coded bars move left and right, and you shoot when the colors
+align. The inspiration comes from games like Radiant Silvergun, where
+you match colors, and the rotating shield wall in the final boss of Gun
+Frontier, where you aim for gaps.
+
+* "Shoot" and "set off chain explosions" game, CRISS CROSS BOMB
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn8[8]^
+
+Hitting a horizontal bomb triggers a horizontal explosion, while hitting
+a vertical bomb triggers a vertical explosion. The objective is to
+involve as many bombs as possible while skillfully avoiding the blast
+waves coming towards your ship from the vertical direction.
+
+* "Shoot" and "pull down" game, RAID
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn9[9]^
+
+Your ship is descending towards a group of skyscrapers and will crash
+into them if you continue. By aiming bombs diagonally at the middle of
+the buildings, you can pull down them.
+
+* "Shoot" and "get hit by your own shots" game, HAVE IT COMING
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn10[10]^
+
+You can defeat enemies in the air with your ship's shots, but the shots
+follow a parabolic trajectory and fall back down. If you get hit by
+them, your ship is also destroyed, so recklessly shooting is dangerous.
+However, when shots hit the ground, they become bonus items, so if
+you're aiming for a high score, it's important to shoot recklessly and
+dodge.
+
+'''''
+
+By devising the purpose of shooting, the consequences, risks, and
+rewards triggered by shooting, you can create new games. By making
+players think about why and when to perform the act of "shooting," you
+can create shmups with new ways to enjoy them.
+
+However, this shouldn't be considered for all shmups. In particular, you
+need to be very cautious about introducing risk to the act of shooting.
+If you want to emphasize the exhilaration of destroying enemies, you
+should make bullets and enemy destruction unlimited, and there's no need
+to introduce tactical elements. Gimmicks like conserving shots to
+maintain combos by leaving enemies alive in DoDonPachi or timing single
+shots to hit enemies of the same color in Ikaruga are very interesting,
+but some players may find them stressful, and I don't think all shmups
+should be like that.
+
+'''''
+
+* "Shoot" and "interfere" game, COUNTER B
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn11[11]^
+
+This game isolates the interference spheres seen in games like Metal
+Black, G-Darius, and Border Down. The situation where your attacks and
+the enemy's attacks collide and compete is irresistible.
+
+* "Shoot" and "defeat enemies together" game, THROW M
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn12[12]^
+
+I love the part in Pooyan where you defeat the balloon-riding wolves
+together with meat, and I just wanted to enjoy that aspect. Defeating
+enemies together for high scores is a traditional game rule from long
+ago.
+
+* "Shoot" and "defeat distant enemies" game, MORTAR
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn13[13]^
+
+The inspiration comes from Sega's Heavy Metal, a vertical scrolling
+shooter with a groundbreaking system that allows you to destroy
+off-screen enemies with long-range missiles.
+
+'''''
+
+Borrowing the enjoyment of features from other games is also an option.
+With fond memories of the fun of a particular feature in a game, let's
+pay homage with love.
+
+'''''
+
+* "Shoot" and "make explosions to defeat enemies while using the blast
+to adjust player's trajectory and dodge enemies" game, BOMB UP
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn14[14]^
+* "Shoot" and "destroy enemy tanks, but you can also make holes in the
+ground to dodge enemy bullets" game, GRENADIER
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn15[15]^
+* "Shoot" and "jump, creating obstacles on the ground, but collecting
+items allows you to shoot and destroy those obstacles" game, R WHEEL
+^https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fn16[16]^
+
+'''''
+
+As shown above, packing too many gimmicks into the act of shooting can
+confuse players. It's fine for small games, but it's best avoided in
+general shooting games.
+
+'''''
+
+How are these ideas based on "shoot" and "do something" keywords useful
+in creating shmups? For example, they can be helpful in considering the
+core mechanics that represent a shmup. Here, core mechanics refer to
+defining mechanisms that characterize the game, such as the liberation
+beam in Metal Black or the chain bonus in Radiant Silvergun. Setting
+impactful core mechanics can help differentiate the game.
+
+They can also be used to come up with special gimmicks for stages or
+bosses. Rather than core mechanics that apply throughout the entire
+game, incorporating these ideas into mechanisms that occur in specific
+parts of the game, such as certain stages or bosses, can add variety to
+the game's progression. For example, the Gradius series provides players
+with new experiences in each stage by having core gimmicks for each
+stage.
+
+I gave a talk on considering shooting game ideas based on "shoot" and
+"do something." If this article can inspire readers to think that
+creating slightly unusual shooting games might be interesting, I'd be
+delighted. By not being constrained by the genre framework of shooting
+games and taking on game design with a free mindset, we can expand the
+possibilities of shooting games. By delivering fresh surprises to
+players, showing them that shooting games can be enjoyed in such ways,
+the fan base for shooting games will grow further. Shooting games have a
+long history as a genre. That's why I hope we can pass on their fun and
+potential to the next generation.
+
+'''''
+
+. {blank}
++
+[[fn1]]
+https://www.tokyoindies.com/en/posts/2024-04/[April Tokyo Indies: STG
+Edition] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref1[↩]
+. {blank}
++
+[[fn2]]
+https://docs.google.com/presentation/d/e/2PACX-1vTnZIMeeTdLbFU9wscpw-ZZrGxym7xaCU6MUmZPyD2_9u6TfrQCOHrMuTJwu4CZyA1Bk4sfiDXI8PyN/pub?slide=id.p[「撃って」「○○する」ゲーム
+それがシューティングゲーム] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref2[↩]
+. {blank}
++
+[[fn3]]
+http://www.hamster.co.jp/american_hamster/arcadearchives/blockhole.htm[Arcade
+Archives BLOCK
+HOLE] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref3[↩]
+. {blank}
++
+[[fn4]]
+https://www.asahi-net.or.jp/~cs8k-cyu/windows/tf_e.html[TUMIKI
+Fighters] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref4[↩]
+. {blank}
++
+[[fn5]]
+https://www.asahi-net.or.jp/~cs8k-cyu/windows/mcd_e.html[Mu-cade] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref5[↩]
+. {blank}
++
+[[fn6]]
+https://www.asahi-net.or.jp/~cs8k-cyu/flash/la2/index.html[L.A.2] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref6[↩]
+. {blank}
++
+[[fn7]]
+https://abagames.github.io/crisp-game-lib-games/?colorroll[COLOR
+ROLL] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref7[↩]
+. {blank}
++
+[[fn8]]
+https://abagames.sakura.ne.jp/flash/ccb/[CRISS CROSS
+BOMB] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref8[↩]
+. {blank}
++
+[[fn9]]
+https://abagames.github.io/crisp-game-lib-games/?raid[RAID] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref9[↩]
+. {blank}
++
+[[fn10]]
+https://abagames.sakura.ne.jp/html5/hic/[HAVE IT
+COMING] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref10[↩]
+. {blank}
++
+[[fn11]]
+https://abagames.github.io/crisp-game-lib-games/?counterb[COUNTER
+B] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref11[↩]
+. {blank}
++
+[[fn12]]
+https://abagames.github.io/crisp-game-lib-games/?throwm[THROW
+M] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref12[↩]
+. {blank}
++
+[[fn13]]
+https://abagames.github.io/crisp-game-lib-games/?mortar[MORTAR] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref13[↩]
+. {blank}
++
+[[fn14]]
+https://abagames.github.io/crisp-game-lib-games/?bombup[BOMB
+UP] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref14[↩]
+. {blank}
++
+[[fn15]]
+https://abagames.github.io/crisp-game-lib-games/?grenadier[GRENADIER] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref15[↩]
+. {blank}
++
+[[fn16]]
+https://abagames.github.io/crisp-game-lib-games/?rwheel[R
+WHEEL] https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#fnref16[↩]
+
+https://dev.to/sentry[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_organization_profile_image_3774_99e0624e-6fb6-4460-819d-3a0d967519cb.webp[profile,width=20,height=20]]
+
+Sentry
+
+[.crayons-bb__indicator .c-indicator .c-indicator--subtle .c-indicator--round .fs-2xs .fw-medium .ml-2 .py-1 .px-2]#Promoted#
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYXBlZ21wcnc1Mm9iZ2c3ZmcwamxxZTRuNXIzbjl0YWgiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI+PHRpdGxlIGlkPSJhcGVnbXBydzUyb2JnZzdmZzBqbHFlNG41cjNuOXRhaCI+RHJvcGRvd24gbWVudTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYXBlZ21wcnc1Mm9iZ2c3ZmcwamxxZTRuNXIzbjl0YWgiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI{plus}PHRpdGxlIGlkPSJhcGVnbXBydzUyb2JnZzdmZzBqbHFlNG41cjNuOXRhaCI{plus}RHJvcGRvd24gbWVudTwvdGl0bGU{plus}CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8{plus}Cjwvc3ZnPg==]
+
+[[sponsorship-dropdown-240306]]
+* https://dev.to/billboards[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMiAyMkM2LjQ3NyAyMiAyIDE3LjUyMyAyIDEyUzYuNDc3IDIgMTIgMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHptMC0yYTggOCAwIDEwMC0xNiA4IDggMCAwMDAgMTZ6TTExIDdoMnYyaC0yVjd6bTAgNGgydjZoLTJ2LTZ6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMiAyMkM2LjQ3NyAyMiAyIDE3LjUyMyAyIDEyUzYuNDc3IDIgMTIgMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHptMC0yYTggOCAwIDEwMC0xNiA4IDggMCAwMDAgMTZ6TTExIDdoMnYyaC0yVjd6bTAgNGgydjZoLTJ2LTZ6IiAvPgo8L3N2Zz4=]
+What's a billboard?]
+* https://dev.to/settings/customization#sponsors[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld2JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0zLjM0IDE2Ljk5OTlDMi45MTcyNyAxNi4yNjg5IDIuNTg4NjYgMTUuNDg3NCAyLjM2MiAxNC42NzM5QzIuODU1MzEgMTQuNDIzIDMuMjY5NTkgMTQuMDQwNiAzLjU1OTAzIDEzLjU2ODhDMy44NDg0NiAxMy4wOTcxIDQuMDAxNzYgMTIuNTU0NSA0LjAwMTk3IDEyLjAwMTFDNC4wMDIxOCAxMS40NDc2IDMuODQ5MjggMTAuOTA0OSAzLjU2MDIgMTAuNDMyOUMzLjI3MTEyIDkuOTYxIDIuODU3MTIgOS41NzgyMSAyLjM2NCA5LjMyNjk0QzIuODE2MDQgNy42OTI0MyAzLjY3NjczIDYuMTk5OSA0Ljg2NSA0Ljk4OTk0QzUuMzI5MDkgNS4yOTE2NyA1Ljg2NzYyIDUuNDU5MTEgNi40MjA5OCA1LjQ3MzczQzYuOTc0MzQgNS40ODgzNCA3LjUyMDk1IDUuMzQ5NTggOC4wMDAzMyA1LjA3Mjc4QzguNDc5NzEgNC43OTU5OCA4Ljg3MzE1IDQuMzkxOTQgOS4xMzcxMyAzLjkwNTM5QzkuNDAxMSAzLjQxODgzIDkuNTI1MzEgMi44Njg3MiA5LjQ5NiAyLjMxNTk0QzExLjEzODEgMS44OTE1NyAxMi44NjEyIDEuODkyMjYgMTQuNTAzIDIuMzE3OTVDMTQuNDc0IDIuODcwNzEgMTQuNTk4NCAzLjQyMDczIDE0Ljg2MjYgMy45MDcxNUMxNS4xMjY4IDQuMzkzNTcgMTUuNTIwNCA0Ljc5NzQyIDE1Ljk5OTggNS4wNzQwMUMxNi40NzkzIDUuMzUwNTkgMTcuMDI1OSA1LjQ4OTEzIDE3LjU3OTMgNS40NzQzQzE4LjEzMjYgNS40NTk0NiAxOC42NzEgNS4yOTE4MyAxOS4xMzUgNC45ODk5NEMxOS43MTQgNS41Nzk5NCAyMC4yMjggNi4yNTA5NSAyMC42NiA2Ljk5OTk1QzIxLjA5MyA3Ljc0ODk1IDIxLjQxNyA4LjUyOTk1IDIxLjYzOCA5LjMyNTk1QzIxLjE0NDcgOS41NzY4NSAyMC43MzA0IDkuOTU5MzIgMjAuNDQxIDEwLjQzMTFDMjAuMTUxNSAxMC45MDI4IDE5Ljk5ODIgMTEuNDQ1NCAxOS45OTggMTEuOTk4OEMxOS45OTc4IDEyLjU1MjMgMjAuMTUwNyAxMy4wOTUgMjAuNDM5OCAxMy41NjY5QzIwLjcyODkgMTQuMDM4OSAyMS4xNDI5IDE0LjQyMTcgMjEuNjM2IDE0LjY3MjlDMjEuMTg0IDE2LjMwNzUgMjAuMzIzMyAxNy44IDE5LjEzNSAxOS4wMDk5QzE4LjY3MDkgMTguNzA4MiAxOC4xMzI0IDE4LjU0MDggMTcuNTc5IDE4LjUyNjJDMTcuMDI1NyAxOC41MTE1IDE2LjQ3OSAxOC42NTAzIDE1Ljk5OTcgMTguOTI3MUMxNS41MjAzIDE5LjIwMzkgMTUuMTI2OCAxOS42MDc5IDE0Ljg2MjkgMjAuMDk0NUMxNC41OTg5IDIwLjU4MTEgMTQuNDc0NyAyMS4xMzEyIDE0LjUwNCAyMS42ODM5QzEyLjg2MTkgMjIuMTA4MyAxMS4xMzg4IDIyLjEwNzYgOS40OTcgMjEuNjgxOUM5LjUyNjA1IDIxLjEyOTIgOS40MDE2IDIwLjU3OTIgOS4xMzc0MiAyMC4wOTI3QzguODczMjQgMTkuNjA2MyA4LjQ3OTY0IDE5LjIwMjUgOC4wMDAxNyAxOC45MjU5QzcuNTIwNyAxOC42NDkzIDYuOTc0MDUgMTguNTEwOCA2LjQyMDczIDE4LjUyNTZDNS44Njc0IDE4LjU0MDQgNS4zMjg5NiAxOC43MDgxIDQuODY1IDE5LjAwOTlDNC4yNzM5OSAxOC40MDY5IDMuNzYxNTkgMTcuNzMxNSAzLjM0IDE2Ljk5OTlaTTkgMTcuMTk1OUMxMC4wNjU2IDE3LjgxMDYgMTAuODY2OCAxOC43OTcgMTEuMjUgMTkuOTY1OUMxMS43NDkgMjAuMDEyOSAxMi4yNSAyMC4wMTM5IDEyLjc0OSAxOS45NjY5QzEzLjEzMjQgMTguNzk3OCAxMy45MzQgMTcuODExNCAxNSAxNy4xOTY5QzE2LjA2NTIgMTYuNTgwNiAxNy4zMjA1IDE2LjM3OTQgMTguNTI1IDE2LjYzMTlDMTguODE1IDE2LjIyMzkgMTkuMDY1IDE1Ljc4ODkgMTkuMjczIDE1LjMzMzlDMTguNDUyNCAxNC40MTc0IDE3Ljk5OTEgMTMuMjMwMiAxOCAxMS45OTk5QzE4IDEwLjczOTkgMTguNDcgOS41NjI5NSAxOS4yNzMgOC42NjU5NUMxOS4wNjM1IDguMjExMDkgMTguODEyNSA3Ljc3NjU4IDE4LjUyMyA3LjM2Nzk1QzE3LjMxOTMgNy42MjAyNSAxNi4wNjQ4IDcuNDE5NDIgMTUgNi44MDM5NUMxMy45MzQ0IDYuMTg5MzIgMTMuMTMzMiA1LjIwMjkzIDEyLjc1IDQuMDMzOTRDMTIuMjUxIDMuOTg2OTQgMTEuNzUgMy45ODU5NCAxMS4yNTEgNC4wMzI5NEMxMC44Njc2IDUuMjAyMDkgMTAuMDY2IDYuMTg4NSA5IDYuODAyOTVDNy45MzQ3OCA3LjQxOTI2IDYuNjc5NDggNy42MjA0NiA1LjQ3NSA3LjM2Nzk1QzUuMTg1NTYgNy43NzYyMyA0LjkzNTEzIDguMjEwODEgNC43MjcgOC42NjU5NUM1LjU0NzU3IDkuNTgyNSA2LjAwMDg4IDEwLjc2OTcgNiAxMS45OTk5QzYgMTMuMjU5OSA1LjUzIDE0LjQzNjkgNC43MjcgMTUuMzMzOUM0LjkzNjQ3IDE1Ljc4ODggNS4xODc1NCAxNi4yMjMzIDUuNDc3IDE2LjYzMTlDNi42ODA3MiAxNi4zNzk2IDcuOTM1MjEgMTYuNTgwNSA5IDE3LjE5NTlaTTEyIDE0Ljk5OTlDMTEuMjA0NCAxNC45OTk5IDEwLjQ0MTMgMTQuNjgzOSA5Ljg3ODY4IDE0LjEyMTNDOS4zMTYwNyAxMy41NTg3IDkgMTIuNzk1NiA5IDExLjk5OTlDOSAxMS4yMDQzIDkuMzE2MDcgMTAuNDQxMiA5Ljg3ODY4IDkuODc4NjJDMTAuNDQxMyA5LjMxNjAyIDExLjIwNDQgOC45OTk5NSAxMiA4Ljk5OTk1QzEyLjc5NTYgOC45OTk5NSAxMy41NTg3IDkuMzE2MDIgMTQuMTIxMyA5Ljg3ODYyQzE0LjY4MzkgMTAuNDQxMiAxNSAxMS4yMDQzIDE1IDExLjk5OTlDMTUgMTIuNzk1NiAxNC42ODM5IDEzLjU1ODcgMTQuMTIxMyAxNC4xMjEzQzEzLjU1ODcgMTQuNjgzOSAxMi43OTU2IDE0Ljk5OTkgMTIgMTQuOTk5OVpNMTIgMTIuOTk5OUMxMi4yNjUyIDEyLjk5OTkgMTIuNTE5NiAxMi44OTQ2IDEyLjcwNzEgMTIuNzA3MUMxMi44OTQ2IDEyLjUxOTUgMTMgMTIuMjY1MiAxMyAxMS45OTk5QzEzIDExLjczNDcgMTIuODk0NiAxMS40ODA0IDEyLjcwNzEgMTEuMjkyOEMxMi41MTk2IDExLjEwNTMgMTIuMjY1MiAxMC45OTk5IDEyIDEwLjk5OTlDMTEuNzM0OCAxMC45OTk5IDExLjQ4MDQgMTEuMTA1MyAxMS4yOTI5IDExLjI5MjhDMTEuMTA1NCAxMS40ODA0IDExIDExLjczNDcgMTEgMTEuOTk5OUMxMSAxMi4yNjUyIDExLjEwNTQgMTIuNTE5NSAxMS4yOTI5IDEyLjcwNzFDMTEuNDgwNCAxMi44OTQ2IDExLjczNDggMTIuOTk5OSAxMiAxMi45OTk5WiIgZmlsbD0iYmxhY2siIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld2JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0zLjM0IDE2Ljk5OTlDMi45MTcyNyAxNi4yNjg5IDIuNTg4NjYgMTUuNDg3NCAyLjM2MiAxNC42NzM5QzIuODU1MzEgMTQuNDIzIDMuMjY5NTkgMTQuMDQwNiAzLjU1OTAzIDEzLjU2ODhDMy44NDg0NiAxMy4wOTcxIDQuMDAxNzYgMTIuNTU0NSA0LjAwMTk3IDEyLjAwMTFDNC4wMDIxOCAxMS40NDc2IDMuODQ5MjggMTAuOTA0OSAzLjU2MDIgMTAuNDMyOUMzLjI3MTEyIDkuOTYxIDIuODU3MTIgOS41NzgyMSAyLjM2NCA5LjMyNjk0QzIuODE2MDQgNy42OTI0MyAzLjY3NjczIDYuMTk5OSA0Ljg2NSA0Ljk4OTk0QzUuMzI5MDkgNS4yOTE2NyA1Ljg2NzYyIDUuNDU5MTEgNi40MjA5OCA1LjQ3MzczQzYuOTc0MzQgNS40ODgzNCA3LjUyMDk1IDUuMzQ5NTggOC4wMDAzMyA1LjA3Mjc4QzguNDc5NzEgNC43OTU5OCA4Ljg3MzE1IDQuMzkxOTQgOS4xMzcxMyAzLjkwNTM5QzkuNDAxMSAzLjQxODgzIDkuNTI1MzEgMi44Njg3MiA5LjQ5NiAyLjMxNTk0QzExLjEzODEgMS44OTE1NyAxMi44NjEyIDEuODkyMjYgMTQuNTAzIDIuMzE3OTVDMTQuNDc0IDIuODcwNzEgMTQuNTk4NCAzLjQyMDczIDE0Ljg2MjYgMy45MDcxNUMxNS4xMjY4IDQuMzkzNTcgMTUuNTIwNCA0Ljc5NzQyIDE1Ljk5OTggNS4wNzQwMUMxNi40NzkzIDUuMzUwNTkgMTcuMDI1OSA1LjQ4OTEzIDE3LjU3OTMgNS40NzQzQzE4LjEzMjYgNS40NTk0NiAxOC42NzEgNS4yOTE4MyAxOS4xMzUgNC45ODk5NEMxOS43MTQgNS41Nzk5NCAyMC4yMjggNi4yNTA5NSAyMC42NiA2Ljk5OTk1QzIxLjA5MyA3Ljc0ODk1IDIxLjQxNyA4LjUyOTk1IDIxLjYzOCA5LjMyNTk1QzIxLjE0NDcgOS41NzY4NSAyMC43MzA0IDkuOTU5MzIgMjAuNDQxIDEwLjQzMTFDMjAuMTUxNSAxMC45MDI4IDE5Ljk5ODIgMTEuNDQ1NCAxOS45OTggMTEuOTk4OEMxOS45OTc4IDEyLjU1MjMgMjAuMTUwNyAxMy4wOTUgMjAuNDM5OCAxMy41NjY5QzIwLjcyODkgMTQuMDM4OSAyMS4xNDI5IDE0LjQyMTcgMjEuNjM2IDE0LjY3MjlDMjEuMTg0IDE2LjMwNzUgMjAuMzIzMyAxNy44IDE5LjEzNSAxOS4wMDk5QzE4LjY3MDkgMTguNzA4MiAxOC4xMzI0IDE4LjU0MDggMTcuNTc5IDE4LjUyNjJDMTcuMDI1NyAxOC41MTE1IDE2LjQ3OSAxOC42NTAzIDE1Ljk5OTcgMTguOTI3MUMxNS41MjAzIDE5LjIwMzkgMTUuMTI2OCAxOS42MDc5IDE0Ljg2MjkgMjAuMDk0NUMxNC41OTg5IDIwLjU4MTEgMTQuNDc0NyAyMS4xMzEyIDE0LjUwNCAyMS42ODM5QzEyLjg2MTkgMjIuMTA4MyAxMS4xMzg4IDIyLjEwNzYgOS40OTcgMjEuNjgxOUM5LjUyNjA1IDIxLjEyOTIgOS40MDE2IDIwLjU3OTIgOS4xMzc0MiAyMC4wOTI3QzguODczMjQgMTkuNjA2MyA4LjQ3OTY0IDE5LjIwMjUgOC4wMDAxNyAxOC45MjU5QzcuNTIwNyAxOC42NDkzIDYuOTc0MDUgMTguNTEwOCA2LjQyMDczIDE4LjUyNTZDNS44Njc0IDE4LjU0MDQgNS4zMjg5NiAxOC43MDgxIDQuODY1IDE5LjAwOTlDNC4yNzM5OSAxOC40MDY5IDMuNzYxNTkgMTcuNzMxNSAzLjM0IDE2Ljk5OTlaTTkgMTcuMTk1OUMxMC4wNjU2IDE3LjgxMDYgMTAuODY2OCAxOC43OTcgMTEuMjUgMTkuOTY1OUMxMS43NDkgMjAuMDEyOSAxMi4yNSAyMC4wMTM5IDEyLjc0OSAxOS45NjY5QzEzLjEzMjQgMTguNzk3OCAxMy45MzQgMTcuODExNCAxNSAxNy4xOTY5QzE2LjA2NTIgMTYuNTgwNiAxNy4zMjA1IDE2LjM3OTQgMTguNTI1IDE2LjYzMTlDMTguODE1IDE2LjIyMzkgMTkuMDY1IDE1Ljc4ODkgMTkuMjczIDE1LjMzMzlDMTguNDUyNCAxNC40MTc0IDE3Ljk5OTEgMTMuMjMwMiAxOCAxMS45OTk5QzE4IDEwLjczOTkgMTguNDcgOS41NjI5NSAxOS4yNzMgOC42NjU5NUMxOS4wNjM1IDguMjExMDkgMTguODEyNSA3Ljc3NjU4IDE4LjUyMyA3LjM2Nzk1QzE3LjMxOTMgNy42MjAyNSAxNi4wNjQ4IDcuNDE5NDIgMTUgNi44MDM5NUMxMy45MzQ0IDYuMTg5MzIgMTMuMTMzMiA1LjIwMjkzIDEyLjc1IDQuMDMzOTRDMTIuMjUxIDMuOTg2OTQgMTEuNzUgMy45ODU5NCAxMS4yNTEgNC4wMzI5NEMxMC44Njc2IDUuMjAyMDkgMTAuMDY2IDYuMTg4NSA5IDYuODAyOTVDNy45MzQ3OCA3LjQxOTI2IDYuNjc5NDggNy42MjA0NiA1LjQ3NSA3LjM2Nzk1QzUuMTg1NTYgNy43NzYyMyA0LjkzNTEzIDguMjEwODEgNC43MjcgOC42NjU5NUM1LjU0NzU3IDkuNTgyNSA2LjAwMDg4IDEwLjc2OTcgNiAxMS45OTk5QzYgMTMuMjU5OSA1LjUzIDE0LjQzNjkgNC43MjcgMTUuMzMzOUM0LjkzNjQ3IDE1Ljc4ODggNS4xODc1NCAxNi4yMjMzIDUuNDc3IDE2LjYzMTlDNi42ODA3MiAxNi4zNzk2IDcuOTM1MjEgMTYuNTgwNSA5IDE3LjE5NTlaTTEyIDE0Ljk5OTlDMTEuMjA0NCAxNC45OTk5IDEwLjQ0MTMgMTQuNjgzOSA5Ljg3ODY4IDE0LjEyMTNDOS4zMTYwNyAxMy41NTg3IDkgMTIuNzk1NiA5IDExLjk5OTlDOSAxMS4yMDQzIDkuMzE2MDcgMTAuNDQxMiA5Ljg3ODY4IDkuODc4NjJDMTAuNDQxMyA5LjMxNjAyIDExLjIwNDQgOC45OTk5NSAxMiA4Ljk5OTk1QzEyLjc5NTYgOC45OTk5NSAxMy41NTg3IDkuMzE2MDIgMTQuMTIxMyA5Ljg3ODYyQzE0LjY4MzkgMTAuNDQxMiAxNSAxMS4yMDQzIDE1IDExLjk5OTlDMTUgMTIuNzk1NiAxNC42ODM5IDEzLjU1ODcgMTQuMTIxMyAxNC4xMjEzQzEzLjU1ODcgMTQuNjgzOSAxMi43OTU2IDE0Ljk5OTkgMTIgMTQuOTk5OVpNMTIgMTIuOTk5OUMxMi4yNjUyIDEyLjk5OTkgMTIuNTE5NiAxMi44OTQ2IDEyLjcwNzEgMTIuNzA3MUMxMi44OTQ2IDEyLjUxOTUgMTMgMTIuMjY1MiAxMyAxMS45OTk5QzEzIDExLjczNDcgMTIuODk0NiAxMS40ODA0IDEyLjcwNzEgMTEuMjkyOEMxMi41MTk2IDExLjEwNTMgMTIuMjY1MiAxMC45OTk5IDEyIDEwLjk5OTlDMTEuNzM0OCAxMC45OTk5IDExLjQ4MDQgMTEuMTA1MyAxMS4yOTI5IDExLjI5MjhDMTEuMTA1NCAxMS40ODA0IDExIDExLjczNDcgMTEgMTEuOTk5OUMxMSAxMi4yNjUyIDExLjEwNTQgMTIuNTE5NSAxMS4yOTI5IDEyLjcwNzFDMTEuNDgwNCAxMi44OTQ2IDExLjczNDggMTIuOTk5OSAxMiAxMi45OTk5WiIgZmlsbD0iYmxhY2siIC8{plus}Cjwvc3ZnPg==]
+Manage preferences]
++
+
+'''''
+* https://dev.to/report-abuse?billboard=240306[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMi4zODIgM2ExIDEgMCAwIDEgLjg5NC41NTNMMTQgNWg2YTEgMSAwIDAgMSAxIDF2MTFhMSAxIDAgMCAxLTEgMWgtNi4zODJhMSAxIDAgMCAxLS44OTQtLjU1M0wxMiAxNkg1djZIM1YzaDkuMzgyWm0tLjYxOCAySDV2OWg4LjIzNmwxIDJIMTlWN2gtNi4yMzZsLTEtMloiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMi4zODIgM2ExIDEgMCAwIDEgLjg5NC41NTNMMTQgNWg2YTEgMSAwIDAgMSAxIDF2MTFhMSAxIDAgMCAxLTEgMWgtNi4zODJhMSAxIDAgMCAxLS44OTQtLjU1M0wxMiAxNkg1djZIM1YzaDkuMzgyWm0tLjYxOCAySDV2OWg4LjIzNmwxIDJIMTlWN2gtNi4yMzZsLTEtMloiIC8{plus}Cjwvc3ZnPg==]
+Report billboard]
+
+https://blog.sentry.io/smarter-debugging-sentry-mcp-cursor/?utm_source=devto&utm_medium=paid-community&utm_campaign=smarter-debugging-mcp-cursor-blog&bb=240306[image:./index_files/https___images.ctfassets.net_em6l9zw4tzag_1GYxa0VJ4TOkpKyV4TaIur_34e4f6e2f1068894f9d0738008646289_mcp-config.png_w=1500&h=1003&q=50&fm=webp[Sentry
+image,width=1500,height=1003]]
+
+=== https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#smarter-debugging-with-sentry-mcp-and-cursor[] https://blog.sentry.io/smarter-debugging-sentry-mcp-cursor/?utm_source=devto&utm_medium=paid-community&utm_campaign=smarter-debugging-mcp-cursor-blog&bb=240306[Smarter debugging with Sentry MCP and Cursor]
+
+No more copying and pasting error messages, logs, or trying to describe
+your distributed tracing setup or stack traces in chat. MCP can
+investigate real issues, understand their impact, and suggest fixes
+based on the actual production context.
+
+https://blog.sentry.io/smarter-debugging-sentry-mcp-cursor/?utm_source=devto&utm_medium=paid-community&utm_campaign=smarter-debugging-mcp-cursor-blog&bb=240306[Read
+more →]
+
+Read More
+
+[[comments]]
+=== Top comments [.js-comments-count]#(1)#
+
+[[comment-subscription]]
+[.crayons-btn .crayons-btn--outlined]#Subscribe#
+
+[[billboard_delay_trigger]]
+
+[[comments-container]]
+[[response-templates-data]]
+
+[.crayons-avatar .m:crayons-avatar--l .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_8j7kvp660rqzt99zui8e.png[pic,width=32,height=32]
+#
+
+Personal
+
+Trusted User
+
+https://dev.to/settings/response-templates[Create template]
+
+Templates let you quickly answer FAQs or store snippets for re-use.
+
+[[preview-div]]
+
+Submit
+
+Preview
+
+https://dev.to/404.html[Dismiss]
+
+[[toggle-code-of-conduct-checkbox]]
+
+[[comment-trees-container]]
+[.m:mx-1 .inline-block .align-middle]#
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYW1pMzd5cjhxazYxc2ZyMXEzMXk1anNudXBzNGVoODEiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYW1pMzd5cjhxazYxc2ZyMXEzMXk1anNudXBzNGVoODEiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYW1pMzd5cjhxazYxc2ZyMXEzMXk1anNudXBzNGVoODEiIGNsYXNzPSJjcmF5b25zLWljb24gZXhwYW5kZWQiPjx0aXRsZSBpZD0iYW1pMzd5cjhxazYxc2ZyMXEzMXk1anNudXBzNGVoODEiPkNvbGxhcHNlPC90aXRsZT4KICAgIDxwYXRoIGQ9Ik0xMiAxMC42NzdMOCA2LjkzNSA5IDZsMyAyLjgwN0wxNSA2bDEgLjkzNS00IDMuNzQyem0wIDQuNTE3TDkgMThsLTEtLjkzNSA0LTMuNzQyIDQgMy43NDItMSAuOTM0LTMtMi44MDV6IiAvPgo8L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWdzc2I0Z3pldDN3b2h0bGh1dDFyNG1icDY4ZDBwcXoiIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImFnc3NiNGd6ZXQzd29odGxodXQxcjRtYnA2OGQwcHF6Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWdzc2I0Z3pldDN3b2h0bGh1dDFyNG1icDY4ZDBwcXoiIGNsYXNzPSJjcmF5b25zLWljb24gY29sbGFwc2VkIj48dGl0bGUgaWQ9ImFnc3NiNGd6ZXQzd29odGxodXQxcjRtYnA2OGQwcHF6Ij5FeHBhbmQ8L3RpdGxlPgogICAgPHBhdGggZD0iTTEyIDE4bC00LTMuNzcxIDEtLjk0MyAzIDIuODI5IDMtMi44MjkgMSAuOTQzTDEyIDE4em0wLTEwLjExNWwtMyAyLjgyOS0xLS45NDNMMTIgNmw0IDMuNzcxLTEgLjk0Mi0zLTIuODI4eiIgLz4KPC9zdmc{plus}]
+# [.js-collapse-comment-content .inline-block .align-middle]##
+
+[[comment-node-1316580]]
+[#comment-2mnfi]# #
+
+https://dev.to/walterwhitw[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_2486077_572e8d9c-60b0-47db-81aa-b443a31d51eb.png[walterwhitw
+profile image,width=32,height=32]]
+
+https://dev.to/walterwhitw[[.js-comment-username]# Walter #]
+
+Walter
+
+[[comment-profile-preview-content-1316580]]
+https://dev.to/walterwhitw[[.crayons-avatar .crayons-avatar--xl .mr-2 .shrink-0]#
+image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_2486077_572e8d9c-60b0-47db-81aa-b443a31d51eb.png[./index++_++files/https++___++dev-to-uploads.s3.us-east-2.amazonaws(1).com++_++uploads++_++user++_++profile++_++image++_++2486077++_++572e8d9c-60b0-47db-81aa-b443a31d51eb]
+# [.crayons-link .crayons-subtitle-2 .mt-5]# Walter #]
+
+Follow
+
+I am a developer
+
+* {blank}
++
+Joined
++
+26. Nov. 2024
+
+[.color-base-30 .px-2 .m:pl-0]#•#
+https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#comment-2mnfi[3.
+Apr. 25]
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYThkZ3dkdTV6YTMyamtzYnBqcGQ5anA4N2FrMmc4eHEiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI+PHRpdGxlIGlkPSJhOGRnd2R1NXphMzJqa3NicGpwZDlqcDg3YWsyZzh4cSI+RHJvcGRvd24gbWVudTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYThkZ3dkdTV6YTMyamtzYnBqcGQ5anA4N2FrMmc4eHEiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI{plus}PHRpdGxlIGlkPSJhOGRnd2R1NXphMzJqa3NicGpwZDlqcDg3YWsyZzh4cSI{plus}RHJvcGRvd24gbWVudTwvdGl0bGU{plus}CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8{plus}Cjwvc3ZnPg==]
+
+[[comment-dropdown-1316580]]
+* https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#comment-2mnfi[Copy
+link]
+* {blank}
+* Hide
+* {blank}
+* https://dev.to/report-abuse?url=https://dev.to/walterwhitw/comment/2mnfi[Report
+abuse]
+* {blank}
+
+Thank u for the guide yes I love shooting games too that's why I use
+https://ishooter.pro/[target practice app] to practice for shooting at
+home its so fun
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFnaGdsNms0c2YwdDBpMGU1bjBycHNzdG5ucDk4OTUxIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWdoZ2w2azRzZjB0MGkwZTVuMHJwc3N0bm5wOTg5NTEiPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFnaGdsNms0c2YwdDBpMGU1bjBycHNzdG5ucDk4OTUxIiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWdoZ2w2azRzZjB0MGkwZTVuMHJwc3N0bm5wOTg5NTEiPkxpa2UgY29tbWVudDogPC90aXRsZT48cGF0aCBkPSJNMTguODg0IDEyLjU5NWwuMDEuMDExTDEyIDE5LjVsLTYuODk0LTYuODk0LjAxLS4wMUE0Ljg3NSA0Ljg3NSAwIDAxMTIgNS43M2E0Ljg3NSA0Ljg3NSAwIDAxNi44ODQgNi44NjV6TTYuNDMxIDcuMDM3YTMuMzc1IDMuMzc1IDAgMDAwIDQuNzczTDEyIDE3LjM4bDUuNTY5LTUuNTY5YTMuMzc1IDMuMzc1IDAgMTAtNC43NzMtNC43NzNMOS42MTMgMTAuMjJsLTEuMDYtMS4wNjIgMi4zNzEtMi4zNzJhMy4zNzUgMy4zNzUgMCAwMC00LjQ5Mi4yNXYuMDAxeiIgLz48L3N2Zz4=]
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWNpaG9qZmVlcGFhbnYzMGtnMGNlbHA4dHppcTU3MjMiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImFjaWhvamZlZXBhYW52MzBrZzBjZWxwOHR6aXE1NzIzIj5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU+CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYWNpaG9qZmVlcGFhbnYzMGtnMGNlbHA4dHppcTU3MjMiIGNsYXNzPSJjcmF5b25zLWljb24gY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24tLWxpa2UgcmVhY3Rpb24taWNvbiByZWFjdGVkIj48dGl0bGUgaWQ9ImFjaWhvamZlZXBhYW52MzBrZzBjZWxwOHR6aXE1NzIzIj5MaWtlIGNvbW1lbnQ6IDwvdGl0bGU{plus}CiAgICA8cGF0aCBkPSJNNS4xMTYgMTIuNTk1YTQuODc1IDQuODc1IDAgMDE1LjU2LTcuNjhoLS4wMDJMNy40OTMgOC4wOThsMS4wNiAxLjA2MSAzLjE4MS0zLjE4MmE0Ljg3NSA0Ljg3NSAwIDAxNi44OTUgNi44OTRMMTIgMTkuNWwtNi44OTQtNi44OTQuMDEtLjAxeiIgLz4KPC9zdmc{plus}]
+[.reactions-count]##1##[.reactions-label .hidden .m:inline-block]## like##
+[.crayons-tooltip__content]# Like #
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFiMm9odXd2NGI4cTdmenRocnIwMTlqZmI1Z2F4bjc1IiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWIyb2h1d3Y0YjhxN2Z6dGhycjAxOWpmYjVnYXhuNzUiPkNvbW1lbnQgYnV0dG9uPC90aXRsZT48cGF0aCBkPSJNMTAuNSA1aDNhNiA2IDAgMTEwIDEydjIuNjI1Yy0zLjc1LTEuNS05LTMuNzUtOS04LjYyNWE2IDYgMCAwMTYtNnpNMTIgMTUuNWgxLjVhNC41MDEgNC41MDEgMCAwMDEuNzIyLTguNjU3QTQuNSA0LjUgMCAwMDEzLjUgNi41aC0zQTQuNSA0LjUgMCAwMDYgMTFjMCAyLjcwNyAxLjg0NiA0LjQ3NSA2IDYuMzZWMTUuNXoiIC8+PC9zdmc+[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9ImFiMm9odXd2NGI4cTdmenRocnIwMTlqZmI1Z2F4bjc1IiBjbGFzcz0iY3JheW9ucy1pY29uIHJlYWN0aW9uLWljb24gbm90LXJlYWN0ZWQiPjx0aXRsZSBpZD0iYWIyb2h1d3Y0YjhxN2Z6dGhycjAxOWpmYjVnYXhuNzUiPkNvbW1lbnQgYnV0dG9uPC90aXRsZT48cGF0aCBkPSJNMTAuNSA1aDNhNiA2IDAgMTEwIDEydjIuNjI1Yy0zLjc1LTEuNS05LTMuNzUtOS04LjYyNWE2IDYgMCAwMTYtNnpNMTIgMTUuNWgxLjVhNC41MDEgNC41MDEgMCAwMDEuNzIyLTguNjU3QTQuNSA0LjUgMCAwMDEzLjUgNi41aC0zQTQuNSA0LjUgMCAwMDYgMTFjMCAyLjcwNyAxLjg0NiA0LjQ3NSA2IDYuMzZWMTUuNXoiIC8{plus}PC9zdmc{plus}]
+[.hidden .m:inline-block]#Reply#
+
+Some comments may only be visible to logged-in visitors.
+https://dev.to/enter[Sign in] to view all comments.
+
+https://dev.to/code-of-conduct[Code of Conduct] [.opacity-25 .px-2]#•#
+https://dev.to/report-abuse[Report abuse]
+
+[[hide-comments-modal]]
+Are you sure you want to hide this comment? It will become hidden in
+your post, but will still be visible via the comment's
+https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#[permalink].
+
+Hide child comments as well
+
+Confirm
+
+For further actions, you may consider blocking this person and/or
+https://dev.to/report-abuse[reporting abuse]
+
+https://dev.to/devteam[image:./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_organization_profile_image_1_d908a186-5651-4a5a-9f76-15200bc6801f.jpg[profile,width=20,height=20]]
+
+The DEV Team
+
+[.crayons-bb__indicator .c-indicator .c-indicator--subtle .c-indicator--round .fs-2xs .fw-medium .ml-2 .py-1 .px-2]#Promoted#
+
+image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTJsNDE3M2Jza3U4M21ydzBlZTYza2VzdXByZzVzajgiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI+PHRpdGxlIGlkPSJhMmw0MTczYnNrdTgzbXJ3MGVlNjNrZXN1cHJnNXNqOCI+RHJvcGRvd24gbWVudTwvdGl0bGU+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld2JveD0iMCAwIDI0IDI0IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0iYTJsNDE3M2Jza3U4M21ydzBlZTYza2VzdXByZzVzajgiIGNsYXNzPSJjcmF5b25zLWljb24gcG9pbnRlci1ldmVudHMtbm9uZSI{plus}PHRpdGxlIGlkPSJhMmw0MTczYnNrdTgzbXJ3MGVlNjNrZXN1cHJnNXNqOCI{plus}RHJvcGRvd24gbWVudTwvdGl0bGU{plus}CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTguMjUgMTJhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTUuMjUgMGExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptMy43NSAxLjVhMS41IDEuNSAwIDEwMC0zIDEuNSAxLjUgMCAwMDAgM3oiIC8{plus}Cjwvc3ZnPg==]
+
+[[sponsorship-dropdown-263769]]
+* https://dev.to/billboards[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMiAyMkM2LjQ3NyAyMiAyIDE3LjUyMyAyIDEyUzYuNDc3IDIgMTIgMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHptMC0yYTggOCAwIDEwMC0xNiA4IDggMCAwMDAgMTZ6TTExIDdoMnYyaC0yVjd6bTAgNGgydjZoLTJ2LTZ6IiAvPgo8L3N2Zz4=[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMiAyMkM2LjQ3NyAyMiAyIDE3LjUyMyAyIDEyUzYuNDc3IDIgMTIgMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHptMC0yYTggOCAwIDEwMC0xNiA4IDggMCAwMDAgMTZ6TTExIDdoMnYyaC0yVjd6bTAgNGgydjZoLTJ2LTZ6IiAvPgo8L3N2Zz4=]
+What's a billboard?]
+* https://dev.to/settings/customization#sponsors[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld2JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0zLjM0IDE2Ljk5OTlDMi45MTcyNyAxNi4yNjg5IDIuNTg4NjYgMTUuNDg3NCAyLjM2MiAxNC42NzM5QzIuODU1MzEgMTQuNDIzIDMuMjY5NTkgMTQuMDQwNiAzLjU1OTAzIDEzLjU2ODhDMy44NDg0NiAxMy4wOTcxIDQuMDAxNzYgMTIuNTU0NSA0LjAwMTk3IDEyLjAwMTFDNC4wMDIxOCAxMS40NDc2IDMuODQ5MjggMTAuOTA0OSAzLjU2MDIgMTAuNDMyOUMzLjI3MTEyIDkuOTYxIDIuODU3MTIgOS41NzgyMSAyLjM2NCA5LjMyNjk0QzIuODE2MDQgNy42OTI0MyAzLjY3NjczIDYuMTk5OSA0Ljg2NSA0Ljk4OTk0QzUuMzI5MDkgNS4yOTE2NyA1Ljg2NzYyIDUuNDU5MTEgNi40MjA5OCA1LjQ3MzczQzYuOTc0MzQgNS40ODgzNCA3LjUyMDk1IDUuMzQ5NTggOC4wMDAzMyA1LjA3Mjc4QzguNDc5NzEgNC43OTU5OCA4Ljg3MzE1IDQuMzkxOTQgOS4xMzcxMyAzLjkwNTM5QzkuNDAxMSAzLjQxODgzIDkuNTI1MzEgMi44Njg3MiA5LjQ5NiAyLjMxNTk0QzExLjEzODEgMS44OTE1NyAxMi44NjEyIDEuODkyMjYgMTQuNTAzIDIuMzE3OTVDMTQuNDc0IDIuODcwNzEgMTQuNTk4NCAzLjQyMDczIDE0Ljg2MjYgMy45MDcxNUMxNS4xMjY4IDQuMzkzNTcgMTUuNTIwNCA0Ljc5NzQyIDE1Ljk5OTggNS4wNzQwMUMxNi40NzkzIDUuMzUwNTkgMTcuMDI1OSA1LjQ4OTEzIDE3LjU3OTMgNS40NzQzQzE4LjEzMjYgNS40NTk0NiAxOC42NzEgNS4yOTE4MyAxOS4xMzUgNC45ODk5NEMxOS43MTQgNS41Nzk5NCAyMC4yMjggNi4yNTA5NSAyMC42NiA2Ljk5OTk1QzIxLjA5MyA3Ljc0ODk1IDIxLjQxNyA4LjUyOTk1IDIxLjYzOCA5LjMyNTk1QzIxLjE0NDcgOS41NzY4NSAyMC43MzA0IDkuOTU5MzIgMjAuNDQxIDEwLjQzMTFDMjAuMTUxNSAxMC45MDI4IDE5Ljk5ODIgMTEuNDQ1NCAxOS45OTggMTEuOTk4OEMxOS45OTc4IDEyLjU1MjMgMjAuMTUwNyAxMy4wOTUgMjAuNDM5OCAxMy41NjY5QzIwLjcyODkgMTQuMDM4OSAyMS4xNDI5IDE0LjQyMTcgMjEuNjM2IDE0LjY3MjlDMjEuMTg0IDE2LjMwNzUgMjAuMzIzMyAxNy44IDE5LjEzNSAxOS4wMDk5QzE4LjY3MDkgMTguNzA4MiAxOC4xMzI0IDE4LjU0MDggMTcuNTc5IDE4LjUyNjJDMTcuMDI1NyAxOC41MTE1IDE2LjQ3OSAxOC42NTAzIDE1Ljk5OTcgMTguOTI3MUMxNS41MjAzIDE5LjIwMzkgMTUuMTI2OCAxOS42MDc5IDE0Ljg2MjkgMjAuMDk0NUMxNC41OTg5IDIwLjU4MTEgMTQuNDc0NyAyMS4xMzEyIDE0LjUwNCAyMS42ODM5QzEyLjg2MTkgMjIuMTA4MyAxMS4xMzg4IDIyLjEwNzYgOS40OTcgMjEuNjgxOUM5LjUyNjA1IDIxLjEyOTIgOS40MDE2IDIwLjU3OTIgOS4xMzc0MiAyMC4wOTI3QzguODczMjQgMTkuNjA2MyA4LjQ3OTY0IDE5LjIwMjUgOC4wMDAxNyAxOC45MjU5QzcuNTIwNyAxOC42NDkzIDYuOTc0MDUgMTguNTEwOCA2LjQyMDczIDE4LjUyNTZDNS44Njc0IDE4LjU0MDQgNS4zMjg5NiAxOC43MDgxIDQuODY1IDE5LjAwOTlDNC4yNzM5OSAxOC40MDY5IDMuNzYxNTkgMTcuNzMxNSAzLjM0IDE2Ljk5OTlaTTkgMTcuMTk1OUMxMC4wNjU2IDE3LjgxMDYgMTAuODY2OCAxOC43OTcgMTEuMjUgMTkuOTY1OUMxMS43NDkgMjAuMDEyOSAxMi4yNSAyMC4wMTM5IDEyLjc0OSAxOS45NjY5QzEzLjEzMjQgMTguNzk3OCAxMy45MzQgMTcuODExNCAxNSAxNy4xOTY5QzE2LjA2NTIgMTYuNTgwNiAxNy4zMjA1IDE2LjM3OTQgMTguNTI1IDE2LjYzMTlDMTguODE1IDE2LjIyMzkgMTkuMDY1IDE1Ljc4ODkgMTkuMjczIDE1LjMzMzlDMTguNDUyNCAxNC40MTc0IDE3Ljk5OTEgMTMuMjMwMiAxOCAxMS45OTk5QzE4IDEwLjczOTkgMTguNDcgOS41NjI5NSAxOS4yNzMgOC42NjU5NUMxOS4wNjM1IDguMjExMDkgMTguODEyNSA3Ljc3NjU4IDE4LjUyMyA3LjM2Nzk1QzE3LjMxOTMgNy42MjAyNSAxNi4wNjQ4IDcuNDE5NDIgMTUgNi44MDM5NUMxMy45MzQ0IDYuMTg5MzIgMTMuMTMzMiA1LjIwMjkzIDEyLjc1IDQuMDMzOTRDMTIuMjUxIDMuOTg2OTQgMTEuNzUgMy45ODU5NCAxMS4yNTEgNC4wMzI5NEMxMC44Njc2IDUuMjAyMDkgMTAuMDY2IDYuMTg4NSA5IDYuODAyOTVDNy45MzQ3OCA3LjQxOTI2IDYuNjc5NDggNy42MjA0NiA1LjQ3NSA3LjM2Nzk1QzUuMTg1NTYgNy43NzYyMyA0LjkzNTEzIDguMjEwODEgNC43MjcgOC42NjU5NUM1LjU0NzU3IDkuNTgyNSA2LjAwMDg4IDEwLjc2OTcgNiAxMS45OTk5QzYgMTMuMjU5OSA1LjUzIDE0LjQzNjkgNC43MjcgMTUuMzMzOUM0LjkzNjQ3IDE1Ljc4ODggNS4xODc1NCAxNi4yMjMzIDUuNDc3IDE2LjYzMTlDNi42ODA3MiAxNi4zNzk2IDcuOTM1MjEgMTYuNTgwNSA5IDE3LjE5NTlaTTEyIDE0Ljk5OTlDMTEuMjA0NCAxNC45OTk5IDEwLjQ0MTMgMTQuNjgzOSA5Ljg3ODY4IDE0LjEyMTNDOS4zMTYwNyAxMy41NTg3IDkgMTIuNzk1NiA5IDExLjk5OTlDOSAxMS4yMDQzIDkuMzE2MDcgMTAuNDQxMiA5Ljg3ODY4IDkuODc4NjJDMTAuNDQxMyA5LjMxNjAyIDExLjIwNDQgOC45OTk5NSAxMiA4Ljk5OTk1QzEyLjc5NTYgOC45OTk5NSAxMy41NTg3IDkuMzE2MDIgMTQuMTIxMyA5Ljg3ODYyQzE0LjY4MzkgMTAuNDQxMiAxNSAxMS4yMDQzIDE1IDExLjk5OTlDMTUgMTIuNzk1NiAxNC42ODM5IDEzLjU1ODcgMTQuMTIxMyAxNC4xMjEzQzEzLjU1ODcgMTQuNjgzOSAxMi43OTU2IDE0Ljk5OTkgMTIgMTQuOTk5OVpNMTIgMTIuOTk5OUMxMi4yNjUyIDEyLjk5OTkgMTIuNTE5NiAxMi44OTQ2IDEyLjcwNzEgMTIuNzA3MUMxMi44OTQ2IDEyLjUxOTUgMTMgMTIuMjY1MiAxMyAxMS45OTk5QzEzIDExLjczNDcgMTIuODk0NiAxMS40ODA0IDEyLjcwNzEgMTEuMjkyOEMxMi41MTk2IDExLjEwNTMgMTIuMjY1MiAxMC45OTk5IDEyIDEwLjk5OTlDMTEuNzM0OCAxMC45OTk5IDExLjQ4MDQgMTEuMTA1MyAxMS4yOTI5IDExLjI5MjhDMTEuMTA1NCAxMS40ODA0IDExIDExLjczNDcgMTEgMTEuOTk5OUMxMSAxMi4yNjUyIDExLjEwNTQgMTIuNTE5NSAxMS4yOTI5IDEyLjcwNzFDMTEuNDgwNCAxMi44OTQ2IDExLjczNDggMTIuOTk5OSAxMiAxMi45OTk5WiIgZmlsbD0iYmxhY2siIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld2JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0zLjM0IDE2Ljk5OTlDMi45MTcyNyAxNi4yNjg5IDIuNTg4NjYgMTUuNDg3NCAyLjM2MiAxNC42NzM5QzIuODU1MzEgMTQuNDIzIDMuMjY5NTkgMTQuMDQwNiAzLjU1OTAzIDEzLjU2ODhDMy44NDg0NiAxMy4wOTcxIDQuMDAxNzYgMTIuNTU0NSA0LjAwMTk3IDEyLjAwMTFDNC4wMDIxOCAxMS40NDc2IDMuODQ5MjggMTAuOTA0OSAzLjU2MDIgMTAuNDMyOUMzLjI3MTEyIDkuOTYxIDIuODU3MTIgOS41NzgyMSAyLjM2NCA5LjMyNjk0QzIuODE2MDQgNy42OTI0MyAzLjY3NjczIDYuMTk5OSA0Ljg2NSA0Ljk4OTk0QzUuMzI5MDkgNS4yOTE2NyA1Ljg2NzYyIDUuNDU5MTEgNi40MjA5OCA1LjQ3MzczQzYuOTc0MzQgNS40ODgzNCA3LjUyMDk1IDUuMzQ5NTggOC4wMDAzMyA1LjA3Mjc4QzguNDc5NzEgNC43OTU5OCA4Ljg3MzE1IDQuMzkxOTQgOS4xMzcxMyAzLjkwNTM5QzkuNDAxMSAzLjQxODgzIDkuNTI1MzEgMi44Njg3MiA5LjQ5NiAyLjMxNTk0QzExLjEzODEgMS44OTE1NyAxMi44NjEyIDEuODkyMjYgMTQuNTAzIDIuMzE3OTVDMTQuNDc0IDIuODcwNzEgMTQuNTk4NCAzLjQyMDczIDE0Ljg2MjYgMy45MDcxNUMxNS4xMjY4IDQuMzkzNTcgMTUuNTIwNCA0Ljc5NzQyIDE1Ljk5OTggNS4wNzQwMUMxNi40NzkzIDUuMzUwNTkgMTcuMDI1OSA1LjQ4OTEzIDE3LjU3OTMgNS40NzQzQzE4LjEzMjYgNS40NTk0NiAxOC42NzEgNS4yOTE4MyAxOS4xMzUgNC45ODk5NEMxOS43MTQgNS41Nzk5NCAyMC4yMjggNi4yNTA5NSAyMC42NiA2Ljk5OTk1QzIxLjA5MyA3Ljc0ODk1IDIxLjQxNyA4LjUyOTk1IDIxLjYzOCA5LjMyNTk1QzIxLjE0NDcgOS41NzY4NSAyMC43MzA0IDkuOTU5MzIgMjAuNDQxIDEwLjQzMTFDMjAuMTUxNSAxMC45MDI4IDE5Ljk5ODIgMTEuNDQ1NCAxOS45OTggMTEuOTk4OEMxOS45OTc4IDEyLjU1MjMgMjAuMTUwNyAxMy4wOTUgMjAuNDM5OCAxMy41NjY5QzIwLjcyODkgMTQuMDM4OSAyMS4xNDI5IDE0LjQyMTcgMjEuNjM2IDE0LjY3MjlDMjEuMTg0IDE2LjMwNzUgMjAuMzIzMyAxNy44IDE5LjEzNSAxOS4wMDk5QzE4LjY3MDkgMTguNzA4MiAxOC4xMzI0IDE4LjU0MDggMTcuNTc5IDE4LjUyNjJDMTcuMDI1NyAxOC41MTE1IDE2LjQ3OSAxOC42NTAzIDE1Ljk5OTcgMTguOTI3MUMxNS41MjAzIDE5LjIwMzkgMTUuMTI2OCAxOS42MDc5IDE0Ljg2MjkgMjAuMDk0NUMxNC41OTg5IDIwLjU4MTEgMTQuNDc0NyAyMS4xMzEyIDE0LjUwNCAyMS42ODM5QzEyLjg2MTkgMjIuMTA4MyAxMS4xMzg4IDIyLjEwNzYgOS40OTcgMjEuNjgxOUM5LjUyNjA1IDIxLjEyOTIgOS40MDE2IDIwLjU3OTIgOS4xMzc0MiAyMC4wOTI3QzguODczMjQgMTkuNjA2MyA4LjQ3OTY0IDE5LjIwMjUgOC4wMDAxNyAxOC45MjU5QzcuNTIwNyAxOC42NDkzIDYuOTc0MDUgMTguNTEwOCA2LjQyMDczIDE4LjUyNTZDNS44Njc0IDE4LjU0MDQgNS4zMjg5NiAxOC43MDgxIDQuODY1IDE5LjAwOTlDNC4yNzM5OSAxOC40MDY5IDMuNzYxNTkgMTcuNzMxNSAzLjM0IDE2Ljk5OTlaTTkgMTcuMTk1OUMxMC4wNjU2IDE3LjgxMDYgMTAuODY2OCAxOC43OTcgMTEuMjUgMTkuOTY1OUMxMS43NDkgMjAuMDEyOSAxMi4yNSAyMC4wMTM5IDEyLjc0OSAxOS45NjY5QzEzLjEzMjQgMTguNzk3OCAxMy45MzQgMTcuODExNCAxNSAxNy4xOTY5QzE2LjA2NTIgMTYuNTgwNiAxNy4zMjA1IDE2LjM3OTQgMTguNTI1IDE2LjYzMTlDMTguODE1IDE2LjIyMzkgMTkuMDY1IDE1Ljc4ODkgMTkuMjczIDE1LjMzMzlDMTguNDUyNCAxNC40MTc0IDE3Ljk5OTEgMTMuMjMwMiAxOCAxMS45OTk5QzE4IDEwLjczOTkgMTguNDcgOS41NjI5NSAxOS4yNzMgOC42NjU5NUMxOS4wNjM1IDguMjExMDkgMTguODEyNSA3Ljc3NjU4IDE4LjUyMyA3LjM2Nzk1QzE3LjMxOTMgNy42MjAyNSAxNi4wNjQ4IDcuNDE5NDIgMTUgNi44MDM5NUMxMy45MzQ0IDYuMTg5MzIgMTMuMTMzMiA1LjIwMjkzIDEyLjc1IDQuMDMzOTRDMTIuMjUxIDMuOTg2OTQgMTEuNzUgMy45ODU5NCAxMS4yNTEgNC4wMzI5NEMxMC44Njc2IDUuMjAyMDkgMTAuMDY2IDYuMTg4NSA5IDYuODAyOTVDNy45MzQ3OCA3LjQxOTI2IDYuNjc5NDggNy42MjA0NiA1LjQ3NSA3LjM2Nzk1QzUuMTg1NTYgNy43NzYyMyA0LjkzNTEzIDguMjEwODEgNC43MjcgOC42NjU5NUM1LjU0NzU3IDkuNTgyNSA2LjAwMDg4IDEwLjc2OTcgNiAxMS45OTk5QzYgMTMuMjU5OSA1LjUzIDE0LjQzNjkgNC43MjcgMTUuMzMzOUM0LjkzNjQ3IDE1Ljc4ODggNS4xODc1NCAxNi4yMjMzIDUuNDc3IDE2LjYzMTlDNi42ODA3MiAxNi4zNzk2IDcuOTM1MjEgMTYuNTgwNSA5IDE3LjE5NTlaTTEyIDE0Ljk5OTlDMTEuMjA0NCAxNC45OTk5IDEwLjQ0MTMgMTQuNjgzOSA5Ljg3ODY4IDE0LjEyMTNDOS4zMTYwNyAxMy41NTg3IDkgMTIuNzk1NiA5IDExLjk5OTlDOSAxMS4yMDQzIDkuMzE2MDcgMTAuNDQxMiA5Ljg3ODY4IDkuODc4NjJDMTAuNDQxMyA5LjMxNjAyIDExLjIwNDQgOC45OTk5NSAxMiA4Ljk5OTk1QzEyLjc5NTYgOC45OTk5NSAxMy41NTg3IDkuMzE2MDIgMTQuMTIxMyA5Ljg3ODYyQzE0LjY4MzkgMTAuNDQxMiAxNSAxMS4yMDQzIDE1IDExLjk5OTlDMTUgMTIuNzk1NiAxNC42ODM5IDEzLjU1ODcgMTQuMTIxMyAxNC4xMjEzQzEzLjU1ODcgMTQuNjgzOSAxMi43OTU2IDE0Ljk5OTkgMTIgMTQuOTk5OVpNMTIgMTIuOTk5OUMxMi4yNjUyIDEyLjk5OTkgMTIuNTE5NiAxMi44OTQ2IDEyLjcwNzEgMTIuNzA3MUMxMi44OTQ2IDEyLjUxOTUgMTMgMTIuMjY1MiAxMyAxMS45OTk5QzEzIDExLjczNDcgMTIuODk0NiAxMS40ODA0IDEyLjcwNzEgMTEuMjkyOEMxMi41MTk2IDExLjEwNTMgMTIuMjY1MiAxMC45OTk5IDEyIDEwLjk5OTlDMTEuNzM0OCAxMC45OTk5IDExLjQ4MDQgMTEuMTA1MyAxMS4yOTI5IDExLjI5MjhDMTEuMTA1NCAxMS40ODA0IDExIDExLjczNDcgMTEgMTEuOTk5OUMxMSAxMi4yNjUyIDExLjEwNTQgMTIuNTE5NSAxMS4yOTI5IDEyLjcwNzFDMTEuNDgwNCAxMi44OTQ2IDExLjczNDggMTIuOTk5OSAxMiAxMi45OTk5WiIgZmlsbD0iYmxhY2siIC8{plus}Cjwvc3ZnPg==]
+Manage preferences]
++
+
+'''''
+* https://dev.to/report-abuse?billboard=263769[image:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMi4zODIgM2ExIDEgMCAwIDEgLjg5NC41NTNMMTQgNWg2YTEgMSAwIDAgMSAxIDF2MTFhMSAxIDAgMCAxLTEgMWgtNi4zODJhMSAxIDAgMCAxLS44OTQtLjU1M0wxMiAxNkg1djZIM1YzaDkuMzgyWm0tLjYxOCAySDV2OWg4LjIzNmwxIDJIMTlWN2gtNi4yMzZsLTEtMloiIC8+Cjwvc3ZnPg==[data:image/svg{plus}xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzcz0iY3JheW9ucy1pY29uIGMtYnRuX19pY29uIj4KICAgIDxwYXRoIGQ9Ik0xMi4zODIgM2ExIDEgMCAwIDEgLjg5NC41NTNMMTQgNWg2YTEgMSAwIDAgMSAxIDF2MTFhMSAxIDAgMCAxLTEgMWgtNi4zODJhMSAxIDAgMCAxLS44OTQtLjU1M0wxMiAxNkg1djZIM1YzaDkuMzgyWm0tLjYxOCAySDV2OWg4LjIzNmwxIDJIMTlWN2gtNi4yMzZsLTEtMloiIC8{plus}Cjwvc3ZnPg==]
+Report billboard]
+
+https://dev.to/googleai/i-built-a-native-android-app-in-an-afternoon-and-ive-never-written-a-line-of-kotlin-20d6?bb=263769[image:./index_files/https___i.imgur.com_1iJlrjG.png[Google
+article image,width=559,height=312]]
+
+=== https://dev.to/abagames/shooting-games-shoot-and-do-something-33cd#i-built-a-native-android-app-in-an-afternoon-and-ive-never-written-a-line-of-kotlin[] https://dev.to/googleai/i-built-a-native-android-app-in-an-afternoon-and-ive-never-written-a-line-of-kotlin-20d6?bb=263769[I built a native Android app in an afternoon&#44; and I've never written a line of Kotlin]
+
+I’ve always thought building a mobile app required climbing a massive
+learning curve just to get a basic environment set up. To test that
+theory, I tried building my very first Android app using Google AI
+Studio.
+
+Five minutes later, I had a working prototype.
+
+https://dev.to/googleai/i-built-a-native-android-app-in-an-afternoon-and-ive-never-written-a-line-of-kotlin-20d6?bb=263769[Read
+more →]

@@ -1,0 +1,2292 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh -->
+<html lang="en" class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Making Small Games, Which Is Fun in Itself - DEV Community</title>
+    
+    <link rel="preload" href="https://dev.to/reactions?article_id=1624858" as="fetch" crossorigin="same-origin">
+    <link rel="canonical" href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh">
+    <meta name="description" content="Creating small games is an enjoyable endeavor in itself. So what constitutes a small game? According... Tagged with gamedev, productivity.">
+    <meta name="keywords" content="gamedev, productivity, software, coding, development, engineering, inclusive, community">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh">
+    <meta property="og:title" content="Making Small Games, Which Is Fun in Itself">
+    <meta property="og:description" content="Creating small games is an enjoyable endeavor in itself. So what constitutes a small game? According...">
+    <meta property="og:site_name" content="DEV Community">
+    <meta name="twitter:site" content="@thepracticaldev">
+    <meta name="twitter:creator" content="@abagames">
+    <meta name="author-trust" content="0">
+    <meta name="twitter:title" content="Making Small Games, Which Is Fun in Itself">
+    <meta name="twitter:description" content="Creating small games is an enjoyable endeavor in itself. So what constitutes a small game? According...">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:widgets:new-embed-design" content="on">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+      <meta property="og:image" content="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo69dloafxpnklxg8r4o9.png">
+      <meta name="twitter:image:src" content="https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo69dloafxpnklxg8r4o9.png">
+
+      <meta name="last-updated" content="2026-08-16 09:03:05 UTC">
+      <meta name="user-signed-in" content="false">
+      <meta name="head-cached-at" content="1786870985">
+      <meta name="environment" content="production">
+      <link rel="stylesheet" href="./index_files/minimal-3a438d8d138f95f478f01cbe53363cacf36bc6c47172aeb2e6c9172eebe29aa6.css" media="all" id="main-minimal-stylesheet">
+<link rel="stylesheet" href="./index_files/views-7b518effb1baaea7fcc933ec2fe16849bb954f4a7cb046c7b6b5bc04c8feb9ae.css" media="all" id="main-views-stylesheet">
+<link rel="stylesheet" href="./index_files/crayons-14f77c98ee8070e83aed5c982ed4c9989d83646f81593a42c2cbef2219c0a15e.css" media="all" id="main-crayons-stylesheet">
+
+      <script src="./index_files/base-efa262328df6551abb8743a1b93f3197472ab544bb3cb9cdfe85b94cbb239d91.js" defer="defer"></script>
+<script src="./index_files/application-9ee88e198a0d2b64238c8557b5225d20e2c18ff5b877f1159ee5a31f6e3174f9.js" defer="defer"></script>
+<script src="./index_files/baseInitializers-12f89d4466dd9259196c7c2cb0e3cafae0d5452919d3f7c2682a732e38bdae6d.js" defer="defer"></script>
+<script src="./index_files/baseTracking-cb478131fb1b41bc25e80ebcee996318777e081c9aa87367fabc1c118461a2d3.js" defer="defer"></script>
+<script src="./index_files/followButtons-e3595664847e9f43945a9b8a0445b32cda9a149f1f169f78b8fcc7714ccab45a.js" defer="defer"></script>
+<script src="./index_files/eventSignupButtons-a2b5da712a1b8eeb0eda4d63fafc54973138a70b88503a2163806c27fc1e4c39.js" defer="defer"></script>
+
+        <meta name="search-script" content="https://assets.dev.to/assets/Search-a570c3428c9b6cb070d3f18817c957f80d0dbdf36a0f4a1d6e23a990305fbc12.js">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <link rel="icon" type="image/x-icon" href="https://media2.dev.to/dynamic/image/width=32,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png">
+      <link rel="apple-touch-icon" href="https://media2.dev.to/dynamic/image/width=180,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="https://media2.dev.to/dynamic/image/width=152,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://media2.dev.to/dynamic/image/width=180,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="https://media2.dev.to/dynamic/image/width=167,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png">
+      <link href="https://media2.dev.to/dynamic/image/width=192,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="icon" sizes="192x192">
+      <link href="https://media2.dev.to/dynamic/image/width=128,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="icon" sizes="128x128">
+      <meta name="apple-mobile-web-app-title" content="dev.to">
+      <meta name="application-name" content="dev.to">
+      <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+      <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+      <link rel="search" href="https://dev.to/open-search.xml" type="application/opensearchdescription+xml" title="DEV Community">
+
+      <meta property="forem:name" content="DEV Community">
+      <meta property="forem:logo" content="https://media2.dev.to/dynamic/image/width=512,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png">
+      <meta property="forem:domain" content="dev.to">
+    <style>
+body:has(.pageslug-aie) #topbar {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) and (pointer: coarse) {
+  /* Target WebKit/Blink specific behaviors */
+  @supports (-webkit-app-region: none) {
+    body:has(.pageslug-aie) .dc-page {
+      padding-top: 56px !important;
+    }
+  }
+}
+
+body:not(.hidden-shell) .pageslug-aie {
+    margin-top: -56px !important;
+}
+
+/* ==========================================================================
+   THE 418 CHALLENGE: THEME-AWARE RETRO EDITION
+   ========================================================================== */
+.articletag-418challenge {
+  font-family: "Comic Sans MS", "Chalkboard SE", "Marker Felt", sans-serif !important;
+  cursor: crosshair !important;
+}
+
+/* Destroy modern rounded corners and add brutal borders */
+.articletag-418challenge .crayons-card,
+.articletag-418challenge .crayons-article__main,
+.articletag-418challenge .crayons-article__header {
+  border-radius: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Typography specifics */
+.articletag-418challenge h1,
+.articletag-418challenge h2,
+.articletag-418challenge h3 {
+  text-transform: uppercase !important;
+}
+
+/* Fake <marquee> effect for the main article title */
+.articletag-418challenge h1.fs-3xl {
+  animation: retro-slide 5s linear infinite alternate;
+  overflow: visible;
+}
+
+/* Spin those avatars */
+.articletag-418challenge .crayons-article__header__meta img {
+  border-radius: 0 !important; 
+  animation: retro-spin 5s linear infinite;
+}
+
+/* Obnoxious tags */
+.articletag-418challenge .crayons-tag {
+  border-radius: 0 !important;
+  font-weight: 900 !important;
+  transform: rotate(-3deg);
+  display: inline-block;
+}
+.articletag-418challenge .crayons-tag:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+/* --------------------------------------------------------------------------
+   2. LIGHT THEME (Windows 95 / Office 97 Vibes)
+   -------------------------------------------------------------------------- */
+body:not(.dark-theme) .articletag-418challenge {
+  background-color: #008080 !important; /* Win95 Teal Desktop */
+}
+
+body:not(.dark-theme) .articletag-418challenge .crayons-card,
+body:not(.dark-theme) .articletag-418challenge .crayons-article__main,
+body:not(.dark-theme) .articletag-418challenge .crayons-article__header {
+  background-color: #c0c0c0 !important; /* Classic dialog gray */
+  color: #000000 !important;
+  border: 4px outset #ffffff !important;
+  box-shadow: 8px 8px 0px #000000 !important;
+}
+
+body:not(.dark-theme) .articletag-418challenge h1,
+body:not(.dark-theme) .articletag-418challenge h2,
+body:not(.dark-theme) .articletag-418challenge h3 {
+  color: #ff0000 !important;
+  text-shadow: 2px 2px 0px #ffff00 !important;
+  border-bottom: 3px dashed #0000ff !important;
+}
+
+body:not(.dark-theme) .articletag-418challenge a,
+body:not(.dark-theme) .articletag-418challenge .crayons-link {
+  color: #0000ff !important; /* Standard unvisited blue */
+  text-decoration: underline !important;
+  font-weight: bold !important;
+}
+
+body:not(.dark-theme) .articletag-418challenge a:hover,
+body:not(.dark-theme) .articletag-418challenge .crayons-link:hover {
+  background-color: #ffff00 !important;
+  color: #ff0000 !important;
+}
+
+body:not(.dark-theme) .articletag-418challenge .crayons-tag {
+  background: #ffff00 !important;
+  color: #ff0000 !important;
+  border: 2px dotted #0000ff !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. DARK THEME (1999 Hacker / Deep GeoCities Vibes)
+   -------------------------------------------------------------------------- */
+body.dark-theme .articletag-418challenge {
+  background-color: #000000 !important;
+  /* Dumb CSS: A scrolling, eye-bleeding neon green hacker grid with CRT scanlines */
+  background-image: 
+    linear-gradient(transparent 50%, rgba(0, 255, 0, 0.25) 50%), 
+    linear-gradient(90deg, rgba(0, 255, 0, 0.5) 1px, transparent 1px), 
+    linear-gradient(rgba(0, 255, 0, 0.5) 1px, transparent 1px) !important;
+  background-size: 100% 4px, 20px 20px, 20px 20px !important;
+  animation: retro-pan 60s linear infinite !important;
+}
+
+body.dark-theme .articletag-418challenge .crayons-card,
+body.dark-theme .articletag-418challenge .crayons-article__main,
+body.dark-theme .articletag-418challenge .crayons-article__header {
+  background-color: #111111 !important;
+  color: #00ff00 !important; /* Terminal Green */
+  border: 4px outset #555555 !important;
+  box-shadow: 8px 8px 0px #ff00ff !important; /* Hot pink shadow */
+}
+
+body.dark-theme .articletag-418challenge h1,
+body.dark-theme .articletag-418challenge h2,
+body.dark-theme .articletag-418challenge h3 {
+  color: #ff00ff !important; /* Magenta headers */
+  text-shadow: 2px 2px 0px #00ffff !important; /* Cyan shadow */
+  border-bottom: 3px dashed #00ff00 !important;
+}
+
+body.dark-theme .articletag-418challenge a,
+body.dark-theme .articletag-418challenge .crayons-link {
+  color: #00ffff !important; /* Cyan links */
+  text-decoration: underline !important;
+  font-weight: bold !important;
+}
+
+body.dark-theme .articletag-418challenge a:hover,
+body.dark-theme .articletag-418challenge .crayons-link:hover {
+  background-color: #ff00ff !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .articletag-418challenge .crayons-tag {
+  background: #000000 !important;
+  color: #00ff00 !important;
+  border: 2px dotted #ff00ff !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. ANIMATIONS
+   -------------------------------------------------------------------------- */
+@keyframes retro-spin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes retro-slide {
+  0% { transform: translateX(-2%); }
+  100% { transform: translateX(2%); }
+}
+
+@keyframes retro-pan {
+  0% { background-position: 0 0, 0 0, 0 0; }
+  /* Numbers must be multiples of the background-size (4px and 20px) to loop perfectly */
+  100% { background-position: 0 100px, 40px 40px, 40px 40px; }
+}
+
+/* --------------------------------------------------------------------------
+   5. BONUS: CAUTION TAPE REACTION BAR
+   -------------------------------------------------------------------------- */
+.articletag-418challenge .crayons-article-actions {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffff00,
+    #ffff00 10px,
+    #000000 10px,
+    #000000 20px
+  ) !important;
+  border: 4px solid #ff0000 !important;
+  border-radius: 0 !important;
+}
+
+.articletag-418challenge .crayons-article-actions button {
+  background:black;
+  color: #ff00ff !important;
+}
+
+.articletag-418challenge .crayons-article-actions .crayons-reaction__count {
+    color: #ff00ff !important;
+    font-weight: bold !important;
+}
+
+.articletag-418challenge .crayons-icon:not(.crayons-icon--default) * {
+    fill: #ffff00 !important;
+}
+
+.articletag-418challenge .c-embed .crayons-btn--primary {
+  color: #00ff00 !important;
+}
+
+.articletag-418challenge .popover-billboard {
+margin-bottom: 0 !important;
+}
+
+.crayons-story__contentpreview .ltag__link--embedded {
+margin-top: 0 !important;
+}
+
+.subscription-icon {
+    max-height: 16px !important;
+    display: inline-block !important;
+}
+
+@media screen and (min-width: 950px) {
+    .event-show-layout {
+        margin-top: 24px !important;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    .event-show-layout {
+        padding: 11px !important;
+    }
+}
+
+
+</style>
+  <meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="xE0izCE-v_2hhqAfcA5-kc1gKdHVqLWHuZkx2PZjazhQwCjzUQ6ZZxgfaZbAgUig-Ef72dI8UwYAIs9weFpTAA"><script src="./index_files/js" async=""></script></head>
+    <body class="sans-serif-article-body default-header" data-user-status="logged-out" data-is-root-subforem="false" data-subforem-id="1" data-side-nav-visible="false" data-community-name="DEV Community" data-subscription-icon="https://assets.dev.to/assets/subscription-icon-805dfa7ac7dd660f07ed8d654877270825b07a92a03841aa99a1093bd00431b2.png" data-community-leader-icon="https://assets.dev.to/assets/community-leader-icon-b72c9e74eff54916e5c46c962f47ba40c9f611a71f8b157511f9613f69c0001b.svg" data-locale="en" data-honeybadger-key="hbp_nqu4Y66HuEKlD6YRGssZuRQnPOjDm50J8Zkr" data-deployed-at="2026-08-15T18:28:55Z" data-latest-commit-id="110aa2f6d35c19a8d146a50918035d0468ae33c8" data-ga-tracking="UA-71991109-1" data-cookie-banner-user-context="logged_out_only" data-cookie-banner-platform-context="off" data-algolia-id="PRSOBFP46H" data-algolia-search-key="9aa7d31610cba78851c9b1f63776a9dd" data-algolia-display="true" data-dynamic-url-component="bmar11" data-ga4-tracking-id="G-TYEM8Y3JN3" data-global-feature-flags-enabled="data_update_scripts onboarding_newsletter_content schedule_articles moderator_role display_ad_tags replace_unicorn_with_jump_to_comments article_id_adjusted_weight cloudflare_preferred_for_hosted_images multiple_reactions subscriber_icon ab_experiment_feed_strategy use_stories_endpoint digest_subject_testing digest_results_count_testing consistent_rendering discover_and_following_tabs hero_billboard onboarding_drip_emails algolia_frontend gemini_onboarding optimize_article_tag_query onboarding_custom_cta_slide dev_core_user_sync personalized_email_digests" data-runtime="Browser-macOS" data-follow-handler-initialized="true" data-event-signup-handler-initialized="true" data-image-lightbox-init="true" data-loaded="true">
+      
+      <script>
+        if (navigator.userAgent === 'ForemWebView/1' || window.frameElement) {
+          document.body.classList.add("hidden-shell");
+        }
+          if (new Date() > new Date("2026-02-04T09:00:00-05:00")) {
+            document.body.dataset.sideNavVisible = "false";
+          } 
+      </script>
+
+      <link rel="stylesheet" href="./index_files/minimal-3a438d8d138f95f478f01cbe53363cacf36bc6c47172aeb2e6c9172eebe29aa6.css" media="all" id="secondary-minimal-stylesheet">
+<link rel="stylesheet" href="./index_files/views-7b518effb1baaea7fcc933ec2fe16849bb954f4a7cb046c7b6b5bc04c8feb9ae.css" media="all" id="secondary-views-stylesheet">
+<link rel="stylesheet" href="./index_files/crayons-14f77c98ee8070e83aed5c982ed4c9989d83646f81593a42c2cbef2219c0a15e.css" media="all" id="secondary-crayons-stylesheet">
+
+      <div id="body-styles">
+        <style>
+          :root {
+            --accent-brand-lighter-rgb: 86, 105, 285;
+            --accent-brand-rgb: 64, 78, 211;
+            --accent-brand-darker-rgb: 51, 62, 169;
+          }
+        </style>
+      </div>
+      <div id="audiocontent" data-podcast="">
+        
+      </div>
+      <div class="navigation-progress" id="navigation-progress"></div>
+
+<header id="topbar" class="crayons-header topbar print-hidden">
+  <span id="route-change-target" tabindex="-1"></span>
+  <a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#main-content" class="skip-content-link">Skip to content</a>
+  <div class="crayons-header__container">
+    <span class="inline-block m:hidden ">
+      <button class="c-btn c-btn--icon-alone js-hamburger-trigger mx-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="arrsn2ihjee1yuu8wsk25pdhcud5xuxv" class="crayons-icon"><title id="arrsn2ihjee1yuu8wsk25pdhcud5xuxv">Navigation menu</title>
+    <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+</svg>
+
+      </button>
+    </span>
+    <a href="https://dev.to/" class="site-logo" aria-label="DEV Community Home">
+    <img class="site-logo__img" src="./index_files/resized_logo_UQww2soKuUsjaOGNB38o.png" style="aspect-ratio: 10 / 8" alt="DEV Community">
+</a>
+
+
+    <div class="crayons-header--search js-search-form" id="header-search">
+      <form accept-charset="UTF-8" method="get" action="https://dev.to/search" role="search">
+        <div class="crayons-fields crayons-fields--horizontal">
+          <div class="crayons-field flex-1 relative">
+            <input id="search-input" class="crayons-header--search-input crayons-textfield js-search-input" type="text" name="q" placeholder="Find related posts..." autocomplete="off">
+            <button type="submit" aria-label="Search" class="c-btn c-btn--icon-alone absolute inset-px right-auto mt-0 py-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ao0hdsl5ezszzo4vos0oeoeh3mrpzd6t" aria-hidden="true" class="crayons-icon"><title id="ao0hdsl5ezszzo4vos0oeoeh3mrpzd6t">Search</title>
+    <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"></path>
+</svg>
+
+            </button>
+
+            <a class="crayons-header--search-brand-indicator" href="https://www.algolia.com/developers/?utm_source=devto&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">
+                Powered by Algolia
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="24" height="24" viewBox="0 0 500 500.34" role="img" aria-labelledby="akx4ylz6y3zol668nzjnsj4auoc5bgw3" aria-hidden="true" class="crayons-icon"><title id="akx4ylz6y3zol668nzjnsj4auoc5bgw3">Search</title>
+  <defs></defs><path class="cls-1" d="M250,0C113.38,0,2,110.16,.03,246.32c-2,138.29,110.19,252.87,248.49,253.67,42.71,.25,83.85-10.2,120.38-30.05,3.56-1.93,4.11-6.83,1.08-9.52l-23.39-20.74c-4.75-4.22-11.52-5.41-17.37-2.92-25.5,10.85-53.21,16.39-81.76,16.04-111.75-1.37-202.04-94.35-200.26-206.1,1.76-110.33,92.06-199.55,202.8-199.55h202.83V407.68l-115.08-102.25c-3.72-3.31-9.43-2.66-12.43,1.31-18.47,24.46-48.56,39.67-81.98,37.36-46.36-3.2-83.92-40.52-87.4-86.86-4.15-55.28,39.65-101.58,94.07-101.58,49.21,0,89.74,37.88,93.97,86.01,.38,4.28,2.31,8.28,5.53,11.13l29.97,26.57c3.4,3.01,8.8,1.17,9.63-3.3,2.16-11.55,2.92-23.6,2.07-35.95-4.83-70.39-61.84-127.01-132.26-131.35-80.73-4.98-148.23,58.18-150.37,137.35-2.09,77.15,61.12,143.66,138.28,145.36,32.21,.71,62.07-9.42,86.2-26.97l150.36,133.29c6.45,5.71,16.62,1.14,16.62-7.48V9.49C500,4.25,495.75,0,490.51,0H250Z"></path>
+</svg>
+
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="flex items-center h-100 ml-auto">
+        <div class="flex" id="authentication-top-nav-actions">
+          <span class="hidden m:block">
+            <a href="https://dev.to/enter?signup_subforem=1" class="c-link c-link--block mr-2 whitespace-nowrap ml-auto" data-no-instant="">
+              Log in
+            </a>
+          </span>
+
+          <a href="https://dev.to/enter?signup_subforem=1&amp;state=new-user" data-tracking-id="ca_top_nav" data-tracking-source="top_navbar" class="c-cta c-cta--branded whitespace-nowrap mr-2" data-no-instant="">
+            Create account
+          </a>
+        </div>
+    </div>
+  </div>
+</header>
+
+<div class="hamburger">
+  <div class="hamburger__content">
+    <header class="hamburger__content__header">
+      <h2 class="fs-l fw-bold flex-1 break-word lh-tight">DEV Community</h2>
+
+      <button class="c-btn c-btn--icon-alone js-hamburger-trigger shrink-0" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aniliocpo7wcvrjlv34vi66gybc2wrth" aria-hidden="true" class="crayons-icon c-btn__icon"><title id="aniliocpo7wcvrjlv34vi66gybc2wrth">Close</title><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636l4.95 4.95z"></path></svg>
+
+      </button>
+    </header>
+
+    <div class="p-2 js-navigation-links-container" id="authentication-hamburger-actions">
+    </div>
+  </div>
+  <div class="hamburger__overlay js-hamburger-trigger"></div>
+</div>
+
+
+      <div id="active-broadcast" class="broadcast-wrapper"></div>
+<div id="page-content" class="wrapper stories stories-show articletag-gamedev articletag-productivity articleuser-859761" data-current-page="stories-show">
+  <div id="page-content-inner" data-internal-nav="false" data-viewable-id="1624858" data-viewable-type="Article">
+    <div id="page-route-change" class="screen-reader-only" aria-live="polite" aria-atomic="true"></div>
+
+    
+<style>
+  .html-variant-wrapper { display: none}
+</style>
+
+
+
+<script src="./index_files/webcomponents-loader.js" integrity="sha384-3HK5hxQbkFqOIxMbpROlRmRtYl2LBZ52t+tqcjzsmr9NJuOWQxl8RgQSyFvq2lhy" crossorigin="anonymous" defer=""></script>
+
+  <script src="./index_files/webShare-0686f0b9ac40589694ef6ae6a6202c44119bc781c254f6cf6d52d8a008461156.js" defer="defer"></script>
+<script src="./index_files/articlePage-7386c745667022e7147503d288454cfce459f2019ee90ce454e641a116844837.js" defer="defer"></script>
+<script src="./index_files/commentDropdowns-7a28d130e5b78d38b30a9495a964003a66bd64fa455fc70b766d69cf06b9ba24.js" defer="defer"></script>
+
+
+  <script type="application/ld+json">
+    {"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh"},"url":"https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh","image":["https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo69dloafxpnklxg8r4o9.png","https://media2.dev.to/dynamic/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo69dloafxpnklxg8r4o9.png","https://media2.dev.to/dynamic/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fo69dloafxpnklxg8r4o9.png"],"publisher":{"@context":"http://schema.org","@type":"Organization","name":"DEV Community","logo":{"@context":"http://schema.org","@type":"ImageObject","url":"https://media2.dev.to/dynamic/image/width=192,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png","width":"192","height":"192"}},"headline":"Making Small Games, Which Is Fun in Itself","author":{"@context":"http://schema.org","@type":"Person","url":"https://dev.to/abagames","name":"ABA Games"},"datePublished":"2023-10-05T11:23:19Z","dateModified":"2023-10-05T11:28:00Z","mainEntity":{"@type":"DiscussionForumPosting","@id":"#article-discussion-1624858","headline":"Making Small Games, Which Is Fun in Itself","text":"\u003cp\u003eCreating small games is an enjoyable endeavor in itself. So what constitutes a small game? According to the 'Small Game Manifesto', \u003csup id=\"fnref1\"\u003e\u003ca href=\"#fn1\"\u003e1\u003c/a\u003e\u003c/sup\u003e it refers to games that conclude within 10 minutes and can be easily played on browsers.\u003c/p\u003e\n\n\u003cp\u003eBy this definition, I have already created over 350 small games.\u003csup id=\"fnref2\"\u003e\u003ca href=\"#fn2\"\u003e2\u003c/a\u003e\u003c/sup\u003e There was a year when I crafted 139 of these small games,\u003csup id=\"fnref3\"\u003e\u003ca href=\"#fn3\"\u003e3\u003c/a\u003e\u003c/sup\u003e showcasing my undeniable love for them.\u003c/p\u003e\n\n\u003cp\u003eTake for instance, a simple game where you slice a red stick into equal parts, which exemplifies a small game.\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://abagames.github.io/crisp-game-lib-11-games/?timbertest\" target=\"_blank\" rel=\"noopener noreferrer\"\u003e\u003cimg src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fgithub.com%2Fabagames%2Fcrisp-game-lib-11-games%2Fraw%2Fmain%2Fdocs%2Ftimbertest%2Fscreenshot.gif\" alt=\"TIMBER TEST\" loading=\"lazy\"\u003e\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eAnother example is a game where you cut a rope with a tap, ensuring it doesn't touch the bottom of the screen, also a small game, enjoyable on touch panel devices like smartphones.\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://abagames.github.io/crisp-game-lib-games/?cnodes\" target=\"_blank\" rel=\"noopener noreferrer\"\u003e\u003cimg src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fgithub.com%2Fabagames%2Fcrisp-game-lib-games%2Fraw%2Fmain%2Fdocs%2Fcnodes%2Fscreenshot.gif\" alt=\"C NODES\" loading=\"lazy\"\u003e\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eThe allure of small games lies in the abbreviated development time they require. A game could be quickly whipped up in about 2 hours, or within around 10 hours if met with challenges. However, once you start diving into artwork, the time investment can become endless. The small games discussed in this article are those produced under initiatives such as \"Game A Week,\"\u003csup id=\"fnref4\"\u003e\u003ca href=\"#fn4\"\u003e4\u003c/a\u003e\u003c/sup\u003e in which developers aim to produce a new game each week. These games, even from a developer's standpoint, are considered small due to the constrained time frame in which they are developed.\u003c/p\u003e\n\n\u003cp\u003eThe abbreviated development time means you can easily experiment with various ideas. I’ve enjoyed crafting and testing unconventional games.\u003c/p\u003e\n\n\u003cp\u003eThe common narrative surrounding small games posits that creating them is a crucial preparatory step towards developing larger, more polished games. Many articles overwhelmingly advise beginners to start with small games.\u003c/p\u003e\n\n\u003cp\u003eA blog post titled \"Make and release lots of small games before making a big one\" \u003csup id=\"fnref5\"\u003e\u003ca href=\"#fn5\"\u003e5\u003c/a\u003e\u003c/sup\u003e emphasizes the importance of this practice before embarking on larger projects.\u003c/p\u003e\n\n\u003cblockquote\u003e\n\u003cp\u003eIt's here because, jumping straight into a big game as your \"first\" game is exactly how you end up losing motivation and never finishing that game, or ending up with something that ate years of your life that you can't even stand looking at anymore.\u003c/p\u003e\n\u003c/blockquote\u003e\n\n\u003cp\u003eBut the story doesn’t end there. Small games possess a unique charm exclusive to them. That's what I believe.\u003c/p\u003e\n\n\u003cp\u003eThere's a blog post titled \"How To Make Good Small Games\",\u003csup id=\"fnref6\"\u003e\u003ca href=\"#fn6\"\u003e6\u003c/a\u003e\u003c/sup\u003e elucidating that excellent small games do exist and detailing how to create them.\u003c/p\u003e\n\n\u003cblockquote\u003e\n\u003cp\u003eThis manifesto of sorts, “How to Make Good Small Games”, is an attempt to meet this perspective halfway. It’s divided into twelve thoughts, made up mostly of esoteric creative theory (why do I like small games? why do I like making small games?), and hopefully a little actionable advice. I can tell you “scope small uwu”, but if you don’t believe small games can be good in the first place, all you’ll hear is a homework assignment you have to do before you can make the games you really care about.\u003c/p\u003e\n\u003c/blockquote\u003e\n\n\u003cp\u003eThe 12 thoughts encompass the following:\u003c/p\u003e\n\n\u003col\u003e\n\u003cli\u003e\u003cp\u003eA game’s quality is independent from its scale.: Small games are not only easy to create but also to make well. The larger the game, the more aspects within it need attention, and the higher the chance of failure.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eA game’s quality is independent from its emotional scope.: Just as short stories function differently from long novels or epics, the conditions constituting “success” vary in small-scale games.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eA game defines the terms of its own success.: Accept them as they are, and assess whether that's good or bad.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eA game succeeds when it fulfills its promises.: The introduction of new characters or mechanics is a promise. Instead of introducing an interesting idea and quickly abandoning it, ensure it evolves and contributes to the game's overall progression.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eIt's easier for a game to succeed if it makes smaller promises.: Reduce the mechanics, enemies, assets, characters, and stages. It's easier to introduce three ideas and develop them to a satisfying climax than to juggle 10 or 100 ideas.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eFulfill promises in an interesting and delightful way.: What makes you smile? This is where your personal style shines through in creating a game that feels authentically \"you\".\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eDon’t over-deliver on your promises.: Games should conclude at the right moment, not extending unnecessarily.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eForm factor is a part of a game’s promises.: Minimize information presented to players, and ensure they can commence playing as soon as the game launches, altering player expectations.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eFinish your game before releasing it.: Before releasing under labels like “Demo” or subtitling it “Prologue”, question why you would wish to release it before completion.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eSerial games are not a shortcut.: Splitting the game into two or more episodes released over an extended period is almost always a bad idea.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eDon’t worry about going viral.: Pursuing small, specific goals in games also attracts a small, specific audience.\u003c/p\u003e\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eGood is good enough.: Once you can consistently create games that satisfy you and feel genuinely good, you’re light-years ahead of many game developers.\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\n\u003cp\u003eAdditionally, the article in discussion presents a 13th thought: \"Have fun :)\". Conceptualize new mechanics and integrate them into your game in a manner that reflects your style. I find this process enjoyable, and it’s even more gratifying if a fair number of people experience and enjoy what I’ve created.\u003c/p\u003e\n\n\u003cp\u003eCreating small games is often discussed within the context of honing game development skills. However, the process of brainstorming diverse game ideas, experimenting, riding the roller coaster of elation and disappointment, and occasionally showcasing your work to others is itself enjoyable, which is an invaluable experience.\u003c/p\u003e\n\n\n\n\u003cp\u003eThis time, I have compiled the joys and methods of developing compact games into a small e-booklet titled \u003cstrong\u003e\"Joys of Small Game Development\"\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://abagames.github.io/joys-of-small-game-development-en/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eJoys of Small Game Development\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eTo convey its delights from various angles, I've included the following content:\u003c/p\u003e\n\n\u003cul\u003e\n\u003cli\u003eExploring what \u003cstrong\u003esmall games\u003c/strong\u003e are and why creating them is enjoyable.\u003c/li\u003e\n\u003cli\u003eChoosing \u003cstrong\u003etarget devices and development environments\u003c/strong\u003e for game development.\u003c/li\u003e\n\u003cli\u003eGenerating \u003cstrong\u003ecore game ideas\u003c/strong\u003e, and discovering how to spawn ideas through constraints.\u003c/li\u003e\n\u003cli\u003eSetting \u003cstrong\u003eappropriate levels of difficulty\u003c/strong\u003e for players.\u003c/li\u003e\n\u003cli\u003eEnhancing the game's appeal by adding \u003cstrong\u003e'juicy' effects and sound\u003c/strong\u003e.\u003c/li\u003e\n\u003cli\u003eCreating \u003cstrong\u003ecustom libraries or engines\u003c/strong\u003e, and exploring methods for auto-generating artwork and sound.\u003c/li\u003e\n\u003cli\u003eDeliberating on the potential of \u003cstrong\u003ecomputers in developing games from scratch\u003c/strong\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eThis compilation aims to benefit those interested in small game development or those already engaged in the process. Although the content is varied and diverse, reflecting my interests, I hope that sharing my experiences and knowledge will make your game development journey a tad more enjoyable.\u003c/p\u003e\n\n\n\u003chr\u003e\n\n\u003col\u003e\n\n\u003cli id=\"fn1\"\u003e\n\u003cp\u003e\u003ca href=\"https://ebeth.itch.io/small-games-manifesto\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eSmall Games Manifesto\u003c/a\u003e for \u003ca href=\"https://itch.io/jam/manifesto-jam\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eManifesto Jam\u003c/a\u003e \u003ca href=\"#fnref1\"\u003e↩\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\n\u003cli id=\"fn2\"\u003e\n\u003cp\u003e\u003ca href=\"http://www.asahi-net.or.jp/~cs8k-cyu/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eABA Games\u003c/a\u003e \u003ca href=\"#fnref2\"\u003e↩\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\n\u003cli id=\"fn3\"\u003e\n\u003cp\u003e\u003ca href=\"https://dev.to/abagames/i-have-created-139-games-in-one-year-by-patterning-my-game-making-gc2\"\u003eI have created 139 games in one year by patterning my game making\u003c/a\u003e \u003ca href=\"#fnref3\"\u003e↩\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\n\u003cli id=\"fn4\"\u003e\n\u003cp\u003e\u003ca href=\"https://www.gamedeveloper.com/audio/game-a-week-getting-experienced-at-failure\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eGame A Week: Getting Experienced At Failure\u003c/a\u003e \u003ca href=\"#fnref4\"\u003e↩\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\n\u003cli id=\"fn5\"\u003e\n\u003cp\u003e\u003ca href=\"https://tylerglaiel.substack.com/p/make-and-release-lots-of-small-games\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eMake and release lots of small games before making a big one\u003c/a\u003e \u003ca href=\"#fnref5\"\u003e↩\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\n\u003cli id=\"fn6\"\u003e\n\u003cp\u003e\u003ca href=\"https://farawaytimes.blogspot.com/2023/02/how-to-make-good-small-games.html\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eHow To Make Good Small Games\u003c/a\u003e \u003ca href=\"#fnref6\"\u003e↩\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\n\u003c/ol\u003e\n\n","author":{"@type":"Person","name":"ABA Games","url":"https://dev.to/abagames"},"datePublished":"2023-10-05T11:23:19Z","dateModified":"2023-10-05T11:28:00Z","url":"https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"https://schema.org/CommentAction","userInteractionCount":4},{"@type":"InteractionCounter","interactionType":"https://schema.org/LikeAction","userInteractionCount":10}],"comment":[{"@type":"Comment","@id":"#comment-1088851","text":"\u003cp\u003eCool! Can we get links to these games?\u003c/p\u003e\n\n","author":{"@type":"Person","name":"Griff Polk","url":"https://dev.to/thecheapaudiophile"},"datePublished":"2023-10-05T17:56:22Z","dateModified":"2023-10-05T17:56:22Z","url":"https://dev.to/thecheapaudiophile/comment/29oin","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"https://schema.org/LikeAction","userInteractionCount":1}],"comment":[{"@type":"Comment","@id":"#comment-1088932","text":"\u003cp\u003e\u003ca href=\"http://www.asahi-net.or.jp/~cs8k-cyu/browser.html\" rel=\"nofollow\"\u003eABA Games - Browser\u003c/a\u003e\u003cbr\u003e\nI hope you enjoy it.\u003c/p\u003e\n\n","author":{"@type":"Person","name":"ABA Games","url":"https://dev.to/abagames"},"datePublished":"2023-10-05T22:35:15Z","dateModified":"2023-10-05T22:35:15Z","url":"https://dev.to/abagames/comment/29om0","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"https://schema.org/LikeAction","userInteractionCount":0}],"parentItem":{"@type":"Comment","@id":"#comment-1088851"}}]},{"@type":"Comment","@id":"#comment-1127152","text":"\u003cp\u003eTOM SCOTT HOLY COW\u003c/p\u003e\n\n","author":{"@type":"Person","name":"Griff Polk","url":"https://dev.to/thecheapaudiophile"},"datePublished":"2024-01-08T17:41:19Z","dateModified":"2024-01-08T17:41:19Z","url":"https://dev.to/thecheapaudiophile/comment/2c3a0","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"https://schema.org/LikeAction","userInteractionCount":1}]}]}}
+  </script>
+
+  
+  <div class="crayons-layout crayons-layout--3-cols crayons-layout--article">
+    <aside class="crayons-layout__sidebar-left" aria-label="Article actions">
+      <script>
+  if (/Twitter for (iPhone|iPad|Android)/i.test(navigator.userAgent)) {
+    document.documentElement.classList.add('is-twitter-in-app');
+  }
+</script>
+
+  <div class="crayons-article-actions print-hidden">
+    <div class="crayons-article-actions__inner">
+
+      
+<div class="reaction-drawer__outer hoverdown" style="">
+  <button id="reaction-drawer-trigger" aria-label="reaction-drawer-trigger" aria-pressed="false" class="hoverdown-trigger crayons-reaction pseudo-reaction crayons-tooltip__activator relative">
+      <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction--like crayons-reaction__icon--inactive" style="width: 40px; height: 40px">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true" class="crayons-icon">
+    <g clip-path="url(#clip0_988_3276)">
+        <path d="M19 14V17H22V19H18.999L19 22H17L16.999 19H14V17H17V14H19ZM20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.992L19.059 11.574C20.39 10.05 20.32 7.65998 18.827 6.16998C17.324 4.67098 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09103 4.60598 6.67503 4.66798 5.17203 6.17198C3.68203 7.66198 3.60703 10.047 4.98003 11.623L13.412 20.069L12 21.485L3.52003 12.993C1.41603 10.637 1.49503 7.01898 3.75603 4.75698C6.02103 2.49298 9.64403 2.41698 12 4.52898C14.349 2.41998 17.979 2.48998 20.242 4.75698H20.243Z" fill="#525252"></path>
+    </g>
+    <defs>
+        <clippath id="clip0_988_3276">
+        <rect width="24" height="24" fill="white"></rect>
+        </clippath>
+    </defs>
+</svg>
+
+      </span>
+      <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction__icon--active" style="width: 40px; height: 40px">
+        <img aria_hidden="true" height="24" width="24" src="./index_files/heart-plus-active-9ea3b22f2bc311281db911d416166c5f430636e76b15cd5df6b3b841d830eefa.svg">
+      </span>
+      <span class="crayons-reaction__count" id="reaction_total_count">10</span>
+      <span class="crayons-tooltip__content">
+        Add reaction
+      </span>
+  </button>
+
+  <div class="reaction-drawer" aria-expanded="false">
+    <div class="reaction-drawer__container">
+        <button id="reaction-butt-like" name="Like" aria-label="Like" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2 activated" data-category="like">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-like">10</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+</button>
+
+        <button id="reaction-butt-unicorn" name="Unicorn" aria-label="Unicorn" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2" data-category="unicorn">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-unicorn">0</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Unicorn
+    </span>
+</button>
+
+        <button id="reaction-butt-exploding_head" name="Exploding Head" aria-label="Exploding Head" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2" data-category="exploding_head">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./index_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-exploding_head">0</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Exploding Head
+    </span>
+</button>
+
+        <button id="reaction-butt-raised_hands" name="Raised Hands" aria-label="Raised Hands" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2" data-category="raised_hands">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-raised_hands">0</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Raised Hands
+    </span>
+</button>
+
+        <button id="reaction-butt-fire" name="Fire" aria-label="Fire" aria-pressed="false" class="crayons-reaction crayons-tooltip__activator relative pt-2 pr-2 pb-1 pl-2" data-category="fire">
+    <span class="crayons-reaction__icon crayons-reaction__icon--inactive p-0">
+      <img aria_hidden="true" height="32" width="32" src="./index_files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg">
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-fire">0</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Fire
+    </span>
+</button>
+
+    </div>
+  </div>
+</div>
+
+<button id="reaction-butt-comment" aria-label="Jump to Comments" aria-pressed="false" class="crayons-reaction crayons-reaction--comment crayons-tooltip__activator relative" data-category="comment">
+    <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction__icon--inactive">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" class="crayons-icon">
+    <path d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"></path>
+</svg>
+
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-comment" data-count="4">4</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Jump to Comments
+    </span>
+</button>
+
+<button id="reaction-butt-readinglist" aria-label="Add to reading list" aria-pressed="false" class="crayons-reaction crayons-reaction--readinglist crayons-tooltip__activator relative activated" data-category="readinglist">
+    <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction__icon--inactive">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" class="crayons-icon">
+    <path d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"></path>
+</svg>
+
+    </span>
+    <span class="crayons-reaction__count" id="reaction-number-readinglist">8</span>
+
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Save
+    </span>
+</button>
+
+
+<button id="reaction-butt-boost" aria-label="Boost" aria-pressed="false" class="crayons-reaction crayons-reaction--boost crayons-tooltip__activator relative">
+    <span class="crayons-reaction__icon crayons-reaction__icon--borderless crayons-reaction__icon--inactive">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" role="img" aria-hidden="true" class="crayons-icon" width="24" height="24">
+  <path transform="translate(24,0) scale(-1,1)" d="M6 4H21C21.5523 4 22 4.44772 22 5V12H20V6H6V9L1 5L6 1V4ZM18 20H3C2.44772 20 2 19.5523 2 19V12H4V18H18V15L23 19L18 23V20Z"></path>
+</svg>
+
+    </span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Boost
+    </span>
+</button>
+
+
+      
+
+      <div class="only-sidebar-menu-item">
+        <div id="mod-actions-menu-btn-area" class="print-hidden trusted-visible-block align-center">
+        </div>
+      </div>
+      <div class="align-center m:relative">
+        <button id="article-show-more-button" aria-controls="article-show-more-dropdown" aria-expanded="false" aria-haspopup="true" class="dropbtn crayons-btn crayons-btn--ghost-dimmed crayons-btn--icon-rounded" aria-label="Share post options" data-dropdown-initialized="true" data-initialized="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a2dy2ewivlhk1aeugtwkbvr2abgbyp0" aria-hidden="true" class="crayons-icon dropdown-icon"><title id="a2dy2ewivlhk1aeugtwkbvr2abgbyp0">More...</title><path fill-rule="evenodd" clip-rule="evenodd" d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+
+        </button>
+
+        <div id="article-show-more-dropdown" class="crayons-dropdown side-bar left-2 right-2 m:right-auto m:left-100 s:left-auto mb-1 m:mb-0 top-unset bottom-100 m:top-0 m:bottom-unset">
+          <div>
+            <button id="copy-post-url-button" class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0" data-posturl="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh">
+              <span class="fw-bold">Copy link</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="article-copy-icon" role="img" aria-labelledby="a95yejslwa49mnwmnjtq1p2inqg494xo" aria-hidden="true" class="crayons-icon mx-2 shrink-0"><title id="a95yejslwa49mnwmnjtq1p2inqg494xo">Copy link</title>
+    <path d="M7 6V3a1 1 0 011-1h12a1 1 0 011 1v14a1 1 0 01-1 1h-3v3c0 .552-.45 1-1.007 1H4.007A1 1 0 013 21l.003-14c0-.552.45-1 1.007-1H7zm2 0h8v10h2V4H9v2zm-2 5v2h6v-2H7zm0 4v2h6v-2H7z"></path>
+</svg>
+
+            </button>
+            <div id="article-copy-link-announcer" aria-live="polite" class="crayons-notice crayons-notice--success my-2 p-1" hidden="">Copied to Clipboard</div>
+          </div>
+
+          <div class="Desktop-only">
+            <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://twitter.com/intent/tweet?text=%22Making%20Small%20Games%2C%20Which%20Is%20Fun%20in%20Itself%22%20by%20%40abagames%20%23DEVCommunity%20https%3A%2F%2Fdev.to%2Fabagames%2Fmaking-small-games-which-is-fun-in-itself-19kh">
+              Share to X
+            </a>
+            <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fdev.to%2Fabagames%2Fmaking-small-games-which-is-fun-in-itself-19kh&amp;title=Making%20Small%20Games%2C%20Which%20Is%20Fun%20in%20Itself&amp;summary=Creating%20small%20games%20is%20an%20enjoyable%20endeavor%20in%20itself.%20So%20what%20constitutes%20a%20small%20game%3F%20According...&amp;source=DEV%20Community">
+              Share to LinkedIn
+            </a>
+            <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdev.to%2Fabagames%2Fmaking-small-games-which-is-fun-in-itself-19kh">
+              Share to Facebook
+            </a>
+            <a target="_blank" class="crayons-link crayons-link--block" rel="noopener" href="https://s2f.kytta.dev/?text=https%3A%2F%2Fdev.to%2Fabagames%2Fmaking-small-games-which-is-fun-in-itself-19kh">
+              Share to Mastodon
+            </a>
+          </div>
+
+          <web-share-wrapper shareurl="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh" sharetitle="Making Small Games, Which Is Fun in Itself" sharetext="Creating small games is an enjoyable endeavor in itself. So what constitutes a small game? According..." template="web-share-button">
+            <a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#" class="dropdown-link-row crayons-link crayons-link--block">Share Post via...</a>
+          </web-share-wrapper>
+          <template id="web-share-button"></template>
+
+          <a href="https://dev.to/report-abuse" class="crayons-link crayons-link--block" id="ReportButtonAuthor">Report Abuse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </aside>
+
+    <main id="main-content" class="crayons-layout__content grid gap-4">
+      <div class="article-wrapper">
+
+
+        <article class="crayons-card crayons-article mb-4" id="article-show-container" data-article-id="1624858" data-article-slug="making-small-games-which-is-fun-in-itself-19kh" data-author-id="859761" data-author-name="ABA Games" data-author-username="abagames" data-co-author-ids="" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh" data-pin-path="/stories/feed/pinned_article" data-pinned-article-id="" data-published="true" data-scheduled="false" lang="en">
+          <script>
+            try {
+              if(localStorage) {
+                let currentUser = localStorage.getItem('current_user');
+
+                if (currentUser) {
+                  currentUser = JSON.parse(currentUser);
+                  if (currentUser.id === 859761) {
+                    document.getElementById('article-show-container').classList.add('current-user-is-article-author');
+                  }
+                }
+              }
+            } catch (e) {
+              console.error(e);
+            }
+          </script>
+          <header class="crayons-article__header" id="main-title">
+              <a class="crayons-article__cover" href="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_o69dloafxpnklxg8r4o9.png">
+                <img src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_o69dloafxpnklxg8r4o9.png" style="aspect-ratio: auto 1000 / 420;" width="1000" height="420" class="crayons-article__cover__image" alt="Cover image for Making Small Games, Which Is Fun in Itself">
+              </a>
+
+            <div class="crayons-article__header__meta">
+              <div class="flex s:items-start flex-col s:flex-row">
+                <div id="action-space" class="crayons-article__actions mb-4 s:mb-0 s:order-last"></div>
+                <div class="flex flex-1 mb-5 items-start">
+                  <div class="relative">
+                      <a href="https://dev.to/abagames"><img class="radius-full align-middle" src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_859761_871a936d-2aa9-4fdd-91cc-74410e64683e.png" width="40" height="40" alt="ABA Games"></a>
+                  </div>
+                  <div class="pl-3 flex-1">
+                    <a href="https://dev.to/abagames" class="crayons-link fw-bold">ABA Games</a>
+                    
+                    
+                    <p class="fs-xs color-base-60">
+                        Posted on <time datetime="2023-10-05T11:23:19Z" class="date" title="Donnerstag, 5. Oktober 2023 um 13:23:19">5. Okt. 2023</time>
+
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multiple_reactions_engagement">
+    <button class="reaction_engagement_like crayons-reaction crayons-reaction--like" data-category="like" aria-label="Like" type="button"><span class="crayons-reaction__icon crayons-reaction__icon--inactive p-1"><img src="./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="24" height="24"></span>
+      <span class="crayons-reaction__count" id="reaction_engagement_like_count">10</span>
+    </button>    <button class="reaction_engagement_unicorn hidden crayons-reaction crayons-reaction--unicorn" data-category="unicorn" aria-label="Unicorn" type="button"><span class="crayons-reaction__icon crayons-reaction__icon--inactive p-1"><img src="./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="24" height="24"></span>
+      <span class="crayons-reaction__count" id="reaction_engagement_unicorn_count">&nbsp;</span>
+    </button>    <button class="reaction_engagement_exploding_head hidden crayons-reaction crayons-reaction--exploding_head" data-category="exploding_head" aria-label="Exploding Head" type="button"><span class="crayons-reaction__icon crayons-reaction__icon--inactive p-1"><img src="./index_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="24" height="24"></span>
+      <span class="crayons-reaction__count" id="reaction_engagement_exploding_head_count">&nbsp;</span>
+    </button>    <button class="reaction_engagement_raised_hands hidden crayons-reaction crayons-reaction--raised_hands" data-category="raised_hands" aria-label="Raised Hands" type="button"><span class="crayons-reaction__icon crayons-reaction__icon--inactive p-1"><img src="./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="24" height="24"></span>
+      <span class="crayons-reaction__count" id="reaction_engagement_raised_hands_count">&nbsp;</span>
+    </button>    <button class="reaction_engagement_fire hidden crayons-reaction crayons-reaction--fire" data-category="fire" aria-label="Fire" type="button"><span class="crayons-reaction__icon crayons-reaction__icon--inactive p-1"><img src="./index_files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="24" height="24"></span>
+      <span class="crayons-reaction__count" id="reaction_engagement_fire_count">&nbsp;</span>
+    </button>
+</div>
+
+
+              <h1 class=" fs-3xl m:fs-4xl l:fs-5xl fw-bold s:fw-heavy lh-tight mb-2 medium">
+                Making Small Games, Which Is Fun in Itself
+              </h1>
+              
+                  <div class="spec__tags flex flex-wrap">
+                      <a class="crayons-tag   " style="
+        --tag-bg: rgba(42, 7, 152, 0.10);
+        --tag-prefix: #2A0798;
+        --tag-bg-hover: rgba(42, 7, 152, 0.10);
+        --tag-prefix-hover: #2A0798;
+      " href="https://dev.to/t/productivity"><span class="crayons-tag__prefix">#</span>productivity</a>
+                      <a class="crayons-tag   " style="
+        --tag-bg: rgba(51, 132, 217, 0.10);
+        --tag-prefix: #3384d9;
+        --tag-bg-hover: rgba(51, 132, 217, 0.10);
+        --tag-prefix-hover: #3384d9;
+      " href="https://dev.to/t/gamedev"><span class="crayons-tag__prefix">#</span>gamedev</a>
+                  </div>
+            </div>
+          </header>
+
+          <div class="crayons-article__main ">
+            <div class="crayons-article__body text-styles spec__body" data-article-id="1624858" id="article-body">
+                <p>Creating small games is an enjoyable endeavor in itself. So what constitutes a small game? According to the 'Small Game Manifesto', <sup id="fnref1"><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn1">1</a></sup> it refers to games that conclude within 10 minutes and can be easily played on browsers.</p>
+
+<p>By this definition, I have already created over 350 small games.<sup id="fnref2"><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn2">2</a></sup> There was a year when I crafted 139 of these small games,<sup id="fnref3"><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn3">3</a></sup> showcasing my undeniable love for them.</p>
+
+<p>Take for instance, a simple game where you slice a red stick into equal parts, which exemplifies a small game.</p>
+
+<p><a href="https://abagames.github.io/crisp-game-lib-11-games/?timbertest" target="_blank" rel="noopener noreferrer"><img src="./index_files/https___github.com_abagames_crisp-game-lib-11-games_raw_main_docs_timbertest_screenshot.gif" alt="TIMBER TEST" loading="lazy"></a></p>
+
+<p>Another example is a game where you cut a rope with a tap, ensuring it doesn't touch the bottom of the screen, also a small game, enjoyable on touch panel devices like smartphones.</p>
+
+<p><a href="https://abagames.github.io/crisp-game-lib-games/?cnodes" target="_blank" rel="noopener noreferrer"><img src="./index_files/https___github.com_abagames_crisp-game-lib-games_raw_main_docs_cnodes_screenshot.gif" alt="C NODES" loading="lazy"></a></p>
+
+<p>The allure of small games lies in the abbreviated development time they require. A game could be quickly whipped up in about 2 hours, or within around 10 hours if met with challenges. However, once you start diving into artwork, the time investment can become endless. The small games discussed in this article are those produced under initiatives such as "Game A Week,"<sup id="fnref4"><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn4">4</a></sup> in which developers aim to produce a new game each week. These games, even from a developer's standpoint, are considered small due to the constrained time frame in which they are developed.</p>
+
+<p>The abbreviated development time means you can easily experiment with various ideas. I’ve enjoyed crafting and testing unconventional games.</p>
+
+<p>The common narrative surrounding small games posits that creating them is a crucial preparatory step towards developing larger, more polished games. Many articles overwhelmingly advise beginners to start with small games.</p>
+
+<p>A blog post titled "Make and release lots of small games before making a big one" <sup id="fnref5"><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn5">5</a></sup> emphasizes the importance of this practice before embarking on larger projects.</p>
+
+<blockquote>
+<p>It's here because, jumping straight into a big game as your "first" game is exactly how you end up losing motivation and never finishing that game, or ending up with something that ate years of your life that you can't even stand looking at anymore.</p>
+</blockquote>
+
+<p>But the story doesn’t end there. Small games possess a unique charm exclusive to them. That's what I believe.</p>
+
+<p>There's a blog post titled "How To Make Good Small Games",<sup id="fnref6"><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fn6">6</a></sup> elucidating that excellent small games do exist and detailing how to create them.</p>
+
+<blockquote>
+<p>This manifesto of sorts, “How to Make Good Small Games”, is an attempt to meet this perspective halfway. It’s divided into twelve thoughts, made up mostly of esoteric creative theory (why do I like small games? why do I like making small games?), and hopefully a little actionable advice. I can tell you “scope small uwu”, but if you don’t believe small games can be good in the first place, all you’ll hear is a homework assignment you have to do before you can make the games you really care about.</p>
+</blockquote>
+
+<p>The 12 thoughts encompass the following:</p>
+
+<ol>
+<li><p>A game’s quality is independent from its scale.: Small games are not only easy to create but also to make well. The larger the game, the more aspects within it need attention, and the higher the chance of failure.</p></li>
+<li><p>A game’s quality is independent from its emotional scope.: Just as short stories function differently from long novels or epics, the conditions constituting “success” vary in small-scale games.</p></li>
+<li><p>A game defines the terms of its own success.: Accept them as they are, and assess whether that's good or bad.</p></li>
+<li><p>A game succeeds when it fulfills its promises.: The introduction of new characters or mechanics is a promise. Instead of introducing an interesting idea and quickly abandoning it, ensure it evolves and contributes to the game's overall progression.</p></li>
+<li><p>It's easier for a game to succeed if it makes smaller promises.: Reduce the mechanics, enemies, assets, characters, and stages. It's easier to introduce three ideas and develop them to a satisfying climax than to juggle 10 or 100 ideas.</p></li>
+<li><p>Fulfill promises in an interesting and delightful way.: What makes you smile? This is where your personal style shines through in creating a game that feels authentically "you".</p></li>
+<li><p>Don’t over-deliver on your promises.: Games should conclude at the right moment, not extending unnecessarily.</p></li>
+<li><p>Form factor is a part of a game’s promises.: Minimize information presented to players, and ensure they can commence playing as soon as the game launches, altering player expectations.</p></li>
+<li><p>Finish your game before releasing it.: Before releasing under labels like “Demo” or subtitling it “Prologue”, question why you would wish to release it before completion.</p></li>
+<li><p>Serial games are not a shortcut.: Splitting the game into two or more episodes released over an extended period is almost always a bad idea.</p></li>
+<li><p>Don’t worry about going viral.: Pursuing small, specific goals in games also attracts a small, specific audience.</p></li>
+<li><p>Good is good enough.: Once you can consistently create games that satisfy you and feel genuinely good, you’re light-years ahead of many game developers.</p></li>
+</ol>
+
+<p>Additionally, the article in discussion presents a 13th thought: "Have fun :)". Conceptualize new mechanics and integrate them into your game in a manner that reflects your style. I find this process enjoyable, and it’s even more gratifying if a fair number of people experience and enjoy what I’ve created.</p>
+
+<p>Creating small games is often discussed within the context of honing game development skills. However, the process of brainstorming diverse game ideas, experimenting, riding the roller coaster of elation and disappointment, and occasionally showcasing your work to others is itself enjoyable, which is an invaluable experience.</p>
+
+
+
+<p>This time, I have compiled the joys and methods of developing compact games into a small e-booklet titled <strong>"Joys of Small Game Development"</strong>.</p>
+
+<p><a href="https://abagames.github.io/joys-of-small-game-development-en/" target="_blank" rel="noopener noreferrer">Joys of Small Game Development</a></p>
+
+<p>To convey its delights from various angles, I've included the following content:</p>
+
+<ul>
+<li>Exploring what <strong>small games</strong> are and why creating them is enjoyable.</li>
+<li>Choosing <strong>target devices and development environments</strong> for game development.</li>
+<li>Generating <strong>core game ideas</strong>, and discovering how to spawn ideas through constraints.</li>
+<li>Setting <strong>appropriate levels of difficulty</strong> for players.</li>
+<li>Enhancing the game's appeal by adding <strong>'juicy' effects and sound</strong>.</li>
+<li>Creating <strong>custom libraries or engines</strong>, and exploring methods for auto-generating artwork and sound.</li>
+<li>Deliberating on the potential of <strong>computers in developing games from scratch</strong>.</li>
+</ul>
+
+<p>This compilation aims to benefit those interested in small game development or those already engaged in the process. Although the content is varied and diverse, reflecting my interests, I hope that sharing my experiences and knowledge will make your game development journey a tad more enjoyable.</p>
+
+
+<hr>
+
+<ol>
+
+<li id="fn1">
+<p><a href="https://ebeth.itch.io/small-games-manifesto" target="_blank" rel="noopener noreferrer">Small Games Manifesto</a> for <a href="https://itch.io/jam/manifesto-jam" target="_blank" rel="noopener noreferrer">Manifesto Jam</a>&nbsp;<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref1">↩</a></p>
+</li>
+
+<li id="fn2">
+<p><a href="http://www.asahi-net.or.jp/~cs8k-cyu/" target="_blank" rel="noopener noreferrer">ABA Games</a>&nbsp;<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref2">↩</a></p>
+</li>
+
+<li id="fn3">
+<p><a href="https://dev.to/abagames/i-have-created-139-games-in-one-year-by-patterning-my-game-making-gc2">I have created 139 games in one year by patterning my game making</a>&nbsp;<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref3">↩</a></p>
+</li>
+
+<li id="fn4">
+<p><a href="https://www.gamedeveloper.com/audio/game-a-week-getting-experienced-at-failure" target="_blank" rel="noopener noreferrer">Game A Week: Getting Experienced At Failure</a>&nbsp;<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref4">↩</a></p>
+</li>
+
+<li id="fn5">
+<p><a href="https://tylerglaiel.substack.com/p/make-and-release-lots-of-small-games" target="_blank" rel="noopener noreferrer">Make and release lots of small games before making a big one</a>&nbsp;<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref5">↩</a></p>
+</li>
+
+<li id="fn6">
+<p><a href="https://farawaytimes.blogspot.com/2023/02/how-to-make-good-small-games.html" target="_blank" rel="noopener noreferrer">How To Make Good Small Games</a>&nbsp;<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#fnref6">↩</a></p>
+</li>
+
+</ol>
+
+
+            </div>
+
+              <div class="below-post-bb body-billboard-container" data-async-url="/abagames/making-small-games-which-is-fun-in-itself-19kh/bmar11/post_body_bottom"><div>    <style>
+  .long-bb-body {
+    max-height: calc(100vh - 200px);
+    overflow: hidden;
+  }
+  .long-bb-bottom {
+    height: 180px;
+    background: linear-gradient(to top, var(--card-bg), transparent);
+    margin-top: -180px;
+    position:relative;
+    z-index: 5;
+  }
+</style>
+
+  <div class="crayons-card crayons-card--secondary crayons-bb js-billboard body-billboard mb-2 mt-6" style="" data-display-unit="" data-id="263961" data-category-click="click" data-category-impression="impression" data-context-type="article" data-dismissal-sku="" data-special="nothing" data-article-id="1624858" data-type-of="partner" data-is-billboard-visible="false">
+    <div class="crayons-story__top flex">
+      <div class="crayons-bb__header relative">
+    <div class="flex">
+        <a href="https://dev.to/devteam" target="_blank" rel="noopener" class="flex" style="align-items: center;">
+          <img width="20" height="20" class="radius-default crayons-bb__image" src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_organization_profile_image_1_d908a186-5651-4a5a-9f76-15200bc6801f.jpg" alt="profile" loading="lazy">
+          <div class="crayons-bb__title ml-2">The DEV Team</div>
+        </a>
+        <span class="crayons-bb__indicator c-indicator c-indicator--subtle c-indicator--round fs-2xs fw-medium ml-2 py-1 px-2">Promoted</span>
+    </div>
+
+  <button id="sponsorship-dropdown-trigger-263961" aria-controls="sponsorship-dropdown-263961" aria-expanded="false" aria-haspopup="true" class="dropBtn crayons-bb__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon" aria-label="Toggle dropdown menu" data-dropdown-initialized="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ahhnf1d5grx31fal8bu12age8iq2tilk" class="crayons-icon pointer-events-none"><title id="ahhnf1d5grx31fal8bu12age8iq2tilk">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+  </button>
+
+  <div id="sponsorship-dropdown-263961" class="crayons-dropdown bb-dropdown right-0">
+    <ul class="list-none m-0">
+        <li>
+          <a class="crayons-link crayons-link--block" href="https://dev.to/billboards">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"></path>
+</svg>
+
+            What's a billboard?
+          </a>
+        </li>
+      <li>
+        <a class="crayons-link crayons-link--block" href="https://dev.to/settings/customization#sponsors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M3.34 16.9999C2.91727 16.2689 2.58866 15.4874 2.362 14.6739C2.85531 14.423 3.26959 14.0406 3.55903 13.5688C3.84846 13.0971 4.00176 12.5545 4.00197 12.0011C4.00218 11.4476 3.84928 10.9049 3.5602 10.4329C3.27112 9.961 2.85712 9.57821 2.364 9.32694C2.81604 7.69243 3.67673 6.1999 4.865 4.98994C5.32909 5.29167 5.86762 5.45911 6.42098 5.47373C6.97434 5.48834 7.52095 5.34958 8.00033 5.07278C8.47971 4.79598 8.87315 4.39194 9.13713 3.90539C9.4011 3.41883 9.52531 2.86872 9.496 2.31594C11.1381 1.89157 12.8612 1.89226 14.503 2.31795C14.474 2.87071 14.5984 3.42073 14.8626 3.90715C15.1268 4.39357 15.5204 4.79742 15.9998 5.07401C16.4793 5.35059 17.0259 5.48913 17.5793 5.4743C18.1326 5.45946 18.671 5.29183 19.135 4.98994C19.714 5.57994 20.228 6.25095 20.66 6.99995C21.093 7.74895 21.417 8.52995 21.638 9.32595C21.1447 9.57685 20.7304 9.95932 20.441 10.4311C20.1515 10.9028 19.9982 11.4454 19.998 11.9988C19.9978 12.5523 20.1507 13.095 20.4398 13.5669C20.7289 14.0389 21.1429 14.4217 21.636 14.6729C21.184 16.3075 20.3233 17.8 19.135 19.0099C18.6709 18.7082 18.1324 18.5408 17.579 18.5262C17.0257 18.5115 16.479 18.6503 15.9997 18.9271C15.5203 19.2039 15.1268 19.6079 14.8629 20.0945C14.5989 20.5811 14.4747 21.1312 14.504 21.6839C12.8619 22.1083 11.1388 22.1076 9.497 21.6819C9.52605 21.1292 9.4016 20.5792 9.13742 20.0927C8.87324 19.6063 8.47964 19.2025 8.00017 18.9259C7.5207 18.6493 6.97405 18.5108 6.42073 18.5256C5.8674 18.5404 5.32896 18.7081 4.865 19.0099C4.27399 18.4069 3.76159 17.7315 3.34 16.9999ZM9 17.1959C10.0656 17.8106 10.8668 18.797 11.25 19.9659C11.749 20.0129 12.25 20.0139 12.749 19.9669C13.1324 18.7978 13.934 17.8114 15 17.1969C16.0652 16.5806 17.3205 16.3794 18.525 16.6319C18.815 16.2239 19.065 15.7889 19.273 15.3339C18.4524 14.4174 17.9991 13.2302 18 11.9999C18 10.7399 18.47 9.56295 19.273 8.66595C19.0635 8.21109 18.8125 7.77658 18.523 7.36795C17.3193 7.62025 16.0648 7.41942 15 6.80395C13.9344 6.18932 13.1332 5.20293 12.75 4.03394C12.251 3.98694 11.75 3.98594 11.251 4.03294C10.8676 5.20209 10.066 6.1885 9 6.80295C7.93478 7.41926 6.67948 7.62046 5.475 7.36795C5.18556 7.77623 4.93513 8.21081 4.727 8.66595C5.54757 9.5825 6.00088 10.7697 6 11.9999C6 13.2599 5.53 14.4369 4.727 15.3339C4.93647 15.7888 5.18754 16.2233 5.477 16.6319C6.68072 16.3796 7.93521 16.5805 9 17.1959ZM12 14.9999C11.2044 14.9999 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 11.9999C9 11.2043 9.31607 10.4412 9.87868 9.87862C10.4413 9.31602 11.2044 8.99995 12 8.99995C12.7956 8.99995 13.5587 9.31602 14.1213 9.87862C14.6839 10.4412 15 11.2043 15 11.9999C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 14.9999 12 14.9999ZM12 12.9999C12.2652 12.9999 12.5196 12.8946 12.7071 12.7071C12.8946 12.5195 13 12.2652 13 11.9999C13 11.7347 12.8946 11.4804 12.7071 11.2928C12.5196 11.1053 12.2652 10.9999 12 10.9999C11.7348 10.9999 11.4804 11.1053 11.2929 11.2928C11.1054 11.4804 11 11.7347 11 11.9999C11 12.2652 11.1054 12.5195 11.2929 12.7071C11.4804 12.8946 11.7348 12.9999 12 12.9999Z" fill="black"></path>
+</svg>
+
+          Manage preferences
+        </a>
+      </li>
+      <hr>
+      <li>
+        <a class="crayons-link crayons-link--block" href="https://dev.to/report-abuse?billboard=263961">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12.382 3a1 1 0 0 1 .894.553L14 5h6a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6.382a1 1 0 0 1-.894-.553L12 16H5v6H3V3h9.382Zm-.618 2H5v9h8.236l1 2H19V7h-6.236l-1-2Z"></path>
+</svg>
+
+          Report billboard
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+    <div class="p-1 pt-3 text-styles text-styles--billboard">
+      <p><a href="https://dev.to/googleai/skills-vs-mcp-how-ai-tools-have-evolved-3pmk?bb=263961"><img src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_articles_qav2bblu7ofv2tbo35f0.png" alt="Google article image" width="800" height="450" loading="lazy"></a></p>
+<h2>  <a name="the-hottest-programming-language-right-now-is-english" href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#the-hottest-programming-language-right-now-is-english">  </a>  <a href="https://dev.to/googleai/skills-vs-mcp-how-ai-tools-have-evolved-3pmk?bb=263961">The hottest programming language right now is English</a>
+</h2>
+<p>A Skill is, more or less, a markdown file containing a reusable prompt. That means non-developers can write, iterate on, and share instructions that make an entire team's agents faster with no code required. Here's how Skills and MCP actually work together.</p>
+<p><a href="https://dev.to/googleai/skills-vs-mcp-how-ai-tools-have-evolved-3pmk?bb=263961" class="crayons-btn crayons-btn--primary" role="button">Read more →</a></p>
+    </div>
+      <div class="long-bb-bottom hidden"></div>
+      <div class="crayons-card__footer">
+        <button class="c-cta c-cta--branded billboard-readmore-button hidden">
+          Read More
+        </button>
+      </div>
+  </div>
+
+</div></div>
+          </div>
+          <section id="comments" data-follow-button-container="true" data-updated-at="2026-08-16 09:03:05 UTC" class="text-padding mb-4 border-t-1 border-0 border-solid border-base-10">
+    <header class="relative flex justify-between items-center mb-6">
+      <div class="flex items-center">
+        <h2 class="crayons-subtitle-1">
+          Top comments <span class="js-comments-count" data-comments-count="4">(4)</span>
+        </h2>
+      </div>
+
+
+      <div id="comment-subscription" class="print-hidden">
+        <div class="crayons-btn-group">
+          <span class="crayons-btn crayons-btn--outlined">Subscribe</span>
+        </div>
+      </div>
+    </header>
+    <div id="billboard_delay_trigger"></div>
+    <div id="comments-container" data-testid="comments-container" data-commentable-id="1624858" data-commentable-type="Article" data-has-recent-comment-activity="false">
+
+        <div id="response-templates-data" class="hidden"></div>
+
+
+<form class="comment-form print-hidden" id="new_comment" action="https://dev.to/comments" accept-charset="UTF-8" method="post">
+
+  <input type="hidden" name="authenticity_token" value="NOTHING" id="new_comment_authenticity_token">
+
+    <input value="1624858" autocomplete="off" type="hidden" name="comment[commentable_id]" id="comment_commentable_id">
+    <input value="Article" autocomplete="off" type="hidden" name="comment[commentable_type]" id="comment_commentable_type">
+    
+
+  <span class="crayons-avatar m:crayons-avatar--l mr-2 shrink-0">
+    <img src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_8j7kvp660rqzt99zui8e.png" width="32" height="32" alt="pic" class="crayons-avatar__image overflow-hidden" id="comment-primary-user-profile--avatar" loading="lazy">
+  </span>
+  <div class="comment-form__inner">
+    <div class="comment-form__field" data-tracking-name="comment_form_textfield">
+      <textarea placeholder="Add to the discussion" onfocus="handleFocus(event)" onkeyup="handleKeyUp(event)" onkeydown="handleKeyDown(event)" oninput="handleChange(event)" id="text-area" required="required" class="crayons-textfield comment-textarea crayons-textfield--ghost" aria-label="Add a comment to the discussion" name="comment[body_markdown]"></textarea>
+
+    </div>
+
+    <div class="response-templates-container crayons-card crayons-card--secondary p-4 mb-4 comment-form__templates fs-base hidden">
+      <header class="mb-3">
+        <button type="button" class="crayons-btn personal-template-button active" data-target-type="personal" data-form-id="new_comment">Personal</button>
+        <button type="button" class="crayons-btn moderator-template-button hidden" data-target-type="moderator" data-form-id="new_comment">Trusted User</button>
+      </header>
+
+      <div class="personal-responses-container">
+      </div>
+      <div class="moderator-responses-container hidden">
+      </div>
+
+      <a target="_blank" rel="noopener nofollow" href="https://dev.to/settings/response-templates">
+        Create template
+      </a>
+      <p>Templates let you quickly answer FAQs or store snippets for re-use.</p>
+    </div>
+
+    <div class="comment-form__preview text-styles text-styles--secondary" id="preview-div"></div>
+
+    <div class="comment-form__buttons mb-4">
+      <button type="submit" class="crayons-btn mr-2 js-btn-enable" onclick="validateField(event)" data-tracking-name="comment_submit_button" disabled="">Submit</button>
+      <button type="button" class="preview-toggle crayons-btn crayons-btn--secondary comment-action-preview js-btn-enable mr-2" data-tracking-name="comment_preview_button" disabled="">Preview</button>
+      <a href="https://dev.to/404.html" class="dismiss-edit-comment crayons-btn crayons-btn--ghost js-btn-dismiss hidden">Dismiss</a>
+    </div>
+  </div>
+
+  <div class="code-of-conduct" id="toggle-code-of-conduct-checkbox"></div>
+</form>
+
+
+      <div class="comments" id="comment-trees-container">
+              <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-0
+                    root
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="m:mx-1 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aqgo2rs2zp49tnmjg2d83zu16eh3z8t5" class="crayons-icon expanded"><title id="aqgo2rs2zp49tnmjg2d83zu16eh3z8t5">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ap5zo05ohx027td0ar7oivtw9dbe6xuw" class="crayons-icon collapsed"><title id="ap5zo05ohx027td0ar7oivtw9dbe6xuw">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-1088851" class="
+      comment single-comment-node
+      
+      root
+      comment--deep-0
+      
+    " data-comment-id="1088851" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh/comments/29oin" data-comment-author-id="1022591" data-content-user-id="1022591">
+    <a name="comment-29oin" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/thecheapaudiophile" class="shrink-0 crayons-avatar m:crayons-avatar--l mt-4 m:mt-3">
+    <img class="crayons-avatar__image" width="32" height="32" src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg" alt="thecheapaudiophile profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/thecheapaudiophile" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">
+      Griff Polk
+    </span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-1088851" aria-controls="comment-profile-preview-content-1088851" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="Griff Polk profile details" aria-expanded="false" aria-haspopup="true" data-dropdown-initialized="true" data-initialized="true">
+      Griff Polk
+      
+      
+    </button>
+    <div id="comment-profile-preview-content-1088851" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #1d1d1d; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/thecheapaudiophile" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">
+      Griff Polk
+      
+      
+    </span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:1022591,&quot;name&quot;:&quot;Griff Polk&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Griff Polk" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    Hey, I’m the cheap audiophile, a self-expressed audiophile, who loves all things… sound!
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+          <li>
+            <div class="key">
+              Pronouns
+            </div>
+            <div class="value">
+              He/Him
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2023-02-07T18:02:40Z" class="date" title="Dienstag, 7. Februar 2023 um 19:02:40">7. Feb. 2023</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29oin" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2023-10-05T17:56:22Z" class="date-short-year" title="Donnerstag, 5. Oktober 2023 um 19:56:22">5. Okt. 23</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-1088851" aria-controls="comment-dropdown-1088851" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-dropdown-initialized="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a4k22or127mrqw27slc3rvr80xk4qm56" class="crayons-icon pointer-events-none"><title id="a4k22or127mrqw27slc3rvr80xk4qm56">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-1088851" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29oin" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to Griff Polk&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="1022591" data-action="settings-button" data-path="https://dev.to/thecheapaudiophile/comment/29oin/settings" aria-label="Go to Griff Polk&#39;s comment settings"></li>
+          <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="859761" data-user-id="1022591">
+              <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="1088851" data-comment-url="https://dev.to/thecheapaudiophile/comment/29oin" aria-label="Hide Griff Polk&#39;s comment">
+                Hide
+              </button>
+          </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/thecheapaudiophile/comment/29oin/mod" aria-label="Moderate Griff Polk&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/thecheapaudiophile/comment/29oin" aria-label="Report Griff Polk&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/thecheapaudiophile/comment/29oin" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>Cool! Can we get links to these games?</p>
+
+
+        </div>
+
+    </div>
+
+    <script>
+    </script>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator relative crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-1088851" data-comment-id="1088851" aria-label="like" data-tracking-name="comment_heart_button" style="z-index: 4;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ah1rc7r16eymo2nc9diublui2jrnd543" class="crayons-icon reaction-icon not-reacted"><title id="ah1rc7r16eymo2nc9diublui2jrnd543">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="acf9qcn9977m2xpmyiftzxeh1fyrjk9i" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="acf9qcn9977m2xpmyiftzxeh1fyrjk9i">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">1</span><span class="reactions-label hidden m:inline-block">&nbsp;like</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+  
+
+      <button class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" data-comment-id="1088851" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh/comments/29oin" data-tracking-name="comment_reply_button" data-testid="reply-button-1088851" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="al593gl9pars4f2zef1ugc3h7abfkse" class="crayons-icon reaction-icon not-reacted"><title id="al593gl9pars4f2zef1ugc3h7abfkse">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </button>
+
+</footer>
+
+  </div>
+</div>
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-1
+                    child
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="mx-0 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ag50ykvacoqsxjx7d5lvh7t4x50joug2" class="crayons-icon expanded"><title id="ag50ykvacoqsxjx7d5lvh7t4x50joug2">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a6867o90q410d1u9ygw4rdbgk8dlw82t" class="crayons-icon collapsed"><title id="a6867o90q410d1u9ygw4rdbgk8dlw82t">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-1088932" class="
+      comment single-comment-node
+      
+      child
+      comment--deep-1
+      
+    " data-comment-id="1088932" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh/comments/29om0" data-comment-author-id="859761" data-content-user-id="859761">
+    <a name="comment-29om0" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/abagames" class="shrink-0 crayons-avatar mt-4">
+    <img class="crayons-avatar__image" width="32" height="32" src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_859761_871a936d-2aa9-4fdd-91cc-74410e64683e.png" alt="abagames profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/abagames" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">
+      ABA Games
+    </span>
+      <span class="crayons-hover-tooltip inline-block spec-op-author -mr-2" data-tooltip="Author">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" class="crayons-icon">
+    <path d="M12 8.25a6 6 0 110 12 6 6 0 010-12zm0 2.625l-.992 2.01-2.218.322 1.605 1.564-.379 2.21L12 15.937l1.984 1.043-.379-2.209 1.605-1.564-2.218-.323L12 10.875zm.75-6.376l3.75.001v2.25l-1.022.854a7.45 7.45 0 00-2.728-.817V4.5zm-1.5 0v2.288a7.451 7.451 0 00-2.727.816L7.5 6.75V4.5h3.75z"></path>
+</svg>
+
+      </span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-1088932" aria-controls="comment-profile-preview-content-1088932" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="ABA Games profile details" aria-expanded="false" aria-haspopup="true" data-dropdown-initialized="true" data-initialized="true">
+      ABA Games
+      
+      
+    </button>
+    <div id="comment-profile-preview-content-1088932" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #000000; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/abagames" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_859761_871a936d-2aa9-4fdd-91cc-74410e64683e.png" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">
+      ABA Games
+      
+      
+    </span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:859761,&quot;name&quot;:&quot;ABA Games&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: ABA Games" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    ABA Games
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2022-05-09T08:41:59Z" class="date" title="Montag, 9. Mai 2022 um 10:41:59">9. Mai 2022</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+      <span class="crayons-hover-tooltip inline-block spec-op-author -ml-2" data-tooltip="Author">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" class="crayons-icon">
+    <path d="M12 8.25a6 6 0 110 12 6 6 0 010-12zm0 2.625l-.992 2.01-2.218.322 1.605 1.564-.379 2.21L12 15.937l1.984 1.043-.379-2.209 1.605-1.564-2.218-.323L12 10.875zm.75-6.376l3.75.001v2.25l-1.022.854a7.45 7.45 0 00-2.728-.817V4.5zm-1.5 0v2.288a7.451 7.451 0 00-2.727.816L7.5 6.75V4.5h3.75z"></path>
+</svg>
+
+      </span>
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29om0" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2023-10-05T22:35:15Z" class="date-short-year" title="Freitag, 6. Oktober 2023 um 00:35:15">6. Okt. 23</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-1088932" aria-controls="comment-dropdown-1088932" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-dropdown-initialized="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ak8x40s4pmsxe3pmk3sn8ft6q34ilbw" class="crayons-icon pointer-events-none"><title id="ak8x40s4pmsxe3pmk3sn8ft6q34ilbw">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-1088932" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29om0" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to ABA Games&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="859761" data-action="settings-button" data-path="https://dev.to/abagames/comment/29om0/settings" aria-label="Go to ABA Games&#39;s comment settings"></li>
+          <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="859761" data-user-id="859761">
+              <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="1088932" data-comment-url="https://dev.to/abagames/comment/29om0" aria-label="Hide ABA Games&#39;s comment">
+                Hide
+              </button>
+          </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/abagames/comment/29om0/mod" aria-label="Moderate ABA Games&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/abagames/comment/29om0" aria-label="Report ABA Games&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/abagames/comment/29om0" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p><a href="http://www.asahi-net.or.jp/~cs8k-cyu/browser.html" rel="nofollow noopener noreferrer" target="_blank">ABA Games - Browser</a><br>
+I hope you enjoy it.</p>
+
+
+        </div>
+
+    </div>
+
+    <script>
+    </script>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator relative crayons-btn crayons-btn--ghost crayons-btn--icon crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-1088932" data-comment-id="1088932" aria-label="like" data-tracking-name="comment_heart_button" style="z-index: 3;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="aolkr02tm5144acqn1tflrjfphow8cxm" class="crayons-icon reaction-icon not-reacted"><title id="aolkr02tm5144acqn1tflrjfphow8cxm">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="almshw2c609zxea0clz10nexk2onsi3u" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="almshw2c609zxea0clz10nexk2onsi3u">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count"></span><span class="reactions-label hidden m:inline-block"></span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+  
+
+      <button class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" data-comment-id="1088932" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh/comments/29om0" data-tracking-name="comment_reply_button" data-testid="reply-button-1088932" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ag01sw7pglou49jn3papmupi15d4y3ma" class="crayons-icon reaction-icon not-reacted"><title id="ag01sw7pglou49jn3papmupi15d4y3ma">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </button>
+
+</footer>
+
+  </div>
+</div>
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-2
+                    child
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="mx-0 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="air0vgwwfpkmgo4pvqb7jc6j8we0nqv9" class="crayons-icon expanded"><title id="air0vgwwfpkmgo4pvqb7jc6j8we0nqv9">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="adve9n41792x5xs78v77eg97rv7uw7l8" class="crayons-icon collapsed"><title id="adve9n41792x5xs78v77eg97rv7uw7l8">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-1089197" class="
+      comment single-comment-node
+      
+      child
+      comment--deep-2
+      
+    " data-comment-id="1089197" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh/comments/29p65" data-comment-author-id="1022591" data-content-user-id="1022591">
+    <a name="comment-29p65" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/thecheapaudiophile" class="shrink-0 crayons-avatar mt-4">
+    <img class="crayons-avatar__image" width="32" height="32" src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg" alt="thecheapaudiophile profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/thecheapaudiophile" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">
+      Griff Polk
+    </span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-1089197" aria-controls="comment-profile-preview-content-1089197" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="Griff Polk profile details" aria-expanded="false" aria-haspopup="true" data-dropdown-initialized="true" data-initialized="true">
+      Griff Polk
+      
+      
+    </button>
+    <div id="comment-profile-preview-content-1089197" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #1d1d1d; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/thecheapaudiophile" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">
+      Griff Polk
+      
+      
+    </span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:1022591,&quot;name&quot;:&quot;Griff Polk&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Griff Polk" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    Hey, I’m the cheap audiophile, a self-expressed audiophile, who loves all things… sound!
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+          <li>
+            <div class="key">
+              Pronouns
+            </div>
+            <div class="value">
+              He/Him
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2023-02-07T18:02:40Z" class="date" title="Dienstag, 7. Februar 2023 um 19:02:40">7. Feb. 2023</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29p65" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2023-10-06T13:03:06Z" class="date-short-year" title="Freitag, 6. Oktober 2023 um 15:03:06">6. Okt. 23</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-1089197" aria-controls="comment-dropdown-1089197" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-dropdown-initialized="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a26sicqpfgpjhletv8ziqkb2nm4e4kli" class="crayons-icon pointer-events-none"><title id="a26sicqpfgpjhletv8ziqkb2nm4e4kli">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-1089197" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-29p65" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to Griff Polk&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="1022591" data-action="settings-button" data-path="https://dev.to/thecheapaudiophile/comment/29p65/settings" aria-label="Go to Griff Polk&#39;s comment settings"></li>
+          <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="859761" data-user-id="1022591">
+              <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="1089197" data-comment-url="https://dev.to/thecheapaudiophile/comment/29p65" aria-label="Hide Griff Polk&#39;s comment">
+                Hide
+              </button>
+          </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/thecheapaudiophile/comment/29p65/mod" aria-label="Moderate Griff Polk&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/thecheapaudiophile/comment/29p65" aria-label="Report Griff Polk&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/thecheapaudiophile/comment/29p65" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>Wow! They are great, the ones i have got to! Which one is the slicing one? (I sound like a kid) I might need to take up small games! </p>
+
+
+        </div>
+
+    </div>
+
+    <script>
+    </script>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator relative crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-1089197" data-comment-id="1089197" aria-label="like" data-tracking-name="comment_heart_button" style="z-index: 2;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="aon88r5pdc49k9zwe5phw52qcnn1cjct" class="crayons-icon reaction-icon not-reacted"><title id="aon88r5pdc49k9zwe5phw52qcnn1cjct">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a3xjci15n4cybx124rbav404fpo589tf" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="a3xjci15n4cybx124rbav404fpo589tf">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">1</span><span class="reactions-label hidden m:inline-block">&nbsp;like</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+  
+
+      <button class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" data-comment-id="1089197" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh/comments/29p65" data-tracking-name="comment_reply_button" data-testid="reply-button-1089197" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="ag4w25he5mksqwc2dyh6e4lfl6404rnx" class="crayons-icon reaction-icon not-reacted"><title id="ag4w25he5mksqwc2dyh6e4lfl6404rnx">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </button>
+
+</footer>
+
+  </div>
+</div>
+
+
+  </div>
+    </details>
+
+
+  </div>
+    </details>
+
+
+  </div>
+    </details>
+
+    <details class="comment-wrapper js-comment-wrapper comment-wrapper--deep-0
+                    root
+                    " open="">
+      <summary aria-label="Toggle this comment (and replies)" data-tracking-name="expand_comment_toggle">
+        <span class="m:mx-1 inline-block align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="agcxtiqf5c3g6juynkx9vu1fwefynxv5" class="crayons-icon expanded"><title id="agcxtiqf5c3g6juynkx9vu1fwefynxv5">Collapse</title>
+    <path d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z"></path>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="abvdvi7ahe6ew5syrk9dn5b7fl14pvmw" class="crayons-icon collapsed"><title id="abvdvi7ahe6ew5syrk9dn5b7fl14pvmw">Expand</title>
+    <path d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z"></path>
+</svg>
+
+        </span>
+        <span class="js-collapse-comment-content inline-block align-middle"></span>
+      </summary>
+  <div id="comment-node-1127152" class="
+      comment single-comment-node
+      
+      root
+      comment--deep-0
+      
+    " data-comment-id="1127152" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh/comments/2c3a0" data-comment-author-id="1022591" data-content-user-id="1022591">
+    <a name="comment-2c3a0" style="position: absolute; top: -8px;">&nbsp;</a>
+    
+<div class="comment__inner">
+    <a href="https://dev.to/thecheapaudiophile" class="shrink-0 crayons-avatar m:crayons-avatar--l mt-4 m:mt-3">
+    <img class="crayons-avatar__image" width="32" height="32" src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg" alt="thecheapaudiophile profile image" loading="lazy">
+  </a>
+
+
+  <div class="inner-comment comment__details">
+    <div class="comment__content crayons-card">
+        
+
+
+        <div class="comment__header">
+  <a href="https://dev.to/thecheapaudiophile" class="crayons-link crayons-link--secondary flex items-center fw-medium m:hidden">
+    <span class="js-comment-username">
+      Griff Polk
+    </span>
+  </a>
+  <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:block">
+    <button id="comment-profile-preview-trigger-1127152" aria-controls="comment-profile-preview-content-1127152" class="profile-preview-card__trigger p-1 -my-1 -ml-1 crayons-btn crayons-btn--ghost" aria-label="Griff Polk profile details" aria-expanded="false" aria-haspopup="true" data-dropdown-initialized="true" data-initialized="true">
+      Griff Polk
+      
+      
+    </button>
+    <div id="comment-profile-preview-content-1127152" class="profile-preview-card__content p-4 pt-0 branded-7 crayons-dropdown reverse" style="--card-color: #1d1d1d; border-top-color: var(--card-color);" data-testid="profile-preview-card" data-repositioning-dropdown="true">
+    <div class="gap-4 grid">
+        <div class="-mt-4">
+  <a href="https://dev.to/thecheapaudiophile" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_1022591_6172c733-f6a0-4fc1-a308-379561289c69.jpeg" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">
+      Griff Polk
+      
+      
+    </span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:1022591,&quot;name&quot;:&quot;Griff Polk&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: Griff Polk" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    Hey, I’m the cheap audiophile, a self-expressed audiophile, who loves all things… sound!
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+          <li>
+            <div class="key">
+              Pronouns
+            </div>
+            <div class="value">
+              He/Him
+            </div>
+          </li>
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2023-02-07T18:02:40Z" class="date" title="Dienstag, 7. Februar 2023 um 19:02:40">7. Feb. 2023</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+</div>
+
+
+  </div>
+
+  <span class="color-base-30 px-2 m:pl-0" role="presentation">•</span>
+
+<a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-2c3a0" class="comment-date crayons-link crayons-link--secondary fs-s">
+  <time datetime="2024-01-08T17:41:19Z" class="date-short-year" title="Montag, 8. Januar 2024 um 18:41:19">8. Jan. 24</time>
+
+</a>
+
+
+  <div class="comment__dropdown" data-tracking-name="comment_dropdown">
+    <button id="comment-dropdown-trigger-1127152" aria-controls="comment-dropdown-1127152" aria-expanded="false" class="dropbtn comment__dropdown-trigger crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon " aria-label="Toggle dropdown menu" aria-haspopup="true" data-dropdown-initialized="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ajk6ck96orrck6hfsnwmooet3dc04avd" class="crayons-icon pointer-events-none"><title id="ajk6ck96orrck6hfsnwmooet3dc04avd">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+    </button>
+    <div id="comment-dropdown-1127152" class="crayons-dropdown right-1 s:right-0 s:left-auto fs-base dropdown">
+      <ul class="m-0">
+        <li><a href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#comment-2c3a0" class="crayons-link crayons-link--block permalink-copybtn" aria-label="Copy link to Griff Polk&#39;s comment" data-no-instant="">Copy link</a></li>
+        <li class="comment-actions hidden" data-user-id="1022591" data-action="settings-button" data-path="https://dev.to/thecheapaudiophile/comment/2c3a0/settings" aria-label="Go to Griff Polk&#39;s comment settings"></li>
+          <li class="comment-actions hidden" data-action="hide-button" data-commentable-user-id="859761" data-user-id="1022591">
+              <button class="flex justify-between crayons-link crayons-link--block w-100 bg-transparent border-0 hide-comment" data-hide-type="hide" data-comment-id="1127152" data-comment-url="https://dev.to/thecheapaudiophile/comment/2c3a0" aria-label="Hide Griff Polk&#39;s comment">
+                Hide
+              </button>
+          </li>
+        <li class="mod-actions hidden mod-actions-comment-button" data-path="https://dev.to/thecheapaudiophile/comment/2c3a0/mod" aria-label="Moderate Griff Polk&#39;s comment"></li>
+        <li class="report-abuse-link-wrapper" data-path="/report-abuse?url=https://dev.to/thecheapaudiophile/comment/2c3a0" aria-label="Report Griff Polk&#39;s comment as abusive or violating our code of conduct and/or terms and conditions"><a href="https://dev.to/report-abuse?url=https://dev.to/thecheapaudiophile/comment/2c3a0" class="crayons-link crayons-link--block">Report abuse</a></li>
+        <li class="current-user-actions"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <div class="
+            comment__body
+            text-styles
+            text-styles--secondary
+            body
+            
+            
+          ">
+          <p>TOM SCOTT HOLY COW</p>
+
+
+        </div>
+
+    </div>
+
+    <script>
+    </script>
+
+    <footer class="comment__footer print-hidden">
+  <button class="crayons-tooltip__activator relative crayons-btn crayons-btn--ghost crayons-btn--icon-left crayons-btn--s mr-1 reaction-like inline-flex reaction-button" id="button-for-comment-1127152" data-comment-id="1127152" aria-label="like" data-tracking-name="comment_heart_button" style="z-index: 1;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="amxxe1w72tjm0fer4cnj3pkc0y663r0s" class="crayons-icon reaction-icon not-reacted"><title id="amxxe1w72tjm0fer4cnj3pkc0y663r0s">Like comment: </title><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="amm3klvkn1qsordff6nf7vwftt1sf1pu" class="crayons-icon crayons-icon reaction-icon--like reaction-icon reacted"><title id="amm3klvkn1qsordff6nf7vwftt1sf1pu">Like comment: </title>
+    <path d="M5.116 12.595a4.875 4.875 0 015.56-7.68h-.002L7.493 8.098l1.06 1.061 3.181-3.182a4.875 4.875 0 016.895 6.894L12 19.5l-6.894-6.894.01-.01z"></path>
+</svg>
+
+    <span class="reactions-count">1</span><span class="reactions-label hidden m:inline-block">&nbsp;like</span>
+    <span data-testid="tooltip" class="crayons-tooltip__content">
+      Like
+    </span>
+  </button>
+
+  
+
+      <button class="actions crayons-btn crayons-btn--ghost crayons-btn--s crayons-btn--icon-left toggle-reply-form mr-1 inline-flex" data-comment-id="1127152" data-path="/abagames/making-small-games-which-is-fun-in-itself-19kh/comments/2c3a0" data-tracking-name="comment_reply_button" data-testid="reply-button-1127152" rel="nofollow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a8f0wstnyiftvn960320491lr1x9f9tk" class="crayons-icon reaction-icon not-reacted"><title id="a8f0wstnyiftvn960320491lr1x9f9tk">Comment button</title><path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>
+
+        <span class="hidden m:inline-block">Reply</span>
+      </button>
+
+</footer>
+
+  </div>
+</div>
+
+
+  </div>
+    </details>
+
+
+      </div>
+    </div>
+
+    <div class="align-center">
+
+
+  <nav class="fs-s align-center block" aria-label="Conduct controls">
+  <a href="https://dev.to/code-of-conduct" class="crayons-link crayons-link--secondary">Code of Conduct</a>
+  <span class="opacity-25 px-2" role="presentation">•</span>
+  <a href="https://dev.to/report-abuse" class="crayons-link crayons-link--secondary">Report abuse</a>
+</nav>
+
+</div>
+
+</section>
+<div id="hide-comments-modal" class="hidden">
+  <form id="hide-comments-modal__form" class="hide-comments-modal__form" data-type="json" action="https://dev.to/comments/hide" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="_method" value="patch" autocomplete="off"><input type="hidden" name="authenticity_token" value="__Jd7FhsjwGtc2mr3ax4hcF12YqTdul5F0LeeLF7KuUhMF8BI1ETbZm96htAbmqlmUncsCoGW34gcDuaSx22yQ" autocomplete="off">
+    <div class="hide-comments-modal__content">
+      <p class="pb-2">
+        Are you sure you want to hide this comment? It will become hidden in your post, but will still be visible via the comment's <a id="hide-comments-modal__comment-permalink" href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#">permalink</a>.
+      </p>
+      <label class="crayons-field crayons-field--checkbox my-2">
+        <input name="hide_children" type="hidden" value="0" autocomplete="off"><input class="hide_children crayons-checkbox" type="checkbox" value="1" name="hide_children" id="hide_children">
+        <p class="crayons-field__label">Hide child comments as well</p>
+      </label>
+      <p class="pb-4 pt-2">
+        <button type="submit" class="crayons-btn">
+          Confirm
+        </button>
+      </p>
+    </div>
+</form>  <p class="fs-s color-base-60">For further actions, you may consider blocking this person and/or <a id="hide-comments-modal__report-link" href="https://dev.to/report-abuse">reporting abuse</a></p>
+</div>
+
+
+
+        </article>
+
+        <div class="pb-4 crayons-layout__comments-billboard">
+          <div class="new-bb-container pb-4 crayons-layout__comments-billboard" data-async-url="/abagames/making-small-games-which-is-fun-in-itself-19kh/bmar11/post_comments"><div>    <style>
+  .long-bb-body {
+    max-height: calc(100vh - 200px);
+    overflow: hidden;
+  }
+  .long-bb-bottom {
+    height: 180px;
+    background: linear-gradient(to top, var(--card-bg), transparent);
+    margin-top: -180px;
+    position:relative;
+    z-index: 5;
+  }
+</style>
+
+  <div class="crayons-card crayons-card--secondary crayons-bb bb-placement js-billboard" style="" data-display-unit="" data-id="262995" data-category-click="click" data-category-impression="impression" data-context-type="article" data-special="nothing" data-article-id="1624858" data-type-of="partner" data-is-billboard-visible="false">
+    <div class="crayons-bb__header relative">
+    <div class="flex">
+        <a href="https://dev.to/devteam" target="_blank" rel="noopener" class="flex" style="align-items: center;">
+          <img width="20" height="20" class="radius-default crayons-bb__image" src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_organization_profile_image_1_d908a186-5651-4a5a-9f76-15200bc6801f.jpg" alt="profile" loading="lazy">
+          <div class="crayons-bb__title ml-2">The DEV Team</div>
+        </a>
+        <span class="crayons-bb__indicator c-indicator c-indicator--subtle c-indicator--round fs-2xs fw-medium ml-2 py-1 px-2">Promoted</span>
+    </div>
+
+  <button id="sponsorship-dropdown-trigger-262995" aria-controls="sponsorship-dropdown-262995" aria-expanded="false" aria-haspopup="true" class="dropBtn crayons-bb__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon" aria-label="Toggle dropdown menu" data-dropdown-initialized="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ae3hrtsdwuiwidvn47syxcma38j32yu3" class="crayons-icon pointer-events-none"><title id="ae3hrtsdwuiwidvn47syxcma38j32yu3">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+  </button>
+
+  <div id="sponsorship-dropdown-262995" class="crayons-dropdown bb-dropdown right-0">
+    <ul class="list-none m-0">
+        <li>
+          <a class="crayons-link crayons-link--block" href="https://dev.to/billboards">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"></path>
+</svg>
+
+            What's a billboard?
+          </a>
+        </li>
+      <li>
+        <a class="crayons-link crayons-link--block" href="https://dev.to/settings/customization#sponsors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M3.34 16.9999C2.91727 16.2689 2.58866 15.4874 2.362 14.6739C2.85531 14.423 3.26959 14.0406 3.55903 13.5688C3.84846 13.0971 4.00176 12.5545 4.00197 12.0011C4.00218 11.4476 3.84928 10.9049 3.5602 10.4329C3.27112 9.961 2.85712 9.57821 2.364 9.32694C2.81604 7.69243 3.67673 6.1999 4.865 4.98994C5.32909 5.29167 5.86762 5.45911 6.42098 5.47373C6.97434 5.48834 7.52095 5.34958 8.00033 5.07278C8.47971 4.79598 8.87315 4.39194 9.13713 3.90539C9.4011 3.41883 9.52531 2.86872 9.496 2.31594C11.1381 1.89157 12.8612 1.89226 14.503 2.31795C14.474 2.87071 14.5984 3.42073 14.8626 3.90715C15.1268 4.39357 15.5204 4.79742 15.9998 5.07401C16.4793 5.35059 17.0259 5.48913 17.5793 5.4743C18.1326 5.45946 18.671 5.29183 19.135 4.98994C19.714 5.57994 20.228 6.25095 20.66 6.99995C21.093 7.74895 21.417 8.52995 21.638 9.32595C21.1447 9.57685 20.7304 9.95932 20.441 10.4311C20.1515 10.9028 19.9982 11.4454 19.998 11.9988C19.9978 12.5523 20.1507 13.095 20.4398 13.5669C20.7289 14.0389 21.1429 14.4217 21.636 14.6729C21.184 16.3075 20.3233 17.8 19.135 19.0099C18.6709 18.7082 18.1324 18.5408 17.579 18.5262C17.0257 18.5115 16.479 18.6503 15.9997 18.9271C15.5203 19.2039 15.1268 19.6079 14.8629 20.0945C14.5989 20.5811 14.4747 21.1312 14.504 21.6839C12.8619 22.1083 11.1388 22.1076 9.497 21.6819C9.52605 21.1292 9.4016 20.5792 9.13742 20.0927C8.87324 19.6063 8.47964 19.2025 8.00017 18.9259C7.5207 18.6493 6.97405 18.5108 6.42073 18.5256C5.8674 18.5404 5.32896 18.7081 4.865 19.0099C4.27399 18.4069 3.76159 17.7315 3.34 16.9999ZM9 17.1959C10.0656 17.8106 10.8668 18.797 11.25 19.9659C11.749 20.0129 12.25 20.0139 12.749 19.9669C13.1324 18.7978 13.934 17.8114 15 17.1969C16.0652 16.5806 17.3205 16.3794 18.525 16.6319C18.815 16.2239 19.065 15.7889 19.273 15.3339C18.4524 14.4174 17.9991 13.2302 18 11.9999C18 10.7399 18.47 9.56295 19.273 8.66595C19.0635 8.21109 18.8125 7.77658 18.523 7.36795C17.3193 7.62025 16.0648 7.41942 15 6.80395C13.9344 6.18932 13.1332 5.20293 12.75 4.03394C12.251 3.98694 11.75 3.98594 11.251 4.03294C10.8676 5.20209 10.066 6.1885 9 6.80295C7.93478 7.41926 6.67948 7.62046 5.475 7.36795C5.18556 7.77623 4.93513 8.21081 4.727 8.66595C5.54757 9.5825 6.00088 10.7697 6 11.9999C6 13.2599 5.53 14.4369 4.727 15.3339C4.93647 15.7888 5.18754 16.2233 5.477 16.6319C6.68072 16.3796 7.93521 16.5805 9 17.1959ZM12 14.9999C11.2044 14.9999 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 11.9999C9 11.2043 9.31607 10.4412 9.87868 9.87862C10.4413 9.31602 11.2044 8.99995 12 8.99995C12.7956 8.99995 13.5587 9.31602 14.1213 9.87862C14.6839 10.4412 15 11.2043 15 11.9999C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 14.9999 12 14.9999ZM12 12.9999C12.2652 12.9999 12.5196 12.8946 12.7071 12.7071C12.8946 12.5195 13 12.2652 13 11.9999C13 11.7347 12.8946 11.4804 12.7071 11.2928C12.5196 11.1053 12.2652 10.9999 12 10.9999C11.7348 10.9999 11.4804 11.1053 11.2929 11.2928C11.1054 11.4804 11 11.7347 11 11.9999C11 12.2652 11.1054 12.5195 11.2929 12.7071C11.4804 12.8946 11.7348 12.9999 12 12.9999Z" fill="black"></path>
+</svg>
+
+          Manage preferences
+        </a>
+      </li>
+      <hr>
+      <li>
+        <a class="crayons-link crayons-link--block" href="https://dev.to/report-abuse?billboard=262995">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12.382 3a1 1 0 0 1 .894.553L14 5h6a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6.382a1 1 0 0 1-.894-.553L12 16H5v6H3V3h9.382Zm-.618 2H5v9h8.236l1 2H19V7h-6.236l-1-2Z"></path>
+</svg>
+
+          Report billboard
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="p-1 pt-3 text-styles text-styles--billboard">
+      <h2>  <a name="check-out-some-recent-articles-from-google-ai" href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#check-out-some-recent-articles-from-google-ai">  </a>  Check out some recent articles from Google AI</h2>
+<div class="ltag__link--embedded">  <div class="crayons-story " data-feed-content-id="3453326" data-content-user-id="3700947">  <a href="https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995" aria-labelledby="article-link-3453326" class="crayons-story__hidden-navigation-link">Deploy Gemma 4 on Cloud Run: Pay Only When You Actually Use It</a>  <div class="crayons-story__body crayons-story__body-full_post">    <div class="crayons-story__top">      <div class="crayons-story__meta">        <div class="crayons-story__author-pic">          <a class="crayons-logo crayons-logo--l" href="https://dev.to/gde?bb=262995">            <img alt="Google Developer Experts logo" src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_organization_profile_image_11939_e3080d5b-ecde-42a8-b089-bafecc31fa97.png" class="crayons-logo__image" loading="lazy" width="90" height="90">          </a>          <a href="https://dev.to/kulaone?bb=262995" class="crayons-avatar  crayons-avatar--s absolute -right-2 -bottom-2 border-solid border-2 border-base-inverted  ">            <img src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_3700947_9cbf0498-ff26-48a2-b5f6-bf03ce467f94.webp" alt="kulaone profile" class="crayons-avatar__image" loading="lazy" width="90" height="90">          </a>        </div>        <div>          <div>            <a href="https://dev.to/kulaone?bb=262995" class="crayons-story__secondary fw-medium m:hidden">              Daniel Gwerzman            </a>            <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:inline-block">              <button id="story-author-preview-trigger-3453326" aria-controls="story-author-preview-content-3453326" class="profile-preview-card__trigger fs-s p-1 -ml-1 -my-2 crayons-btn crayons-btn--ghost" aria-label="Daniel Gwerzman profile details">                Daniel Gwerzman                              </button>              <div id="story-author-preview-content-3453326" class="profile-preview-card__content crayons-dropdown branded-7 p-4 pt-0 reverse" style="border-top-color: var(--card-color);" data-repositioning-dropdown="true" data-testid="profile-preview-card">                <div class="gap-4 grid">                  <div class="-mt-4">                    <a href="https://dev.to/kulaone?bb=262995" class="flex">                      <span class="crayons-avatar crayons-avatar--xl mr-2 shrink-0">                        <img src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_3700947_9cbf0498-ff26-48a2-b5f6-bf03ce467f94.webp" class="crayons-avatar__image" alt="" loading="lazy" width="90" height="90">                      </span>                      <span class="crayons-link crayons-subtitle-2 mt-5">Daniel Gwerzman</span>                    </a>                  </div>                  <div class="print-hidden">                    <button class="crayons-btn follow-action-button whitespace-nowrap follow-user w-100" data-info="{&quot;style&quot;:&quot;full&quot;,&quot;id&quot;:3700947,&quot;className&quot;:&quot;User&quot;,&quot;name&quot;:&quot;Daniel Gwerzman&quot;}">                      Follow                    </button>                  </div>                  <div class="author-preview-metadata-container" data-author-id="3700947"></div>                </div>              </div>            </div>            <span>              <span class="crayons-story__tertiary fw-normal"> for </span><a href="https://dev.to/gde?bb=262995" class="crayons-story__secondary fw-medium">Google Developer Experts</a>            </span>          </div>          <a href="https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995" class="crayons-story__tertiary fs-xs"><time datetime="2026-04-04T10:42:37Z">Apr 4</time><span class="time-ago-indicator-initial-placeholder" data-seconds="1775299357"></span></a>        </div>      </div>    </div>    <div class="crayons-story__indention">      <h2 class="crayons-story__title crayons-story__title-full_post">        <a href="https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995" data-preload-image="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpaa9lx5j1mf8lbazntjf.png" id="article-link-3453326">          Deploy Gemma 4 on Cloud Run: Pay Only When You Actually Use It        </a>      </h2>        <div class="crayons-story__tags">            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(50, 123, 249, 0.10);        --tag-prefix: #327BF9;        --tag-bg-hover: rgba(50, 123, 249, 0.10);        --tag-prefix-hover: #327BF9;      " href="https://dev.to/t/gemma?bb=262995"><span class="crayons-tag__prefix">#</span>gemma</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(59, 73, 223, 0.10);        --tag-prefix: #3b49df;        --tag-bg-hover: rgba(59, 73, 223, 0.10);        --tag-prefix-hover: #3b49df;      " href="https://dev.to/t/cloudrun?bb=262995"><span class="crayons-tag__prefix">#</span>cloudrun</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(255, 153, 0, 0.10);        --tag-prefix: #FF9900;        --tag-bg-hover: rgba(255, 153, 0, 0.10);        --tag-prefix-hover: #FF9900;      " href="https://dev.to/t/cloud?bb=262995"><span class="crayons-tag__prefix">#</span>cloud</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(23, 253, 26, 0.10);        --tag-prefix: #17fd1a;        --tag-bg-hover: rgba(23, 253, 26, 0.10);        --tag-prefix-hover: #17fd1a;      " href="https://dev.to/t/ai?bb=262995"><span class="crayons-tag__prefix">#</span>ai</a>        </div>      <div class="crayons-story__bottom">        <div class="crayons-story__details">          <a href="https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995" class="crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon-left" data-reaction-count="" data-reactable-id="3453326" aria-label="Add a comment to post - Deploy Gemma 4 on Cloud Run: Pay Only When You Actually Use It">            <div class="multiple_reactions_aggregate">              <span class="multiple_reactions_icons_container" dir="rtl">                  <span class="crayons_icon_container">                    <img src="./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18" height="18">                  </span>                  <span class="crayons_icon_container">                    <img src="./index_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18" height="18">                  </span>                  <span class="crayons_icon_container">                    <img src="./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18" height="18">                  </span>              </span>              <span class="aggregate_reactions_counter">17<span class="hidden s:inline">&nbsp;reactions</span></span>            </div>          </a>            <a href="https://dev.to/gde/deploy-gemma-4-on-cloud-run-pay-only-when-you-actually-use-it-9ln?bb=262995#comments" class="crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon-left flex items-center" aria-label="Add a comment to post - Deploy Gemma 4 on Cloud Run: Pay Only When You Actually Use It">              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="am14gzdd3ko31g31r09bb9cycnit1xuc" class="crayons-icon"><title id="am14gzdd3ko31g31r09bb9cycnit1xuc">Comments</title>
+<path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>              3<span class="hidden s:inline">&nbsp;comments</span>            </a>        </div>        <div class="crayons-story__save">          <small class="crayons-story__tertiary fs-xs mr-2">            18 min read          </small>            <button type="button" id="article-save-button-3453326" class="c-btn c-btn--icon-alone bookmark-button" data-reactable-id="3453326" data-article-author-id="3700947" aria-label="Save post Deploy Gemma 4 on Cloud Run: Pay Only When You Actually Use It to reading list" title="Save post Deploy Gemma 4 on Cloud Run: Pay Only When You Actually Use It to reading list">              <span class="bm-initial">                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>              </span>              <span class="bm-success">                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z"></path></svg>              </span>            </button>        </div>      </div>    </div>  </div>
+</div>
+</div>
+<div class="ltag__link--embedded">  <div class="crayons-story " data-feed-content-id="3469292" data-content-user-id="1150046">  <a href="https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995" aria-labelledby="article-link-3469292" class="crayons-story__hidden-navigation-link">Running Agentic AI at Scale on Google Kubernetes Engine</a>  <div class="crayons-story__body crayons-story__body-full_post">    <div class="crayons-story__top">      <div class="crayons-story__meta">        <div class="crayons-story__author-pic">          <a class="crayons-logo crayons-logo--l" href="https://dev.to/gde?bb=262995">            <img alt="Google Developer Experts logo" src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_organization_profile_image_11939_e3080d5b-ecde-42a8-b089-bafecc31fa97.png" class="crayons-logo__image" loading="lazy" width="90" height="90">          </a>          <a href="https://dev.to/saurabhmi?bb=262995" class="crayons-avatar  crayons-avatar--s absolute -right-2 -bottom-2 border-solid border-2 border-base-inverted  ">            <img src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_1150046_7b2a3640-5eec-4bd7-a008-61950bda1fdc.png" alt="saurabhmi profile" class="crayons-avatar__image" loading="lazy" width="90" height="90">          </a>        </div>        <div>          <div>            <a href="https://dev.to/saurabhmi?bb=262995" class="crayons-story__secondary fw-medium m:hidden">              Saurabh Mishra            </a>            <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:inline-block">              <button id="story-author-preview-trigger-3469292" aria-controls="story-author-preview-content-3469292" class="profile-preview-card__trigger fs-s p-1 -ml-1 -my-2 crayons-btn crayons-btn--ghost" aria-label="Saurabh Mishra profile details">                Saurabh Mishra                              </button>              <div id="story-author-preview-content-3469292" class="profile-preview-card__content crayons-dropdown branded-7 p-4 pt-0 reverse" style="border-top-color: var(--card-color);" data-repositioning-dropdown="true" data-testid="profile-preview-card">                <div class="gap-4 grid">                  <div class="-mt-4">                    <a href="https://dev.to/saurabhmi?bb=262995" class="flex">                      <span class="crayons-avatar crayons-avatar--xl mr-2 shrink-0">                        <img src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_1150046_7b2a3640-5eec-4bd7-a008-61950bda1fdc.png" class="crayons-avatar__image" alt="" loading="lazy" width="90" height="90">                      </span>                      <span class="crayons-link crayons-subtitle-2 mt-5">Saurabh Mishra</span>                    </a>                  </div>                  <div class="print-hidden">                    <button class="crayons-btn follow-action-button whitespace-nowrap follow-user w-100" data-info="{&quot;style&quot;:&quot;full&quot;,&quot;id&quot;:1150046,&quot;className&quot;:&quot;User&quot;,&quot;name&quot;:&quot;Saurabh Mishra&quot;}">                      Follow                    </button>                  </div>                  <div class="author-preview-metadata-container" data-author-id="1150046"></div>                </div>              </div>            </div>            <span>              <span class="crayons-story__tertiary fw-normal"> for </span><a href="https://dev.to/gde?bb=262995" class="crayons-story__secondary fw-medium">Google Developer Experts</a>            </span>          </div>          <a href="https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995" class="crayons-story__tertiary fs-xs"><time datetime="2026-04-08T04:15:15Z">Apr 8</time><span class="time-ago-indicator-initial-placeholder" data-seconds="1775621715"></span></a>        </div>      </div>    </div>    <div class="crayons-story__indention">      <h2 class="crayons-story__title crayons-story__title-full_post">        <a href="https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995" data-preload-image="" id="article-link-3469292">          Running Agentic AI at Scale on Google Kubernetes Engine        </a>      </h2>        <div class="crayons-story__tags">            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(11, 226, 245, 0.10);        --tag-prefix: #0be2f5;        --tag-bg-hover: rgba(11, 226, 245, 0.10);        --tag-prefix-hover: #0be2f5;      " href="https://dev.to/t/agents?bb=262995"><span class="crayons-tag__prefix">#</span>agents</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(23, 253, 26, 0.10);        --tag-prefix: #17fd1a;        --tag-bg-hover: rgba(23, 253, 26, 0.10);        --tag-prefix-hover: #17fd1a;      " href="https://dev.to/t/ai?bb=262995"><span class="crayons-tag__prefix">#</span>ai</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(255, 153, 0, 0.10);        --tag-prefix: #FF9900;        --tag-bg-hover: rgba(255, 153, 0, 0.10);        --tag-prefix-hover: #FF9900;      " href="https://dev.to/t/cloud?bb=262995"><span class="crayons-tag__prefix">#</span>cloud</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(50, 109, 230, 0.10);        --tag-prefix: #326de6;        --tag-bg-hover: rgba(50, 109, 230, 0.10);        --tag-prefix-hover: #326de6;      " href="https://dev.to/t/kubernetes?bb=262995"><span class="crayons-tag__prefix">#</span>kubernetes</a>        </div>      <div class="crayons-story__bottom">        <div class="crayons-story__details">          <a href="https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995" class="crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon-left" data-reaction-count="" data-reactable-id="3469292" aria-label="Add a comment to post - Running Agentic AI at Scale on Google Kubernetes Engine">            <div class="multiple_reactions_aggregate">              <span class="multiple_reactions_icons_container" dir="rtl">                  <span class="crayons_icon_container">                    <img src="./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18" height="18">                  </span>                  <span class="crayons_icon_container">                    <img src="./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18" height="18">                  </span>                  <span class="crayons_icon_container">                    <img src="./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18" height="18">                  </span>              </span>              <span class="aggregate_reactions_counter">7<span class="hidden s:inline">&nbsp;reactions</span></span>            </div>          </a>            <a href="https://dev.to/gde/running-agentic-ai-at-scale-on-google-kubernetes-engine-2540?bb=262995#comments" class="crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon-left flex items-center" aria-label="Add a comment to post - Running Agentic AI at Scale on Google Kubernetes Engine">              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="abdebtnzggi1bgneucq5mfcaeb0mbcbm" class="crayons-icon"><title id="abdebtnzggi1bgneucq5mfcaeb0mbcbm">Comments</title>
+<path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>              <span class="hidden s:inline">Add&nbsp;Comment</span>            </a>        </div>        <div class="crayons-story__save">          <small class="crayons-story__tertiary fs-xs mr-2">            6 min read          </small>            <button type="button" id="article-save-button-3469292" class="c-btn c-btn--icon-alone bookmark-button" data-reactable-id="3469292" data-article-author-id="1150046" aria-label="Save post Running Agentic AI at Scale on Google Kubernetes Engine to reading list" title="Save post Running Agentic AI at Scale on Google Kubernetes Engine to reading list">              <span class="bm-initial">                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>              </span>              <span class="bm-success">                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z"></path></svg>              </span>            </button>        </div>      </div>    </div>  </div>
+</div>
+</div>
+<div class="ltag__link--embedded">  <div class="crayons-story " data-feed-content-id="3461516" data-content-user-id="774921">  <a href="https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995" aria-labelledby="article-link-3461516" class="crayons-story__hidden-navigation-link">Observability at Scale: Mastering ADK Callbacks for Cost, Latency, and Auditability [GDE]</a>  <div class="crayons-story__body crayons-story__body-full_post">      <a href="https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995" class="crayons-article__context-note crayons-article__context-note__feed"><p>Bypassing redundant steps to cut LLM costs</p></a>    <div class="crayons-story__top">      <div class="crayons-story__meta">        <div class="crayons-story__author-pic">          <a class="crayons-logo crayons-logo--l" href="https://dev.to/gde?bb=262995">            <img alt="Google Developer Experts logo" src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_organization_profile_image_11939_e3080d5b-ecde-42a8-b089-bafecc31fa97.png" class="crayons-logo__image" loading="lazy" width="90" height="90">          </a>          <a href="https://dev.to/railsstudent?bb=262995" class="crayons-avatar  crayons-avatar--s absolute -right-2 -bottom-2 border-solid border-2 border-base-inverted  ">            <img src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_774921_1f16eaef-f6d6-4ef0-ab0d-17eaa5c01e75.jpeg" alt="railsstudent profile" class="crayons-avatar__image" loading="lazy" width="90" height="90">          </a>        </div>        <div>          <div>            <a href="https://dev.to/railsstudent?bb=262995" class="crayons-story__secondary fw-medium m:hidden">              Connie Leung            </a>            <div class="profile-preview-card relative mb-4 s:mb-0 fw-medium hidden m:inline-block">              <button id="story-author-preview-trigger-3461516" aria-controls="story-author-preview-content-3461516" class="profile-preview-card__trigger fs-s p-1 -ml-1 -my-2 crayons-btn crayons-btn--ghost" aria-label="Connie Leung profile details">                Connie Leung                              </button>              <div id="story-author-preview-content-3461516" class="profile-preview-card__content crayons-dropdown branded-7 p-4 pt-0 reverse" style="border-top-color: var(--card-color);" data-repositioning-dropdown="true" data-testid="profile-preview-card">                <div class="gap-4 grid">                  <div class="-mt-4">                    <a href="https://dev.to/railsstudent?bb=262995" class="flex">                      <span class="crayons-avatar crayons-avatar--xl mr-2 shrink-0">                        <img src="./index_files/https___dev-to-uploads.s3.amazonaws.com_uploads_user_profile_image_774921_1f16eaef-f6d6-4ef0-ab0d-17eaa5c01e75.jpeg" class="crayons-avatar__image" alt="" loading="lazy" width="90" height="90">                      </span>                      <span class="crayons-link crayons-subtitle-2 mt-5">Connie Leung</span>                    </a>                  </div>                  <div class="print-hidden">                    <button class="crayons-btn follow-action-button whitespace-nowrap follow-user w-100" data-info="{&quot;style&quot;:&quot;full&quot;,&quot;id&quot;:774921,&quot;className&quot;:&quot;User&quot;,&quot;name&quot;:&quot;Connie Leung&quot;}">                      Follow                    </button>                  </div>                  <div class="author-preview-metadata-container" data-author-id="774921"></div>                </div>              </div>            </div>            <span>              <span class="crayons-story__tertiary fw-normal"> for </span><a href="https://dev.to/gde?bb=262995" class="crayons-story__secondary fw-medium">Google Developer Experts</a>            </span>          </div>          <a href="https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995" class="crayons-story__tertiary fs-xs"><time datetime="2026-04-06T16:02:04Z">Apr 6</time><span class="time-ago-indicator-initial-placeholder" data-seconds="1775491324"></span></a>        </div>      </div>    </div>    <div class="crayons-story__indention">      <h2 class="crayons-story__title crayons-story__title-full_post">        <a href="https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995" data-preload-image="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0wopqh8z8l9t5jua1jrl.jpg" id="article-link-3461516">          Observability at Scale: Mastering ADK Callbacks for Cost, Latency, and Auditability [GDE]        </a>      </h2>        <div class="crayons-story__tags">            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(11, 226, 245, 0.10);        --tag-prefix: #0be2f5;        --tag-bg-hover: rgba(11, 226, 245, 0.10);        --tag-prefix-hover: #0be2f5;      " href="https://dev.to/t/agents?bb=262995"><span class="crayons-tag__prefix">#</span>agents</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(254, 255, 165, 0.10);        --tag-prefix: #FEFFA5;        --tag-bg-hover: rgba(254, 255, 165, 0.10);        --tag-prefix-hover: #FEFFA5;      " href="https://dev.to/t/tutorial?bb=262995"><span class="crayons-tag__prefix">#</span>tutorial</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(23, 253, 26, 0.10);        --tag-prefix: #17fd1a;        --tag-bg-hover: rgba(23, 253, 26, 0.10);        --tag-prefix-hover: #17fd1a;      " href="https://dev.to/t/ai?bb=262995"><span class="crayons-tag__prefix">#</span>ai</a>            <a class="crayons-tag  crayons-tag--monochrome " style="        --tag-bg: rgba(35, 74, 132, 0.10);        --tag-prefix: #234A84;        --tag-bg-hover: rgba(35, 74, 132, 0.10);        --tag-prefix-hover: #234A84;      " href="https://dev.to/t/typescript?bb=262995"><span class="crayons-tag__prefix">#</span>typescript</a>        </div>      <div class="crayons-story__bottom">        <div class="crayons-story__details">          <a href="https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995" class="crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon-left" data-reaction-count="" data-reactable-id="3461516" aria-label="Add a comment to post - Observability at Scale: Mastering ADK Callbacks for Cost, Latency, and Auditability [GDE]">            <div class="multiple_reactions_aggregate">              <span class="multiple_reactions_icons_container" dir="rtl">                  <span class="crayons_icon_container">                    <img src="./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18" height="18">                  </span>                  <span class="crayons_icon_container">                    <img src="./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18" height="18">                  </span>                  <span class="crayons_icon_container">                    <img src="./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18" height="18">                  </span>              </span>              <span class="aggregate_reactions_counter">32<span class="hidden s:inline">&nbsp;reactions</span></span>            </div>          </a>            <a href="https://dev.to/gde/observability-at-scale-mastering-adk-callbacks-for-cost-latency-and-auditability-1mo5?bb=262995#comments" class="crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon-left flex items-center" aria-label="Add a comment to post - Observability at Scale: Mastering ADK Callbacks for Cost, Latency, and Auditability [GDE]">              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="aduvpbjqkr89q9sxnlnkfsrbavtwgv4k" class="crayons-icon"><title id="aduvpbjqkr89q9sxnlnkfsrbavtwgv4k">Comments</title>
+<path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"></path></svg>              11<span class="hidden s:inline">&nbsp;comments</span>            </a>        </div>        <div class="crayons-story__save">          <small class="crayons-story__tertiary fs-xs mr-2">            12 min read          </small>            <button type="button" id="article-save-button-3461516" class="c-btn c-btn--icon-alone bookmark-button" data-reactable-id="3461516" data-article-author-id="774921" aria-label="Save post Observability at Scale: Mastering ADK Callbacks for Cost, Latency, and Auditability [GDE] to reading list" title="Save post Observability at Scale: Mastering ADK Callbacks for Cost, Latency, and Auditability [GDE] to reading list">              <span class="bm-initial">                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>              </span>              <span class="bm-success">                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true"><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z"></path></svg>              </span>            </button>        </div>      </div>    </div>  </div>
+</div>
+</div>
+    </div>
+  </div>
+
+</div></div>
+        </div>
+
+          <!-- Bottom content skipped via SKIP_BOTTOM_CONTENT config -->
+      </div>
+    </main>
+
+    <aside class="crayons-layout__sidebar-right" aria-label="Author details">
+      <div class="crayons-article-sticky grid gap-4 pb-4 break-word" id="article-show-primary-sticky-nav">
+  <div class="crayons-card crayons-card--secondary branded-7 p-4 pt-0 gap-4 grid" style="border-top-color: #000000;">
+    <div class="-mt-4">
+  <a href="https://dev.to/abagames" class="flex">
+    <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+      <img src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws(1).com_uploads_user_profile_image_859761_871a936d-2aa9-4fdd-91cc-74410e64683e.png" class="crayons-avatar__image" alt="" loading="lazy">
+    </span>
+    <span class="crayons-link crayons-subtitle-2 mt-5">
+      ABA Games
+      
+      
+    </span>
+  </a>
+</div>
+
+<div class="print-hidden">
+  <button name="button" type="button" data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:859761,&quot;name&quot;:&quot;ABA Games&quot;}" class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user" aria-label="Follow user: ABA Games" aria-pressed="false" data-fetched="fetched">Follow</button>
+</div>
+  <div class="color-base-70">
+    ABA Games
+  </div>
+
+  <div class="user-metadata-details">
+    <ul class="user-metadata-details-inner">
+      <li>
+        <div class="key">
+          Joined
+        </div>
+        <div class="value">
+          <time datetime="2022-05-09T08:41:59Z" class="date">9. Mai 2022</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  </div>
+
+      <div class="crayons-card crayons-card--secondary">
+        <header class="crayons-card__header">
+          <h3 class="crayons-subtitle-2">
+            More from <a href="https://dev.to/abagames">ABA Games</a>
+          </h3>
+        </header>
+        <div>
+            <a class="crayons-link crayons-link--contentful" href="https://dev.to/abagames/godot-is-well-suited-for-game-development-with-ai-coding-agents-2lcm">
+              Godot Is Well-Suited for Game Development with AI Coding Agents
+              <div class="crayons-link__secondary -ml-1">
+                  <span class="mr-1"><span class="opacity-50">#</span>godot</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>godotengine</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>ai</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>gamedev</span>
+              </div>
+            </a>
+            <a class="crayons-link crayons-link--contentful" href="https://dev.to/abagames/ai-makes-us-start-too-many-projects-4jpe">
+              AI Makes Us Start Too Many Projects
+              <div class="crayons-link__secondary -ml-1">
+                  <span class="mr-1"><span class="opacity-50">#</span>ai</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>productivity</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>sideprojects</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>softwaredevelopment</span>
+              </div>
+            </a>
+            <a class="crayons-link crayons-link--contentful" href="https://dev.to/abagames/is-game-programming-actually-harder-for-ai-agents-4hh1">
+              Is Game Programming Actually Harder for AI Agents?
+              <div class="crayons-link__secondary -ml-1">
+                  <span class="mr-1"><span class="opacity-50">#</span>ai</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>agents</span>
+                  <span class="mr-1"><span class="opacity-50">#</span>gamedev</span>
+              </div>
+            </a>
+        </div>
+      </div>
+</div>
+
+<div class="crayons-article-sticky grid gap-4 break-word sidebar-bb" data-async-url="/abagames/making-small-games-which-is-fun-in-itself-19kh/bmar11/post_sidebar"><div>    <style>
+  .long-bb-body {
+    max-height: calc(100vh - 200px);
+    overflow: hidden;
+  }
+  .long-bb-bottom {
+    height: 180px;
+    background: linear-gradient(to top, var(--card-bg), transparent);
+    margin-top: -180px;
+    position:relative;
+    z-index: 5;
+  }
+</style>
+
+  <div class="crayons-card crayons-card--secondary crayons-bb bb-placement js-billboard" style="" data-display-unit="" data-id="263979" data-category-click="click" data-category-impression="impression" data-context-type="article" data-special="nothing" data-article-id="1624858" data-type-of="partner" data-is-billboard-visible="true" data-impression-recorded="true" data-polling-interval-id="100" data-event-id="1085729147">
+    <div class="crayons-bb__header relative">
+    <div class="flex">
+        <a href="https://dev.to/tigerdata" target="_blank" rel="noopener" class="flex" style="align-items: center;">
+          <img width="20" height="20" class="radius-default crayons-bb__image" src="./index_files/https___dev-to-uploads.s3.us-east-2.amazonaws.com_uploads_organization_profile_image_2028_55d4ec28-b9c7-4adb-bd8f-08fad8f4c075.png" alt="profile" loading="lazy">
+          <div class="crayons-bb__title ml-2">Tiger Data (Creators of TimescaleDB)</div>
+        </a>
+        <span class="crayons-bb__indicator c-indicator c-indicator--subtle c-indicator--round fs-2xs fw-medium ml-2 py-1 px-2">Promoted</span>
+    </div>
+
+  <button id="sponsorship-dropdown-trigger-263979" aria-controls="sponsorship-dropdown-263979" aria-expanded="false" aria-haspopup="true" class="dropBtn crayons-bb__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon" aria-label="Toggle dropdown menu" data-dropdown-initialized="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ass3z2c6x0upq1q72m7hxral3o56n6vl" class="crayons-icon pointer-events-none"><title id="ass3z2c6x0upq1q72m7hxral3o56n6vl">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+  </button>
+
+  <div id="sponsorship-dropdown-263979" class="crayons-dropdown bb-dropdown right-0">
+    <ul class="list-none m-0">
+        <li>
+          <a class="crayons-link crayons-link--block" href="https://dev.to/billboards">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"></path>
+</svg>
+
+            What's a billboard?
+          </a>
+        </li>
+      <li>
+        <a class="crayons-link crayons-link--block" href="https://dev.to/settings/customization#sponsors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M3.34 16.9999C2.91727 16.2689 2.58866 15.4874 2.362 14.6739C2.85531 14.423 3.26959 14.0406 3.55903 13.5688C3.84846 13.0971 4.00176 12.5545 4.00197 12.0011C4.00218 11.4476 3.84928 10.9049 3.5602 10.4329C3.27112 9.961 2.85712 9.57821 2.364 9.32694C2.81604 7.69243 3.67673 6.1999 4.865 4.98994C5.32909 5.29167 5.86762 5.45911 6.42098 5.47373C6.97434 5.48834 7.52095 5.34958 8.00033 5.07278C8.47971 4.79598 8.87315 4.39194 9.13713 3.90539C9.4011 3.41883 9.52531 2.86872 9.496 2.31594C11.1381 1.89157 12.8612 1.89226 14.503 2.31795C14.474 2.87071 14.5984 3.42073 14.8626 3.90715C15.1268 4.39357 15.5204 4.79742 15.9998 5.07401C16.4793 5.35059 17.0259 5.48913 17.5793 5.4743C18.1326 5.45946 18.671 5.29183 19.135 4.98994C19.714 5.57994 20.228 6.25095 20.66 6.99995C21.093 7.74895 21.417 8.52995 21.638 9.32595C21.1447 9.57685 20.7304 9.95932 20.441 10.4311C20.1515 10.9028 19.9982 11.4454 19.998 11.9988C19.9978 12.5523 20.1507 13.095 20.4398 13.5669C20.7289 14.0389 21.1429 14.4217 21.636 14.6729C21.184 16.3075 20.3233 17.8 19.135 19.0099C18.6709 18.7082 18.1324 18.5408 17.579 18.5262C17.0257 18.5115 16.479 18.6503 15.9997 18.9271C15.5203 19.2039 15.1268 19.6079 14.8629 20.0945C14.5989 20.5811 14.4747 21.1312 14.504 21.6839C12.8619 22.1083 11.1388 22.1076 9.497 21.6819C9.52605 21.1292 9.4016 20.5792 9.13742 20.0927C8.87324 19.6063 8.47964 19.2025 8.00017 18.9259C7.5207 18.6493 6.97405 18.5108 6.42073 18.5256C5.8674 18.5404 5.32896 18.7081 4.865 19.0099C4.27399 18.4069 3.76159 17.7315 3.34 16.9999ZM9 17.1959C10.0656 17.8106 10.8668 18.797 11.25 19.9659C11.749 20.0129 12.25 20.0139 12.749 19.9669C13.1324 18.7978 13.934 17.8114 15 17.1969C16.0652 16.5806 17.3205 16.3794 18.525 16.6319C18.815 16.2239 19.065 15.7889 19.273 15.3339C18.4524 14.4174 17.9991 13.2302 18 11.9999C18 10.7399 18.47 9.56295 19.273 8.66595C19.0635 8.21109 18.8125 7.77658 18.523 7.36795C17.3193 7.62025 16.0648 7.41942 15 6.80395C13.9344 6.18932 13.1332 5.20293 12.75 4.03394C12.251 3.98694 11.75 3.98594 11.251 4.03294C10.8676 5.20209 10.066 6.1885 9 6.80295C7.93478 7.41926 6.67948 7.62046 5.475 7.36795C5.18556 7.77623 4.93513 8.21081 4.727 8.66595C5.54757 9.5825 6.00088 10.7697 6 11.9999C6 13.2599 5.53 14.4369 4.727 15.3339C4.93647 15.7888 5.18754 16.2233 5.477 16.6319C6.68072 16.3796 7.93521 16.5805 9 17.1959ZM12 14.9999C11.2044 14.9999 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 11.9999C9 11.2043 9.31607 10.4412 9.87868 9.87862C10.4413 9.31602 11.2044 8.99995 12 8.99995C12.7956 8.99995 13.5587 9.31602 14.1213 9.87862C14.6839 10.4412 15 11.2043 15 11.9999C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 14.9999 12 14.9999ZM12 12.9999C12.2652 12.9999 12.5196 12.8946 12.7071 12.7071C12.8946 12.5195 13 12.2652 13 11.9999C13 11.7347 12.8946 11.4804 12.7071 11.2928C12.5196 11.1053 12.2652 10.9999 12 10.9999C11.7348 10.9999 11.4804 11.1053 11.2929 11.2928C11.1054 11.4804 11 11.7347 11 11.9999C11 12.2652 11.1054 12.5195 11.2929 12.7071C11.4804 12.8946 11.7348 12.9999 12 12.9999Z" fill="black"></path>
+</svg>
+
+          Manage preferences
+        </a>
+      </li>
+      <hr>
+      <li>
+        <a class="crayons-link crayons-link--block" href="https://dev.to/report-abuse?billboard=263979">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12.382 3a1 1 0 0 1 .894.553L14 5h6a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6.382a1 1 0 0 1-.894-.553L12 16H5v6H3V3h9.382Zm-.618 2H5v9h8.236l1 2H19V7h-6.236l-1-2Z"></path>
+</svg>
+
+          Report billboard
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="p-1 pt-3 text-styles text-styles--billboard">
+      <p><a href="https://www.tigerdata.com/events/tiger-hunt?utm_source=content-syndication&amp;utm_medium=referral&amp;utm_campaign=dev-to&amp;utm_content=display-tigerhunt-0813&amp;bb=263979" target="_blank" rel="noopener noreferrer"><img src="./index_files/https___i.imgur.com_BR7xQdt.png" alt="Tiger Data image" width="1600" height="672" loading="lazy"></a></p>
+<h2>  <a name="learn-timescaledb-earn-a-swag-pack-skill-up-by-building-not-just-reading-the-docs" href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#learn-timescaledb-earn-a-swag-pack-skill-up-by-building-not-just-reading-the-docs">  </a>  <a href="https://www.tigerdata.com/events/tiger-hunt?utm_source=content-syndication&amp;utm_medium=referral&amp;utm_campaign=dev-to&amp;utm_content=display-tigerhunt-0813&amp;bb=263979" target="_blank" rel="noopener noreferrer">Learn TimescaleDB. Earn a Swag Pack. Skill up by building, not just reading the docs.</a>
+</h2>
+<p>Take the Tiger Hunt challenge: skill up on TimescaleDB by building, not just reading. Sign up on Tiger Cloud and finish five quick tasks: load a dataset, install the MCP or Tiger CLI, create a hypertable, build a continuous aggregate, join a live workshop. Earn a swag pack, and learn to run time-series and real-time analytics on Postgres.</p>
+<p><a href="https://www.tigerdata.com/events/tiger-hunt?utm_source=content-syndication&amp;utm_medium=referral&amp;utm_campaign=dev-to&amp;utm_content=display-tigerhunt-0813&amp;bb=263979" class="crayons-btn crayons-btn--primary" role="button" target="_blank" rel="noopener noreferrer">Start the Hunt →</a></p>
+    </div>
+  </div>
+
+</div></div>
+
+
+    </aside>
+  </div>
+
+  <div class="mod-actions-menu print-hidden"></div>
+  <div data-testid="unpublish-post-modal-container" class="unpublish-post-modal-container hidden"></div>
+
+  <div class="fullscreen-code js-fullscreen-code"></div>
+  <script src="./index_files/billboard-1b75959755e3f87ef58c28efef9eab9853df3b84cf27a937749b2c3449fd450d.js" defer="defer"></script>
+<script src="./index_files/localizeArticleDates-ddf0f7415ce8497325dd1b64bc1e022762d4d14aec7f538e6988744eeaa9a501.js" defer="defer"></script>
+<script src="./index_files/articleReactions-03b03e63c7319a6caa1788ca81e7b25dff9fe90b38ca051b8b979a773b011e3b.js" defer="defer"></script>
+<script src="./index_files/favoriteControls-cfa2ed6790ef8a2f8e34cb8509281caaaefa45a5cea6bb1e5c4675943b8b6a37.js" defer="defer"></script>
+
+  <script>
+  </script>
+  <div class="js-billboard-container pb-4 crayons-layout__comments-billboard" data-async-url="/abagames/making-small-games-which-is-fun-in-itself-19kh/bmar11/post_fixed_bottom"><div>    <style>
+  .long-bb-body {
+    max-height: calc(100vh - 200px);
+    overflow: hidden;
+  }
+  .long-bb-bottom {
+    height: 180px;
+    background: linear-gradient(to top, var(--card-bg), transparent);
+    margin-top: -180px;
+    position:relative;
+    z-index: 5;
+  }
+</style>
+
+  <div class="crayons-card crayons-card--secondary crayons-bb popover-billboard crayons-story__billboard js-billboard fixed bottom-0 left-0 right-0 popover-billboard--menuopenupwards" style="display: none;" data-display-unit="" data-id="239338" data-category-click="click" data-category-impression="impression" data-context-type="article" data-dismissal-sku="" data-special="nothing" data-browser-context="desktop" data-article-id="1624858" data-type-of="in_house" data-is-billboard-visible="false" data-impression-recorded="true" data-event-id="1085729146">
+    <div class="popover-billboard__header flex">
+      <div class="crayons-bb__header relative">
+    <div class="crayons-bb__title">👋 Kindness is contagious</div>
+
+  <button id="sponsorship-dropdown-trigger-239338" aria-controls="sponsorship-dropdown-239338" aria-expanded="false" aria-haspopup="true" class="dropBtn crayons-bb__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon" aria-label="Toggle dropdown menu" data-dropdown-initialized="true" data-initialized="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="aa5j02ddytymkykibs18gxz7px1oh6ci" class="crayons-icon pointer-events-none"><title id="aa5j02ddytymkykibs18gxz7px1oh6ci">Dropdown menu</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+
+  </button>
+
+  <div id="sponsorship-dropdown-239338" class="crayons-dropdown bb-dropdown right-0">
+    <ul class="list-none m-0">
+        <li>
+          <a class="crayons-link crayons-link--block" href="https://dev.to/billboards">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"></path>
+</svg>
+
+            What's a billboard?
+          </a>
+        </li>
+      <li>
+        <a class="crayons-link crayons-link--block" href="https://dev.to/settings/customization#sponsors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M3.34 16.9999C2.91727 16.2689 2.58866 15.4874 2.362 14.6739C2.85531 14.423 3.26959 14.0406 3.55903 13.5688C3.84846 13.0971 4.00176 12.5545 4.00197 12.0011C4.00218 11.4476 3.84928 10.9049 3.5602 10.4329C3.27112 9.961 2.85712 9.57821 2.364 9.32694C2.81604 7.69243 3.67673 6.1999 4.865 4.98994C5.32909 5.29167 5.86762 5.45911 6.42098 5.47373C6.97434 5.48834 7.52095 5.34958 8.00033 5.07278C8.47971 4.79598 8.87315 4.39194 9.13713 3.90539C9.4011 3.41883 9.52531 2.86872 9.496 2.31594C11.1381 1.89157 12.8612 1.89226 14.503 2.31795C14.474 2.87071 14.5984 3.42073 14.8626 3.90715C15.1268 4.39357 15.5204 4.79742 15.9998 5.07401C16.4793 5.35059 17.0259 5.48913 17.5793 5.4743C18.1326 5.45946 18.671 5.29183 19.135 4.98994C19.714 5.57994 20.228 6.25095 20.66 6.99995C21.093 7.74895 21.417 8.52995 21.638 9.32595C21.1447 9.57685 20.7304 9.95932 20.441 10.4311C20.1515 10.9028 19.9982 11.4454 19.998 11.9988C19.9978 12.5523 20.1507 13.095 20.4398 13.5669C20.7289 14.0389 21.1429 14.4217 21.636 14.6729C21.184 16.3075 20.3233 17.8 19.135 19.0099C18.6709 18.7082 18.1324 18.5408 17.579 18.5262C17.0257 18.5115 16.479 18.6503 15.9997 18.9271C15.5203 19.2039 15.1268 19.6079 14.8629 20.0945C14.5989 20.5811 14.4747 21.1312 14.504 21.6839C12.8619 22.1083 11.1388 22.1076 9.497 21.6819C9.52605 21.1292 9.4016 20.5792 9.13742 20.0927C8.87324 19.6063 8.47964 19.2025 8.00017 18.9259C7.5207 18.6493 6.97405 18.5108 6.42073 18.5256C5.8674 18.5404 5.32896 18.7081 4.865 19.0099C4.27399 18.4069 3.76159 17.7315 3.34 16.9999ZM9 17.1959C10.0656 17.8106 10.8668 18.797 11.25 19.9659C11.749 20.0129 12.25 20.0139 12.749 19.9669C13.1324 18.7978 13.934 17.8114 15 17.1969C16.0652 16.5806 17.3205 16.3794 18.525 16.6319C18.815 16.2239 19.065 15.7889 19.273 15.3339C18.4524 14.4174 17.9991 13.2302 18 11.9999C18 10.7399 18.47 9.56295 19.273 8.66595C19.0635 8.21109 18.8125 7.77658 18.523 7.36795C17.3193 7.62025 16.0648 7.41942 15 6.80395C13.9344 6.18932 13.1332 5.20293 12.75 4.03394C12.251 3.98694 11.75 3.98594 11.251 4.03294C10.8676 5.20209 10.066 6.1885 9 6.80295C7.93478 7.41926 6.67948 7.62046 5.475 7.36795C5.18556 7.77623 4.93513 8.21081 4.727 8.66595C5.54757 9.5825 6.00088 10.7697 6 11.9999C6 13.2599 5.53 14.4369 4.727 15.3339C4.93647 15.7888 5.18754 16.2233 5.477 16.6319C6.68072 16.3796 7.93521 16.5805 9 17.1959ZM12 14.9999C11.2044 14.9999 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 11.9999C9 11.2043 9.31607 10.4412 9.87868 9.87862C10.4413 9.31602 11.2044 8.99995 12 8.99995C12.7956 8.99995 13.5587 9.31602 14.1213 9.87862C14.6839 10.4412 15 11.2043 15 11.9999C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 14.9999 12 14.9999ZM12 12.9999C12.2652 12.9999 12.5196 12.8946 12.7071 12.7071C12.8946 12.5195 13 12.2652 13 11.9999C13 11.7347 12.8946 11.4804 12.7071 11.2928C12.5196 11.1053 12.2652 10.9999 12 10.9999C11.7348 10.9999 11.4804 11.1053 11.2929 11.2928C11.1054 11.4804 11 11.7347 11 11.9999C11 12.2652 11.1054 12.5195 11.2929 12.7071C11.4804 12.8946 11.7348 12.9999 12 12.9999Z" fill="black"></path>
+</svg>
+
+          Manage preferences
+        </a>
+      </li>
+      <hr>
+      <li>
+        <a class="crayons-link crayons-link--block" href="https://dev.to/report-abuse?billboard=239338">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" role="img" aria-hidden="true" class="crayons-icon c-btn__icon">
+    <path d="M12.382 3a1 1 0 0 1 .894.553L14 5h6a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6.382a1 1 0 0 1-.894-.553L12 16H5v6H3V3h9.382Zm-.618 2H5v9h8.236l1 2H19V7h-6.236l-1-2Z"></path>
+</svg>
+
+          Report billboard
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <button id="sponsorship-close-trigger-239338" aria-controls="sponsorship-close-239338" aria-label="Dismiss billboard" class="crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon popover-billboard__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a3tpyljhyix2sabnr3vmcce8i9hrmvgm" class="crayons-icon pointer-events-none"><title id="a3tpyljhyix2sabnr3vmcce8i9hrmvgm">x</title><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636l4.95 4.95z"></path></svg>
+
+      </button>
+    </div>
+    <div class="popover-billboard__content text-styles text-styles--billboard">
+      <p>Explore this practical breakdown on DEV’s open platform, where developers from every background come together to push boundaries. <strong>No matter your experience,</strong> your viewpoint enriches the conversation.</p>
+<p>Dropping a simple “thank you” or question in the comments goes a long way in supporting authors—your feedback helps ideas evolve.</p>
+<p>At DEV, <strong>shared discovery drives progress</strong> and builds lasting bonds. If this post resonated, a quick nod of appreciation can make all the difference.</p>
+<h2>  <a name="-cta-httpsdevtoenterstatenewuser-" href="https://dev.to/abagames/making-small-games-which-is-fun-in-itself-19kh#-cta-httpsdevtoenterstatenewuser-">  </a>  <a href="https://dev.to/enter?state=new-user&amp;bb=239338" class="ltag_cta ltag_cta--branded" role="button">Okay</a>
+</h2>
+    </div>
+  </div>
+
+</div></div>
+
+
+    <div id="runtime-banner-container"></div>
+    <div id="i18n-translations" data-translations="{&quot;en&quot;:{&quot;core&quot;:{&quot;add_comment&quot;:&quot;Add comment&quot;,&quot;beta&quot;:&quot;beta&quot;,&quot;comment&quot;:&quot;Comment&quot;,&quot;copy_link&quot;:&quot;Copy link&quot;,&quot;edit_profile&quot;:&quot;Edit profile&quot;,&quot;follow&quot;:&quot;Follow&quot;,&quot;follow_back&quot;:&quot;Follow back&quot;,&quot;following&quot;:&quot;Following&quot;,&quot;like&quot;:&quot;Like&quot;,&quot;loading&quot;:&quot;loading...&quot;,&quot;reaction&quot;:&quot;Reaction&quot;,&quot;report_abuse&quot;:&quot;Report abuse&quot;,&quot;search&quot;:&quot;Search&quot;,&quot;success_settings&quot;:&quot;Successfully updated settings.&quot;,&quot;search_placeholder&quot;:&quot;Search...&quot;,&quot;search_find_related_posts&quot;:&quot;Find related posts...&quot;,&quot;search_powered_by&quot;:&quot;Powered by Algolia&quot;,&quot;search_submit_search&quot;:&quot;Submit search for advanced filtering.&quot;,&quot;search_displaying_recommendations&quot;:&quot;Displaying Algolia Recommendations — Start typing to search&quot;,&quot;article_form_save_changes&quot;:&quot;Save changes&quot;,&quot;article_form_schedule&quot;:&quot;Schedule&quot;,&quot;article_form_publish&quot;:&quot;Publish&quot;,&quot;article_form_loading_preview&quot;:&quot;Loading preview&quot;,&quot;article_form_preview_loaded&quot;:&quot;Preview loaded&quot;,&quot;article_form_co_authors&quot;:&quot;Co-authors&quot;,&quot;article_form_co_authors_description&quot;:&quot;Add up to 4 co-authors from %{org_name}.&quot;,&quot;article_form_co_authors_placeholder&quot;:&quot;Add up to 4...&quot;,&quot;comments_preview&quot;:&quot;Preview&quot;,&quot;comments_continue_editing&quot;:&quot;Continue editing&quot;,&quot;survey_enter_response&quot;:&quot;Enter your response here...&quot;,&quot;survey_thank_you_response&quot;:&quot;Thank you for your response.&quot;,&quot;survey_thank_you_completing&quot;:&quot;Thank you for completing the survey!&quot;,&quot;dashboard_analytics_readers&quot;:&quot;Readers&quot;,&quot;dashboard_analytics_avg_read_time&quot;:&quot;avg. read time %{seconds}s&quot;,&quot;dashboard_analytics_comments&quot;:&quot;Comments&quot;,&quot;dashboard_analytics_reactions&quot;:&quot;Reactions&quot;,&quot;dashboard_analytics_unique_reactors&quot;:&quot;from %{count} unique users&quot;,&quot;dashboard_analytics_bookmarks&quot;:&quot;Bookmarks&quot;,&quot;dashboard_analytics_followers&quot;:&quot;New Followers&quot;,&quot;top_contributors_empty&quot;:&quot;No engagers found for this period.&quot;,&quot;top_contributors_reactions&quot;:&quot;reactions&quot;,&quot;top_contributors_comments&quot;:&quot;comments&quot;,&quot;top_contributors_weight_note&quot;:&quot;Comments carry more weight&quot;,&quot;follower_engagement_ratio&quot;:&quot;%{ratio}% of followers engaged&quot;,&quot;follower_engagement_detail&quot;:&quot;(%{engaged} of %{total})&quot;,&quot;dashboard_analytics_no_data&quot;:&quot;No data available for this period&quot;,&quot;dashboard_analytics_no_referrers&quot;:&quot;No traffic sources yet&quot;,&quot;stats_by&quot;:&quot;by&quot;,&quot;editor_new_title&quot;:&quot;New post title here...&quot;,&quot;editor_body_placeholder&quot;:&quot;Write your post content here...&quot;,&quot;tags_field_label&quot;:&quot;Add up to 4 tags&quot;,&quot;tags_field_placeholder&quot;:&quot;Add up to 4 tags...&quot;,&quot;counted_organization&quot;:{&quot;one&quot;:&quot;%{count} organization&quot;,&quot;other&quot;:&quot;%{count} organizations&quot;},&quot;counted_user&quot;:{&quot;one&quot;:&quot;%{count} person&quot;,&quot;other&quot;:&quot;%{count} people&quot;},&quot;not_following&quot;:&quot;You&#39;re not following anyone&quot;,&quot;following_everyone&quot;:&quot;You&#39;re following %{details} (everyone)&quot;,&quot;you_are_following&quot;:&quot;You&#39;re following&quot;,&quot;and&quot;:&quot;and&quot;}}}"></div>
+  </div>
+</div>
+    
+
+<footer id="footer" class="crayons-footer print-hidden">
+  <div id="footer-container" class="crayons-footer__container">
+
+
+
+    <p class="fs-s crayons-footer__description">
+      <a class="c-link c-link--branded fw-medium" aria-label="DEV Community Home" href="https://dev.to/">DEV Community</a> — A space to discuss and keep up software development and manage your software career
+    </p>
+
+    <ul class="footer__nav-links flex gap-2 justify-center flex-wrap fs-s p-0" style="">
+        <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/">
+      Home
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/challenges">
+      DEV Challenges
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/++">
+      DEV++
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/videos">
+      Videos
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/deved">
+      DEV Education Tracks
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/help">
+      DEV Help
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/advertise">
+      Advertise on DEV
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/organizations">
+      Organization Accounts
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/showcase">
+      DEV Showcase
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/about">
+      About
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/contact">
+      Contact
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/free-postgres-database-tier">
+      Free Postgres Database
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://shop.forem.com/" target="_blank" rel="noopener noreferrer">
+      DEV Shop
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://mlh.io/" target="_blank" rel="noopener noreferrer">
+      MLH
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+
+    </ul>
+
+    <ul class="footer__nav-links flex gap-2 justify-center flex-wrap fs-s p-0" style="">
+        <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/code-of-conduct">
+      Code of Conduct
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/privacy">
+      Privacy Policy
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li class="footer__nav-link flex items-center">
+    <a href="https://dev.to/terms">
+      Terms of Use
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+
+    </ul>
+
+    <div class="fs-s">
+      <p>Built on <a class="c-link c-link--branded" target="_blank" rel="noopener noreferrer" href="https://www.forem.com/">Forem</a> — the <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/t/opensource">open source</a> software that powers <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/">DEV</a> and other inclusive communities.</p>
+      <p>Made with love and <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community <span title="copyright">©</span> 2016 - 2026.</p>
+    </div>
+  </div>
+</footer>
+<div id="snack-zone"></div>
+
+    <div id="global-signup-modal" class="authentication-modal hidden">
+  <div class="authentication-modal__container">
+    <figure class="authentication-modal__image-container">
+      <img class="authentication-modal__image" src="./index_files/https___dev-to-uploads.s3.amazonaws(1).com_uploads_articles_8j7kvp660rqzt99zui8e.png" alt="DEV Community" loading="lazy">
+    </figure>
+    <div class="authentication-modal__content">
+      <p class="authentication-modal__description">
+          We're a place where coders share, stay up-to-date and grow their careers.
+      </p>
+    </div>
+    <div class="authentication-modal__actions">
+      <a href="https://dev.to/enter?signup_subforem=1" class="crayons-btn" aria-label="Log in" data-no-instant="">
+        Log in
+      </a>
+      <a href="https://dev.to/enter?signup_subforem=1&amp;state=new-user" class="crayons-btn crayons-btn--ghost-brand js-global-signup-modal__create-account" aria-label="Create new account" data-no-instant="">
+        Create account
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="./index_files/signupModalShortcuts-0b25469b985100a01e94cbd7fccaf7f0a4d776e129aac65c766aa32cb28ab29a.js" defer="defer"></script>
+
+    <div id="cookie-consent"></div>
+  <div id="reaction-category-resources" class="hidden" aria-hidden="true">
+    <img data-name="Like" data-slug="like" data-position="1" src="./index_files/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18" height="18">
+    <img data-name="Unicorn" data-slug="unicorn" data-position="2" src="./index_files/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18" height="18">
+    <img data-name="Exploding Head" data-slug="exploding_head" data-position="3" src="./index_files/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18" height="18">
+    <img data-name="Raised Hands" data-slug="raised_hands" data-position="4" src="./index_files/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18" height="18">
+    <img data-name="Fire" data-slug="fire" data-position="5" src="./index_files/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18" height="18">
+</div>
+
+    <script>
+  var userSignedIn = false;
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    initAuth();
+  } else {
+    document.addEventListener('DOMContentLoaded', initAuth);
+  }
+
+  function initAuth() {
+    var paramToken = new URLSearchParams(window.location.search).get('jwt');
+
+    if (paramToken && !userSignedIn) {
+      authenticateUser(paramToken);
+    } else {
+      var iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = 'https://forem.com/auth_pass/iframe';
+  
+      document.body.appendChild(iframe);
+  
+      window.addEventListener('message', function(event) {
+        if (event.origin !== 'https://forem.com' && event.origin !== window.location.origin) {
+          return;
+        }
+  
+        var data = event.data;
+  
+        if (data.authenticated && !userSignedIn) {
+          authenticateUser(data.token);
+        } else if(data.authenticated && window.ReactNativeWebView && window.ReactNativeWebView.postMessage) {
+          window.ReactNativeWebView.postMessage(JSON.stringify({
+            action: 'login',
+            token: data.token,
+          }));
+        }
+      });  
+    }
+
+    function authenticateUser(token) {
+      fetch('/auth_pass/token_login', {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRF-Token': getMetaContent('csrf-token'),
+        },
+        body: JSON.stringify({ token: token }),
+      })
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        if (data.success) {
+          if (document.head.querySelector('meta[name="user-signed-in"][content="false"]')) {
+            // Reload the page to update the user's state
+            location.reload();
+          }
+        }
+      })
+      .catch(function(error) {
+        console.error('Error during authentication:', error);
+      });
+    }
+
+    function getMetaContent(name) {
+      var element = document.querySelector('meta[name="' + name + '"]');
+      return element ? element.getAttribute('content') : '';
+    }
+  }
+</script>
+
+  
+  
+  
+  
+  
+<iframe src="./index_files/iframe.html" style="display: none;"></iframe></body></html>
